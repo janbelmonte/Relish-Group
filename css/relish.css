@@ -5,14 +5,25 @@
 }
 
 /* TYPOGRAPHY */
+
+p {
+  color: #404040;
+}
+
 p.caption {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.70em;
   text-transform: uppercase;
   margin-bottom: 0.2em;
 }
 p.detail {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.9em;
   margin-bottom: 0;
+}
+p.brand-promise {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 400;
 }
 
 /* NAVIGATION */
@@ -102,6 +113,8 @@ footer {
 
   footer ul {
     list-style: none;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 700;
   }
 
   footer ul li a,
