@@ -24,6 +24,10 @@ nav {
   background: rgba(0,0,0,0.6);
 }
 
+  #relish-logo {
+    transform: translateY(-20px);
+  }
+
   nav ul {
     list-style: none;
     float: right;
