@@ -108,11 +108,11 @@ nav {
       position: absolute;
       width: 100%;
       height: 170px;
-      transform: translateY(-67px);
-      -webkit-transform: translateY(-67px);
-      -moz-transform: translateY(-67px);
-      -ms-transform: translateY(-67px);
-      -o-transform: translateY(-67px);
+      transform: translateY(-52px);
+      -webkit-transform: translateY(-52px);
+      -moz-transform: translateY(-52px);
+      -ms-transform: translateY(-52px);
+      -o-transform: translateY(-52px);
       background-color: #fff;
       z-index: -1000;
     }
