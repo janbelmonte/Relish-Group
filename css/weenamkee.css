@@ -113,6 +113,7 @@ nav.no-bg {
 	min-height: 100px;
 	height: auto;
 	background-color: #7c1315;
+	padding-bottom: 25px;
 }
 
 	.menu-title {
@@ -146,4 +147,5 @@ nav.no-bg {
 	left: 0;
 	width: 100% !important;
 	height: 100% !important;
+	pointer-events:none;
 }
