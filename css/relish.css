@@ -102,6 +102,10 @@ nav {
         max-height: 70%;
         max-width: 70%;
       }
+
+      .brandsOn {
+        cursor: pointer;
+      }
   }
 
 /* CAROUSEL */
