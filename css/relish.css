@@ -83,6 +83,7 @@ nav {
       margin: 0 auto;
     }
     #brand-bar {
+      display: none;
       position: absolute;
       width: 100%;
       height: 170px;

@@ -27,7 +27,7 @@
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+  <script src="js/jquery-2.1.4.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,7 +44,7 @@
 			<ul>
 			 	<li><a href="#">Home</a></li>
 			    <li><a href="#">About</a></li>
-			    <li><a href="#">Our Brands</a></li>
+			    <li><a class="brandsOn">Our Brands</a></li>
 			</ul>
 		</div>
 		<div id="brand-bar">
@@ -84,7 +84,7 @@
 			<ul>
 				<li><a href="#">Home</a></li>
 		    	<li><a href="#">About</a></li>
-		    	<li><a href="#">Our Brands</a></li>
+		    	<li><a class="brandsOn">Our Brands</a></li>
 		    	<li><a href="#">Careers</a></li>
 		    </ul>
 		</div>
@@ -114,6 +114,12 @@
 		<p class="detail">&copy; 2015 Relish Group</p>
 	</div>
 </div>
+
+<script>
+	$(".brandsOn").click(function () {
+	    $("#brand-bar").toggle();
+	});
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
