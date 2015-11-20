@@ -165,6 +165,7 @@ footer {
   position: relative;
   width: 100%;
   background: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
 
 #footer-menu {
