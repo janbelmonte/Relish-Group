@@ -36,6 +36,18 @@
 	font-size: 1em;
 }
 
+	@media (max-width: 400px) {
+		#carousel h1 {
+			font-size: 1.8em;
+			font-family: 'Playfair Display', serif;
+		}
+		#carousel p {
+			font-size: 0.9em;
+		}
+	}
+
+
+
 /* NAVIGATION */
 
 nav.no-bg {
@@ -54,6 +66,11 @@ nav.no-bg {
 
 	nav ul li a:hover {
 		color: #f1be06;
+	}
+
+	nav img {
+		height: 35px;
+		padding: 15px;
 	}
 
 	#relish-logo {
@@ -81,6 +98,10 @@ nav.no-bg {
 			padding-top: 25px;
 			padding-bottom: 25px;
 		}
+		nav img {
+			height: 65px;
+			padding: 15px;
+		}
 	}
 
 /* CAROUSEL */
@@ -104,6 +125,13 @@ nav.no-bg {
 		top: auto; bottom: 0; left: 0; right: 0;
 		border: none;
 		background: #7c1315;
+	}
+
+	@media (max-width: 400px) {
+		#carousel .header {
+			margin-left: 0px;
+			margin-top: 30px;
+		}
 	}
 
 
