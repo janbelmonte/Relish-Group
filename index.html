@@ -23,6 +23,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/relish.css">
 
   <!-- JS
@@ -41,6 +42,7 @@
   	<nav class="nav-collapse">
   		<div class="limit">
   			<img id="relish-logo" src="images/relish-logo.png" />
+  			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul>
 			 	<li><a href="#">Home</a></li>
 			    <li><a href="#">About</a></li>
@@ -119,6 +121,25 @@
 	$(".brandsOn").click(function () {
 	    $("#brand-bar").toggle();
 	});
+	$(function() {
+	    var pull        = $('#pull');
+	        menu        = $('nav ul');
+	        menuHeight  = menu.height();
+	 
+	    $(pull).on('click', function(e) {
+	        e.preventDefault();
+	        menu.slideToggle();
+	    });
+	});
+
+	window.onresize = function(){
+		var nav = document.querySelector("nav ul");
+		var mql = window.matchMedia("screen and (min-width: 500px)");
+
+		if(mql.matches){
+			nav.setAttribute("style", "");
+		}
+	}
 </script>
 
 <!-- End Document
