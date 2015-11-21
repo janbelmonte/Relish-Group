@@ -2,6 +2,14 @@
   transition: 0s;
 }
 
+.bg-light-grey {
+	background-color: #f1f1f1;
+}
+
+.bg-dark-grey {
+	background-color: #d3d3d3;
+}
+
 
 p.title-bar {
 	color: #662003;
@@ -86,16 +94,17 @@ nav {
 
 
 .kumori-menu {
+	margin-top: 40px;
 	width: 100%;
-	min-height: 200px;
+	height: auto;
 }
 
-	.wnk-menu-item {
-		display: inline;
-		width: 33.33vw;
-		height: 33.33vw;
-		margin: 0;
-		background-color: gray;
+	.menu-item {
+		float: left;
+		min-width: 33.33vw;
+		min-height: 33.33vw;
+		margin: 0 !important;
+		margin-right: -10px;
 	}
 
 
