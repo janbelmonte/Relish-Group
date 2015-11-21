@@ -94,17 +94,16 @@ nav {
 
 
 .kumori-menu {
-	margin-top: 40px;
 	width: 100%;
 	height: auto;
+	background-color: #000;
 }
 
 	.menu-item {
-		float: left;
-		min-width: 33.33vw;
-		min-height: 33.33vw;
+		display: inline-table;
+		width: 33.33vw;
+		height: 33.33vw;
 		margin: 0 !important;
-		margin-right: -10px;
 	}
 
 
