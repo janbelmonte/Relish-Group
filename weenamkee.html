@@ -30,7 +30,7 @@
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+  <script src="js/jquery-2.1.4.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -56,20 +56,20 @@
 			</div>
 		</div>
 	</div>
-	<nav>
-		<div class="limit">
-			<img class="wnk-logo" src="images/wnk/wnk-logo.jpg" />
-			<ul>
-			 	<li><a href="#">Home</a></li>
-			    <li><a href="#">Menu</a></li>
-			    <li><a class="brandsOn">Branches</a></li>
-			</ul>
-		</div>
-	</nav>
 </div>
+<nav class="wnk-nav">
+	<div class="limit">
+		<img class="wnk-logo" src="images/wnk/wnk-logo.jpg" />
+		<ul>
+		 	<li><a href="#">Home</a></li>
+		    <li><a href="#">Menu</a></li>
+		    <li><a class="brandsOn">Branches</a></li>
+		</ul>
+	</div>
+</nav>
 
 <div id="wnk-menu">
-	<div class="row">
+	<div class="row	">
 		<div class="menu-title std-padding-left">
 			<h1>Menu</h1>
 		</div>
@@ -198,6 +198,21 @@
 		<p class="detail">&copy; 2015 Relish Group</p>
 	</div>
 </div>
+
+
+<script>
+	var  mn = $(".wnk-nav");
+	    mns = "main-nav-scrolled";
+	    hdr = $('#carousel').height();
+
+	$(window).scroll(function() {
+	  if( $(this).scrollTop() > hdr ) {
+	    mn.addClass(mns);
+	  } else {
+	    mn.removeClass(mns);
+	  }
+	});
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

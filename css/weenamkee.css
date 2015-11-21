@@ -122,6 +122,7 @@ nav.no-bg {
 		}
 	}
 
+
 /* CAROUSEL */
 
 #carousel {
@@ -139,11 +140,17 @@ nav.no-bg {
 		padding: 20px;
 	}
 
-	#carousel nav {
-		position: absolute;
+	nav.wnk-nav {
+		position: relative;
 		top: auto; bottom: 0; left: 0; right: 0;
 		border: none;
 		background: #7c1315;
+		z-index: 12000;
+	}
+
+	.main-nav-scrolled {
+		position: fixed !important;
+		top: 0px !important; bottom: auto !important;
 	}
 
 	@media (min-width: 1100px) {
@@ -156,10 +163,12 @@ nav.no-bg {
 /* MENU */
 
 #wnk-menu {
+	
 	min-height: 100px;
 	height: auto;
 	background-color: #5e0d0e;
 	padding-bottom: 25px;
+	z-index: 12000 !important;
 }
 
 	.menu-title {
