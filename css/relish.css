@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1100px;
+}
+
 .no-margin {
   margin: 0 !important;
 }
