@@ -1,0 +1,105 @@
+* {
+  transition: 0s;
+}
+
+
+p.title-bar {
+	color: #662003;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: "Century Gothic", sans-serif;
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+
+nav {
+	background: #ffb725;
+}
+
+	nav ul {
+		font-family: "Century Gothic", sans-serif;
+		list-style: none;
+		float: left;
+		margin: 50px 0;
+		display: none;
+	}
+
+	nav ul li {
+		display: inline-block;
+		padding-left: 2em;
+	}
+
+	nav ul li a,
+	nav ul li a:visited {
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	nav ul li a:hover {
+		color: #662003;
+	}
+
+	#relish-logo {
+		float: right;
+		max-width: 25%;
+		height: 25%;
+		margin-right: 20px;
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+		z-index: 10000;
+	}
+
+	@media (min-width: 550px) {
+	    nav ul {
+	      display: block;
+	    }
+	    #relish-logo {
+	      max-width: 165px;
+	      max-width: 165px;
+	    }
+  	}
+
+
+#carousel {
+	background-attachment: scroll;
+}
+
+
+.title-bar {
+	width: 100%;
+	height: 30px;
+	background: #ffb725;
+}
+
+
+#kumori-desc {
+	width: 100%;
+	min-height: 530px;
+	background: #662003;
+}
+
+
+.kumori-menu {
+	width: 100%;
+	min-height: 200px;
+}
+
+	.wnk-menu-item {
+		display: inline;
+		width: 33.33vw;
+		height: 33.33vw;
+		margin: 0;
+		background-color: gray;
+	}
+
+
+.kumori-branches {
+	width: 100%;
+	min-height: 200px;
+}
