@@ -1,3 +1,4 @@
+/* TYPOGRAPHY */
 h1 {
 	color: #d71921;
 	font-size: 52px;
@@ -7,35 +8,61 @@ h1 {
 	margin-bottom: 20px;
 }
 
-p {
-	font-size: 18px;
-	font-family: DINPro, sans-serif;
-	line-height: 28px;
-}
+	.osaka-section-title h1 {
+		color: #fff;
+		font-family: Helvetica Neue LT Com;
+		z-index: 21000;
+	}
+
+	.osaka-desc p {
+		font-size: 18px;
+		font-family: DINPro, sans-serif;
+		line-height: 28px;
+	}
+
+	p.osaka-caption {
+		font-size: 18px;
+		font-family: DINPro, sans-serif;
+		line-height: 28px;
+	}
+
 
 #carousel {
-	min-height: 1000px;
+	min-height: 900px;
 	background: url(../images/osakaohsho/osaka-bg.jpg);
 	background-size: cover;
 	background-position: center top;
 }
 
 	.osaka-desc {
-		position: absolute;
-		bottom: 30px;
-		left: 75px;
+		position: relative;
+		width: auto;
+		top: 350px;
+	}
+
+	@media (max-width: 1100px) {
+		.osaka-desc {
+			padding: 20px;
+		}
 	}
 
 #red-strip {
 	width: 100%;
 	position: absolute;
-	top: 800px;
+	top: 700px;
 	/*transform: translateY(-200px);
 	-webkit-transform: translateY(-200px);
 	-moz-transform: translateY(-200px);
 	-o-transform: translateY(-200px);
 	-ms-transform: translateY(-200px);*/
 	z-index: 15000;
+}
+
+.osaka-section-title {
+	position: absolute;
+	width: 320px;
+	z-index: 16000;
+	transform: translateY(-100px);
 }
 
 nav {
@@ -58,7 +85,7 @@ nav {
 
 	#osaka-logo {
 		position: relative;
-		margin-top: 70px;
+		margin-top: 50px;
 		float: left;
 		z-index: 10000;
 		transform: translateX(-10px);
@@ -76,6 +103,13 @@ nav {
 	    #kumori-logo {
 	    	height: 100px !important;
 	    }
+  	}
+
+  	@media (max-width: 750px) {
+  		#osaka-logo {
+  			width: 150px;
+  			transform: translateX(20px);
+  		}
   	}
 
 #osaka-menu {
