@@ -30,7 +30,7 @@ nav {
 		font-family: "Century Gothic", sans-serif;
 		list-style: none;
 		float: left;
-		margin: 50px 0;
+		margin: 40px 0;
 		display: none;
 	}
 
@@ -66,6 +66,7 @@ nav {
 	@media (min-width: 550px) {
 	    nav ul {
 	      display: block;
+	      padding: 0 !important;
 	    }
 	    #relish-logo {
 	      max-width: 165px;
@@ -104,6 +105,7 @@ nav {
 		width: 33.33vw;
 		height: 33.33vw;
 		margin: 0 !important;
+		margin-bottom: -7px !important;
 	}
 
 
