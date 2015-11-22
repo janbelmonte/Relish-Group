@@ -90,9 +90,11 @@ nav {
 #kumori-desc {
 	width: 100%;
 	min-height: 530px;
-	background: #662003;
+	background: url(../images/kumori/bg-about.jpg);
+	background-size: cover;
+	background-color: #542d24;
+	background-attachment: fixed;
 }
-
 
 .kumori-menu {
 	width: 100%;
@@ -108,8 +110,7 @@ nav {
 		margin-bottom: -7px !important;
 	}
 
-
 .kumori-branches {
 	width: 100%;
-	min-height: 200px;
+	min-height: 140px;
 }
