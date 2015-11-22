@@ -123,19 +123,43 @@ nav {
       position: absolute;
       width: 100%;
       height: auto;
-      transform: translateY(-117px);
-      -webkit-transform: translateY(-117px);
-      -moz-transform: translateY(-117px);
-      -ms-transform: translateY(-117px);
-      -o-transform: translateY(-117px);
+      transform: translateY(-97px);
+      -webkit-transform: translateY(-97px);
+      -moz-transform: translateY(-97px);
+      -ms-transform: translateY(-97px);
+      -o-transform: translateY(-97px);
       background-color: #fff;
       z-index: 500;
   }
 
-    .logo-bar {
-      display: block;
-      width: 45%;
-    }
+  .brand__item {
+    width: 48%;
+    padding: 40px 0;
+  }
+
+  .brand__item a {
+    display: block;
+    width: initial;
+  }
+
+  .brand__logo {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .brand__row {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
   @media (min-width: 550px) {
     #pull {display: none;}
@@ -172,6 +196,20 @@ nav {
       -ms-transform: translateY(-67px);
       -o-transform: translateY(-67px);
     }
+
+    .brand__row {
+      padding: 0;
+    }
+
+    .brand__item {
+      display: block;
+      width: 100%;
+    }
+
+    .brand__logo {
+      width: 100%;
+      padding: 0;
+    }
   }
 
   @media (min-width: 1000px) {
@@ -200,7 +238,7 @@ nav {
       #brand-bar .row {
         margin: 35px 0;
       }
-      .logo-bar__logo {
+      .brand__logo {
         max-height: 70%;
         max-width: 70%;
       }

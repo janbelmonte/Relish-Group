@@ -51,24 +51,24 @@
 		</div>
 		<div id="brand-bar">
 			<div class="limit">
-				<div class="row">
-					<div class="logo-bar">
-						<a href="#"><img class="logo-bar__logo" src="images/relish-logo.png" width="100%"/></a>
+				<div class="container brand__row">
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
 					</div>
-					<div class="logo-bar">
-						<a href="#"><img class="logo-bar__logo" src="images/relish-logo.png" width="100%"/></a>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
 					</div>
-					<div class="logo-bar">
-						<a href="#"><img class="logo-bar__logo"src="images/relish-logo.png" width="100%"/></a>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo"src="images/relish-logo.png" width="100%"/></a>
 					</div>
-					<div class="logo-bar">
-						<a href="#"><img class="logo-bar__logo" src="images/relish-logo.png" width="100%"/></a>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
 					</div>
-					<div class="logo-bar">
-						<a href="#"><img class="logo-bar__logo" src="images/relish-logo.png" width="100%"/></a>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
 					</div>
-					<div class="logo-bar">
-						<a href="#"><img class="logo-bar__logo" src="images/relish-logo.png" width="100%"/></a>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
 					</div>
 				</div>
 			</div>
@@ -129,15 +129,88 @@
 	    $(pull).on('click', function(e) {
 	        e.preventDefault();
 	        menu.slideToggle();
+	        var brandBar = $("#brand-bar");
+	        if(brandBar.css("display") == "block") {
+	        	brandBar.css("display", "none");
+	        }
 	    });
 	});
+
 
 	window.onresize = function(){
 		var nav = document.querySelector("nav ul");
 		var mql = window.matchMedia("screen and (min-width: 500px)");
 
 		if(mql.matches){
-			nav.setAttribute("style", "");
+			nav.removeAttribute("style");
+		}
+
+		if (helper.checkForPull()){
+			if( document.getElementsByClassName("close")[0] == undefined ){
+				var close = document.createElement("a");
+				close.setAttribute("class", "fa fa-close fa-2x close");
+				close.setAttribute("id", "closeBtn");
+				var parent = document.getElementById("brand-bar");
+				console.log(parent);
+				parent.appendChild(close);	
+			}
+		} else {
+			if( document.getElementsByClassName("close")[0] != undefined ){
+				var close = document.getElementsByClassName("close")[0];
+			var parent = document.getElementById("brand-bar");
+			parent.removeChild(close);
+			}
+		}
+
+		var close = document.getElementsByClassName("close")[0];
+		var parent = document.getElementById("brand-bar");
+		close.addEventListener("click", function(){
+			event.preventDefault();
+			console.log(getComputedStyle(parent, null).display);
+			if(getComputedStyle(parent, null).display == "block"){
+				parent.style.display = "none";
+			}
+		});
+	}
+
+	window.onload = function(){
+		if (helper.checkForPull()){
+			if( document.getElementsByClassName("close")[0] == undefined ){
+				var close = document.createElement("a");
+				close.setAttribute("class", "fa fa-close fa-2x close");
+				var parent = document.getElementById("brand-bar");
+				console.log(parent);
+				parent.appendChild(close);	
+
+			}
+		} else {
+			if( document.getElementsByClassName("close")[0] != undefined ){
+				var close = document.getElementsByClassName("close")[0];
+			var parent = document.getElementById("brand-bar");
+			parent.removeChild(close);
+			}
+		}
+		var close = document.getElementsByClassName("close")[0];
+		var parent = document.getElementById("brand-bar");
+		close.addEventListener("click", function(){
+			event.preventDefault();
+			console.log(getComputedStyle(parent, null).display);
+			if(getComputedStyle(parent, null).display == "block"){
+				parent.style.display = "none";
+			}
+		});
+		
+	}
+	var helper = {
+		checkForPull : function(){
+			var pull = document.getElementById('pull');
+			var pullDisplay = getComputedStyle(pull,null).display;
+			var bool;
+			if( pullDisplay == "block" ){
+				return true;
+			} else {
+				return false;
+			}
 		}
 	}
 </script>
