@@ -145,6 +145,7 @@ nav {
       width: auto;
       background-color: transparent;
       margin-right: 20px;
+      padding: 0;
     }
 
     nav ul li {
