@@ -64,6 +64,8 @@ nav {
 	background: url(../images/osakaohsho/osaka-menu-bg.jpg);
 	background-repeat: repeat-y;
 	z-index: -1000;
+	-webkit-clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
 }
 
 
