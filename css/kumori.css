@@ -63,6 +63,11 @@ nav {
 		z-index: 10000;
 	}
 
+	#kumori-logo {
+		float: left;
+		z-index: 10000;
+	}
+
 	@media (min-width: 550px) {
 	    nav ul {
 	      display: block;
