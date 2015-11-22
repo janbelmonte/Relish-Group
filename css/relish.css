@@ -120,17 +120,22 @@ nav {
 
   #brand-bar {
     display: none;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    z-index: -1000;
-    transform: translateY(-117px);
-    -webkit-transform: translateY(-117px);
-    -moz-transform: translateY(-117px);
-    -ms-transform: translateY(-117px);
-    -o-transform: translateY(-117px);
+      position: absolute;
+      width: 100%;
+      height: auto;
+      transform: translateY(-117px);
+      -webkit-transform: translateY(-117px);
+      -moz-transform: translateY(-117px);
+      -ms-transform: translateY(-117px);
+      -o-transform: translateY(-117px);
+      background-color: #fff;
+      z-index: 500;
   }
+
+    .logo-bar {
+      display: block;
+      width: 45%;
+    }
 
   @media (min-width: 550px) {
     #pull {display: none;}
@@ -195,7 +200,7 @@ nav {
       #brand-bar .row {
         margin: 35px 0;
       }
-      .brand-logo {
+      .logo-bar__logo {
         max-height: 70%;
         max-width: 70%;
       }
