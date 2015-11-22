@@ -1,9 +1,30 @@
+h1 {
+	color: #d71921;
+	font-size: 52px;
+	font-family: Helvetica Neue, sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	font-family: DINPro, sans-serif;
+	line-height: 28px;
+}
+
 #carousel {
 	min-height: 1000px;
 	background: url(../images/osakaohsho/osaka-bg.jpg);
 	background-size: cover;
 	background-position: center top;
 }
+
+	.osaka-desc {
+		position: absolute;
+		bottom: 30px;
+		left: 75px;
+	}
 
 #red-strip {
 	width: 100%;
@@ -40,6 +61,7 @@ nav {
 		margin-top: 70px;
 		float: left;
 		z-index: 10000;
+		transform: translateX(-10px);
 	}
 
 	@media (min-width: 550px) {
