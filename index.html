@@ -87,7 +87,7 @@
 		<li><p style="background-image:url('images/img2.jpg)">3</p></li>
 	</ul>
 </div> -->
-<div style="display:block; width:100vw; height:90vh; background-color:aliceblue; position:relative; z-index: -2000;" class="carousel__container">
+<div style="display:block; width:100vw; height:90vh; position:relative; z-index: -2000;" class="carousel__container">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 90vh;">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -229,8 +229,6 @@
 	}
 
 	window.onload = function(){
-		$("#lightSlider").lightSlider(); 
-		
 		if (helper.checkForPull()){
 			if( document.getElementsByClassName("close")[0] == undefined ){
 				var close = document.createElement("a");
