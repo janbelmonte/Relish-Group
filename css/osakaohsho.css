@@ -1,0 +1,66 @@
+#carousel {
+	min-height: 1000px;
+	background: url(../images/osakaohsho/osaka-bg.jpg);
+	background-size: cover;
+	background-position: center top;
+}
+
+#red-strip {
+	width: 100%;
+	transform: translateY(-200px);
+	-webkit-transform: translateY(-200px);
+	-moz-transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+}
+
+nav {
+	position: absolute;
+	background: none;
+}
+
+#relish-logo {
+		float: right;
+		max-width: 25%;
+		height: 25%;
+		margin-right: 20px;
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+		z-index: 10000;
+	}
+
+	#osaka-logo {
+		position: relative;
+		margin-top: 70px;
+		float: left;
+		z-index: 10000;
+	}
+
+	@media (min-width: 550px) {
+	    nav ul {
+	      display: block;
+	      padding: 0 !important;
+	    }
+	    #relish-logo {
+	      max-width: 165px;
+	      max-width: 165px;
+	    }
+	    #kumori-logo {
+	    	height: 100px !important;
+	    }
+  	}
+
+#osaka-menu {
+	min-height: 100vh;
+	height: auto;
+	background: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+footer {
+	z-index: -1000;
+}
