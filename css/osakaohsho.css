@@ -7,11 +7,14 @@
 
 #red-strip {
 	width: 100%;
-	transform: translateY(-200px);
+	position: absolute;
+	top: 800px;
+	/*transform: translateY(-200px);
 	-webkit-transform: translateY(-200px);
 	-moz-transform: translateY(-200px);
 	-o-transform: translateY(-200px);
-	-ms-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);*/
+	z-index: 15000;
 }
 
 nav {
@@ -54,12 +57,15 @@ nav {
   	}
 
 #osaka-menu {
+	width: 100%;
+	position: relative;
 	min-height: 100vh;
 	height: auto;
-	background: url();
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: url(../images/osakaohsho/osaka-menu-bg.jpg);
+	background-repeat: repeat-y;
+	z-index: -1000;
 }
+
 
 footer {
 	z-index: -1000;
