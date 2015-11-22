@@ -1,5 +1,12 @@
+/* UNIVERSAL */
+.padding-20 {
+	padding: 20px;
+}
+
 /* TYPOGRAPHY */
 h1 {
+	
+
 	color: #d71921;
 	font-size: 52px;
 	font-family: Helvetica Neue, sans-serif;
@@ -28,7 +35,7 @@ h1 {
 
 
 #carousel {
-	min-height: 1000px;
+	min-height: 1150px;
 	background: url(../images/osakaohsho/osaka-bg.jpg);
 	background-size: cover;
 	background-position: center top;
@@ -55,15 +62,13 @@ h1 {
 
 #red-strip {
 	width: 100%;
-	position: absolute;
-	top: 700px;
-	/*transform: translateY(-200px);
+	height: 540px;
+	transform: translateY(-200px);
 	-webkit-transform: translateY(-200px);
 	-moz-transform: translateY(-200px);
 	-o-transform: translateY(-200px);
-	-ms-transform: translateY(-200px);*/
-	overflow: hidden;
-	z-index: 15000;
+	-ms-transform: translateY(-200px);
+	background: url(../images/osakaohsho/osaka-redstrip.png);
 }
 
 	@media (max-width: 1100px) {
@@ -77,8 +82,6 @@ h1 {
 	}
 
 .osaka-section-title {
-	position: absolute;
-	width: 20%;
 	z-index: 16000;
 	transform: translateY(-100px);
 }
@@ -144,21 +147,52 @@ nav {
 	height: auto;
 	background: url(../images/osakaohsho/osaka-menu-bg.jpg);
 	background-repeat: repeat-y;
-	z-index: -1000;
-	-webkit-clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
+	z-index: 16000;
+	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 
+	@media (max-width: 400px) {
+		#osaka-menu {
+			-webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+			clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+		}
+	}
+
 	.osaka-food {
+		transform: translateY(-550px);
+	}
+
+	.menu-spacer75 {
+		width: auto;
+		height: 75px;
+	}
+
+	.menu-spacer150 {
+		width: auto;
+		height: 150px;
+	}
+
+	.osaka-menu-item {
+		position: relative;
+		width: auto;
+		height: 500px;
+		margin-bottom: 50px;
+		background: #d3d3d3;
+	}
+	.osaka-menu-title {
+		width: 100%;
+		padding: 15px;
 		position: absolute;
-		right:0;
-		z-index: 16000;
+		bottom: 0px; left: 0px; right: 0px;
+		background: #c2121a;
 	}
-
-	.osaka-food h1 {
-		color: #000;
+	.osaka-menu-title p {
+		color: #fff;
+		font-size: 18px;
+		font-family: Helvetica;
+		font-weight: bold;
 	}
-
 
 footer {
 	z-index: -1000;
