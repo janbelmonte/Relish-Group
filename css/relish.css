@@ -129,8 +129,13 @@ nav {
       -ms-transform: translateY(-67px);
       -o-transform: translateY(-67px);
       background-color: #fff;
-      z-index: -1000;
+      z-index: 500;
   }
+
+    .logo-bar {
+      display: block;
+      width: 45%;
+    }
 
   @media (min-width: 550px) {
     #pull {display: none;}
