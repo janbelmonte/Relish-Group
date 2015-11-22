@@ -59,12 +59,12 @@ nav {
   top: 0; left: 0; right: 0;
   border-top: 30px solid #333;
   background: rgba(0,0,0,0.6);
-  height: 120px;
+  height: 75px;
 }
 
   #pull {
     position: absolute;
-    top: 80px;
+    top: 50px;
     right: 20px;
     text-decoration: none;
     color: white;
@@ -94,12 +94,12 @@ nav {
     float: right;
     margin: 40px 0;
     display: none;
-    background: #333;
-    opacity: 0.6;
+    background: rgba(0,0,0,0.6);;
     position: absolute;
-    top: 110px;
+    top: 65px;
     width: 100%;
     text-align: center;
+    padding: 15px 0;
   }
 
   nav ul li {
@@ -123,11 +123,11 @@ nav {
       position: absolute;
       width: 100%;
       height: auto;
-      transform: translateY(-67px);
-      -webkit-transform: translateY(-67px);
-      -moz-transform: translateY(-67px);
-      -ms-transform: translateY(-67px);
-      -o-transform: translateY(-67px);
+      transform: translateY(-117px);
+      -webkit-transform: translateY(-117px);
+      -moz-transform: translateY(-117px);
+      -ms-transform: translateY(-117px);
+      -o-transform: translateY(-117px);
       background-color: #fff;
       z-index: 500;
   }
@@ -140,12 +140,17 @@ nav {
   @media (min-width: 550px) {
     #pull {display: none;}
 
+    nav {
+      height: 120px;
+    } 
+
     nav ul {
       display: block;
       position: static;
       width: auto;
       background-color: transparent;
       margin-right: 20px;
+      padding: 0;
     }
 
     nav ul li {
@@ -158,6 +163,14 @@ nav {
     #relish-logo {
       max-width: 165px;
       max-width: 165px;
+    }
+
+    #brand-bar {
+      transform: translateY(-67px);
+      -webkit-transform: translateY(-67px);
+      -moz-transform: translateY(-67px);
+      -ms-transform: translateY(-67px);
+      -o-transform: translateY(-67px);
     }
   }
 
