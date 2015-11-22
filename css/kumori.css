@@ -37,6 +37,7 @@ p.title-bar {
 
 nav {
 	background: #ffb725;
+	z-index: 20000;
 }
 
 	nav ul {
