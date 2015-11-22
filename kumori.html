@@ -25,10 +25,12 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/relish.css">
   <link rel="stylesheet" href="css/kumori.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,7 +53,50 @@
 		</div>
 	</nav>
 
-	<div id="carousel"></div>
+	<div style="display:block; width:100vw; height:90vh; background-color:aliceblue; position:relative; z-index: -2000;" class="carousel__container">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 90vh;">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active" style="background-image:url('images/img1.jpg'); background-size:cover; background-position: center center; height:90vh;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    <div class="item" style="background-image:url('images/img2.jpg'); background-size:cover; background-position: center center; height:90vh;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    <div class="item" style="background-image:url('images/img1.jpg');background-size:cover; background-position: center center; height:90vh;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    <div class="item" style="background-image:url('images/img2.jpg');background-size:cover; background-position: center center; height:90vh;">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+</div>
 
 	<div id="kumori-desc"></div>
 
