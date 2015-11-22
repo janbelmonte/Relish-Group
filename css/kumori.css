@@ -77,6 +77,9 @@ nav {
 	}
 
 	#kumori-logo {
+		position: relative;
+		height: 60px;
+		margin: 8px 10px;
 		float: left;
 		z-index: 10000;
 	}
@@ -89,6 +92,9 @@ nav {
 	    #relish-logo {
 	      max-width: 165px;
 	      max-width: 165px;
+	    }
+	    #kumori-logo {
+	    	height: 100px !important;
 	    }
   	}
 
