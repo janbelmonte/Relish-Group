@@ -28,7 +28,7 @@ h1 {
 
 
 #carousel {
-	min-height: 900px;
+	min-height: 1000px;
 	background: url(../images/osakaohsho/osaka-bg.jpg);
 	background-size: cover;
 	background-position: center top;
@@ -43,6 +43,13 @@ h1 {
 	@media (max-width: 1100px) {
 		.osaka-desc {
 			padding: 20px;
+			top: 370px;
+		}
+	}
+
+	@media (min-width: 1100px) {
+		#carousel {
+			min-height: 900px;
 		}
 	}
 
@@ -55,15 +62,33 @@ h1 {
 	-moz-transform: translateY(-200px);
 	-o-transform: translateY(-200px);
 	-ms-transform: translateY(-200px);*/
+	overflow: hidden;
 	z-index: 15000;
 }
 
+	@media (max-width: 1100px) {
+		#red-strip {
+			top: 900px;
+			width: 100%;
+		}
+		#red-strip img {
+			width: 1200px;
+		}
+	}
+
 .osaka-section-title {
 	position: absolute;
-	width: 320px;
+	width: 20%;
 	z-index: 16000;
 	transform: translateY(-100px);
 }
+	@media (max-width: 1100px) {
+		.osaka-section-title {
+			padding: 20px;
+		}
+	}
+
+
 
 nav {
 	position: absolute;
@@ -123,6 +148,16 @@ nav {
 	-webkit-clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
 }
+
+	.osaka-food {
+		position: absolute;
+		right:0;
+		z-index: 16000;
+	}
+
+	.osaka-food h1 {
+		color: #000;
+	}
 
 
 footer {
