@@ -17,10 +17,23 @@ p.title-bar {
 	font-weight: bold;
 	font-family: "Century Gothic", sans-serif;
 	text-align: center;
-	padding: 20px 0;
 }
 
-
+	p.item-name {
+		color: #351108;
+		font-size: 1.25em;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 0;
+		font-family: "Minion Pro", serif;
+	}
+	p.item-desc {
+		font-size: 1em;
+		color: #351108;
+		font-family: "Minion Pro", serif;
+		text-align: center;
+		margin-bottom: 0;
+	}
 
 nav {
 	background: #ffb725;
@@ -87,7 +100,8 @@ nav {
 
 .title-bar {
 	width: 100%;
-	height: 70px;
+	height: 50px;
+	padding: 10px 0;
 	background: #ffb725;
 }
 
@@ -117,5 +131,7 @@ nav {
 
 .kumori-branches {
 	width: 100%;
-	min-height: 140px;
+	height: auto;
+	background: #ebebeb;
+	padding: 35px 0;
 }
