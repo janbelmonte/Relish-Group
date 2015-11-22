@@ -120,16 +120,16 @@ nav {
 
   #brand-bar {
     display: none;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      transform: translateY(-67px);
-      -webkit-transform: translateY(-67px);
-      -moz-transform: translateY(-67px);
-      -ms-transform: translateY(-67px);
-      -o-transform: translateY(-67px);
-      background-color: #fff;
-      z-index: -1000;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: -1000;
+    transform: translateY(-117px);
+    -webkit-transform: translateY(-117px);
+    -moz-transform: translateY(-117px);
+    -ms-transform: translateY(-117px);
+    -o-transform: translateY(-117px);
   }
 
   @media (min-width: 550px) {
@@ -158,6 +158,14 @@ nav {
     #relish-logo {
       max-width: 165px;
       max-width: 165px;
+    }
+
+    #brand-bar {
+      transform: translateY(-67px);
+      -webkit-transform: translateY(-67px);
+      -moz-transform: translateY(-67px);
+      -ms-transform: translateY(-67px);
+      -o-transform: translateY(-67px);
     }
   }
 
