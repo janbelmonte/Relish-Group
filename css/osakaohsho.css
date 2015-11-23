@@ -23,7 +23,7 @@
 h1 {
 	color: #d71921;
 	font-size: 52px;
-	font-family: 'Helvetica Neue Light', sans-serif;
+	font-family: 'Helvetica Neue Light', Arial, sans-serif;
 	font-weight: 100;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
@@ -31,7 +31,7 @@ h1 {
 
 	.osaka-section-title h1 {
 		color: #fff;
-		font-family: 'Helvetica Neue LT Com';
+		font-family: 'Helvetica Neue LT Com', Arial, sans-serif;
 		z-index: 21000;
 		display: table;
 		overflow-x: auto; /* Use horizontal scroller if needed */
@@ -43,13 +43,13 @@ h1 {
 
 	.osaka-desc p {
 		font-size: 18px;
-		font-family: 'DINPro', sans-serif;
+		font-family: 'DINPro', Arial, sans-serif;
 		line-height: 28px;
 	}
 
 	p.osaka-caption {
 		font-size: 18px;
-		font-family: 'DINPro', sans-serif;
+		font-family: 'DINPro', Arial, sans-serif;
 		line-height: 28px;
 		overflow-x: auto; /* Use horizontal scroller if needed */
 	    white-space: pre-wrap; /* css-3 */
@@ -179,6 +179,13 @@ nav {
 }
 
 	@media (max-width: 400px) {
+		#osaka-menu {
+			-webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+			clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+		}
+	}
+
+	@media (max-width: 1000px) {
 		#osaka-menu {
 			-webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
 			clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
