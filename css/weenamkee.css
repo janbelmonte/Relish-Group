@@ -150,6 +150,7 @@ nav.no-bg {
 
 	.main-nav-scrolled {
 		position: fixed !important;
+		height: 75px;
 		top: 0px !important; bottom: auto !important;
 		box-shadow: 0 0 5px rgba(0,0,0,0.6);
 	}
