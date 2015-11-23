@@ -77,7 +77,7 @@ h1 {
 	@media (max-width: 1100px) {
 		.osaka-desc {
 			padding: 20px;
-			top: 370px;
+			top: 300px;
 		}
 	}
 
@@ -259,6 +259,12 @@ nav {
 		padding-bottom: 30%; // This is the aspect ratio
 		height: 395px;
 		overflow: hidden;
+	}
+
+	@media (max-width: 750px) {
+		.osaka-map {
+			display: none;
+		}
 	}
 
 	.osaka-map iframe {
