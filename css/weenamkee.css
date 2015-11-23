@@ -92,9 +92,11 @@ nav.no-bg {
 
 	#relish-logo {
 		float: right;
-		max-width: 25%;
-		height: 25%;
 		margin-right: 20px;
+	}
+
+	#relish-logo img {
+		margin-top: 20px;
 		transform: translateY(-20px);
 		-webkit-transform: translateY(-20px);
 		-moz-transform: translateY(-20px);
@@ -117,7 +119,7 @@ nav.no-bg {
 			padding-bottom: 25px;
 		}
 		nav img {
-			height: 65px;
+			height: 100px;
 			padding: 15px;
 		}
 	}
@@ -150,7 +152,7 @@ nav.no-bg {
 
 	.main-nav-scrolled {
 		position: fixed !important;
-		height: 75px;
+		height: 115px;
 		top: 0px !important; bottom: auto !important;
 		box-shadow: 0 0 5px rgba(0,0,0,0.6);
 	}
@@ -200,9 +202,9 @@ nav.no-bg {
 
 .wnk-map iframe {
 	position: absolute;
-    top: 0;
+    top: -50px;
 	left: 0;
 	width: 100% !important;
-	height: 100% !important;
+	height: calc(100% + 50px) !important;
 	pointer-events:none;
 }
