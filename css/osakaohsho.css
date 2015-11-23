@@ -47,6 +47,11 @@ h1 {
 		top: 350px;
 	}
 
+	.osaka-desc-scrolled {
+		position: fixed !important;
+		top: 0px !important; bottom: auto !important;
+	}
+
 	@media (max-width: 1100px) {
 		.osaka-desc {
 			padding: 20px;
