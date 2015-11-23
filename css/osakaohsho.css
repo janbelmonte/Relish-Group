@@ -176,8 +176,8 @@ nav {
 	background: url(../images/osakaohsho/osaka-menu-bg.jpg);
 	background-repeat: repeat-y;
 	z-index: 16000;
-	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
 }
 
 	@media (max-width: 400px) {
@@ -195,7 +195,7 @@ nav {
 	}
 
 	.osaka-food {
-		transform: translateY(-550px);
+		margin-top: -550px;
 	}
 
 	.menu-spacer75 {
