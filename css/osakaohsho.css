@@ -19,6 +19,12 @@ h1 {
 		color: #fff;
 		font-family: Helvetica Neue LT Com;
 		z-index: 21000;
+		display: table;
+		overflow-x: auto; /* Use horizontal scroller if needed */
+    	white-space: pre-wrap; /* css-3 */
+    	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    	word-wrap: break-word; /* Internet Explorer 5.5+ */
+    	white-space : normal;
 	}
 
 	.osaka-desc p {
@@ -31,6 +37,11 @@ h1 {
 		font-size: 18px;
 		font-family: DINPro, sans-serif;
 		line-height: 28px;
+		overflow-x: auto; /* Use horizontal scroller if needed */
+	    white-space: pre-wrap; /* css-3 */
+	    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	    word-wrap: break-word; /* Internet Explorer 5.5+ */
+	    white-space : normal;
 	}
 
 
@@ -45,11 +56,6 @@ h1 {
 		position: relative;
 		width: auto;
 		top: 350px;
-	}
-
-	.osaka-desc-scrolled {
-		position: fixed !important;
-		top: 0px !important; bottom: auto !important;
 	}
 
 	@media (max-width: 1100px) {
@@ -90,6 +96,7 @@ h1 {
 	z-index: 16000;
 	transform: translateY(-100px);
 }
+
 	@media (max-width: 1100px) {
 		.osaka-section-title {
 			padding: 20px;
