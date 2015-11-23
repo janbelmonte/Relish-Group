@@ -29,7 +29,8 @@ h1 {
 	margin-bottom: 20px;
 }
 
-	.osaka-section-title h1 {
+	.osaka-section-title h1,
+	#osaka-branches h1 {
 		color: #fff;
 		font-family: 'Helvetica Neue LT Com', Arial, sans-serif;
 		z-index: 21000;
@@ -41,7 +42,8 @@ h1 {
     	white-space : normal;
 	}
 
-	.osaka-desc p {
+	.osaka-desc p,
+	#osaka-branches p {
 		font-size: 18px;
 		font-family: 'DINPro', Arial, sans-serif;
 		line-height: 28px;
@@ -225,6 +227,34 @@ nav {
 		font-size: 18px;
 		font-family: 'Helvetica Light', Arial, sans-serif;
 		font-weight: bold;
+	}
+
+#osaka-branches {
+	width: 100%;
+	min-height: 200px;
+	background: #d3d3d3;
+}
+
+	.osaka-branch-row {
+		width: 100%;
+		min-height: 140px;
+		padding-top: 25px;
+		background: url(../images/osakaohsho/osaka-wood.jpg);
+		background-repeat: repeat-y;
+	}
+
+	.osaka-map {
+		position: relative;
+		padding-bottom: 30%; // This is the aspect ratio
+		height: 395px;
+		overflow: hidden;
+	}
+
+	.osaka-map iframe {
+		position: absolute;
+    	top: -50px;
+		height: 445px;
+		pointer-events:none;
 	}
 
 footer {
