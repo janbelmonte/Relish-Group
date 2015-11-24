@@ -304,11 +304,18 @@ footer {
 	.osaka-section-title.fixed {
 	  position: fixed;
 	  top: 100px;
-	  width: 240px;
+	  width: 100%;
 	  box-sizing: border-box;
-	  z-index: 0;
+	  z-index: 1000;
 	  background: #c2121a;
 	}
+
+		@media (min-width: 750px) {
+			.osaka-section-title.fixed {
+				width: 240px !important;
+				z-index: 0;
+			}
+		}
 
 	.osaka-section-title.fixed.absolute {
 	  position: absolute;
@@ -318,7 +325,6 @@ footer {
 	.section-invisible {
 		display: none;
 	}
-
 
 
 @media (min-width: 550px) {
@@ -351,3 +357,10 @@ footer {
       padding: 10px;
     }
   }
+
+@media (max-width: 960px) {
+	.disappear {
+  	display: none;
+  }	
+}
+  
