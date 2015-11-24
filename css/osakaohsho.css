@@ -300,3 +300,7 @@ footer {
 	  position: absolute;
 	  background: none;
 	}
+
+	.section-invisible {
+		display: none;
+	}
