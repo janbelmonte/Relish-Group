@@ -40,6 +40,8 @@ p.detail {
   margin-bottom: 0;
 }
 p.brand-promise {
+  font-size: 16px;
+  line-height: 26px;
   color: #67bc29;
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 400;
