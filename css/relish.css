@@ -117,6 +117,7 @@ nav {
 
   nav ul li a:hover {
     color: #67bc29;
+    text-decoration: none;
   }
 
   #brand-bar {
