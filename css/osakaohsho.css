@@ -89,7 +89,7 @@ h1 {
 
 #red-strip {
 	width: 100%;
-	height: 540px;
+	height: 740px;
 	transform: translateY(-200px);
 	-webkit-transform: translateY(-200px);
 	-moz-transform: translateY(-200px);
@@ -197,7 +197,7 @@ nav {
 	}
 
 	.osaka-food {
-		margin-top: -550px;
+		margin-top: -750px;
 	}
 
 	.menu-spacer75 {
