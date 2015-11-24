@@ -67,9 +67,13 @@
 
 /* NAVIGATION */
 
-nav.no-bg {
-	background: none;
-}
+
+	@media (min-width: 750px) {
+		nav.no-bg {
+			background: none;
+		}
+	}
+
 	nav ul {
     	font-family: 'Playfair Display', serif;
     	font-size: 1.2em;
@@ -86,14 +90,18 @@ nav.no-bg {
 	}
 
 	nav img {
-		height: 35px;
-		padding: 15px;
+		height: 85px;
+    	padding: 25px 15px;
 	}
 
 	#relish-logo {
 		float: right;
 		margin-right: 20px;
 	}
+
+		.logo-invisible {
+			display: none;
+		}
 
 	#relish-logo img {
 		margin-top: 20px;
@@ -114,6 +122,9 @@ nav.no-bg {
 	}
 
 	@media (min-width: 1100px) {
+		nav {
+			height: 120px;
+		}
 		.wnk-logo {
 			padding-top: 25px;
 			padding-bottom: 25px;
@@ -142,6 +153,12 @@ nav.no-bg {
 		padding: 20px;
 	}
 
+	@media (min-width: 750px) {
+		#carousel .header {
+			margin-bottom: 20px;
+		}
+	}
+
 	nav.wnk-nav {
 		position: relative;
 		top: auto; bottom: 0; left: 0; right: 0;
@@ -152,7 +169,7 @@ nav.no-bg {
 
 	.main-nav-scrolled {
 		position: fixed !important;
-		height: 115px;
+		height: 120px;
 		top: 0px !important; bottom: auto !important;
 		box-shadow: 0 0 5px rgba(0,0,0,0.6);
 	}
@@ -208,3 +225,14 @@ nav.no-bg {
 	height: calc(100% + 50px) !important;
 	pointer-events:none;
 }
+
+
+.ghost-120 {
+	width: 100%;
+	height: 120px;
+	display: none;
+}
+
+	.unghost {
+		display: table;
+	}

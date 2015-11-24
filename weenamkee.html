@@ -53,6 +53,7 @@
 			<h1>A continuing tradition<br>of serving the best<br>Hainanese Chicken Rice.</h1>
 			<div class="eight columns no-margin">
 				<p>Wee Nam Kee Hainanese Chicken Rice is Singapore’s #1 Chicken Rice concept. Starting as a humble dine and dash restaurant at the heart of Singapore’s Novena district in 1989, the concept established its first international location in the Philippines in 2010. Opening to much fanfare at the Ayala Triangle Gardens in Makati City, the concept has now grown to several locations domestically.</p>
+				<div class="kill-logo"></div>
 			</div>
 		</div>
 	</div>
@@ -68,7 +69,7 @@
 		</ul>
 	</div>
 </nav>
-
+<div class="ghost-120"></div>
 <div id="wnk-menu">
 	<div class="row	">
 		<div class="menu-title std-padding-left">
@@ -208,8 +209,10 @@
 	    var div_top = $('#sticky-anchor').offset().top;
 	    if (window_top > div_top) {
 	        $('.wnk-nav').addClass('main-nav-scrolled');
+	        $('.ghost-120').addClass('unghost');
 	    } else {
 	        $('.wnk-nav').removeClass('main-nav-scrolled');
+	        $('.ghost-120').removeClass('unghost');
 	    }
 	}
 
@@ -217,6 +220,23 @@
 	    $(window).scroll(sticky_relocate);
 	    sticky_relocate();
 	});
+
+
+	function kill_logo() {
+	    var window_top = $(window).scrollTop();
+	    var div_top = $('.kill-logo').offset().top;
+	    if (window_top > div_top) {
+	        $('#relish-logo').addClass('logo-invisible');
+	    } else {
+	        $('#relish-logo').removeClass('logo-invisible');
+	    }
+	}
+
+	$(function () {
+	    $(window).scroll(kill_logo);
+	    kill_logo();
+	});
+
 </script>
 
 <!-- End Document
