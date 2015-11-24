@@ -96,6 +96,7 @@ h1 {
 	-o-transform: translateY(-200px);
 	-ms-transform: translateY(-200px);
 	background: url(../images/osakaohsho/osaka-redstrip.png);
+	background-size: cover;
 }
 
 	@media (max-width: 1100px) {
