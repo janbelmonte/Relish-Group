@@ -128,6 +128,19 @@ nav {
 	background: none;
 }
 
+	nav ul li a,
+  nav ul li a:visited {
+  	font-family: 'DINPro', sans-serif;
+  	font-size: 18px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #d71921;
+    text-decoration: none;
+  }
+
 #relish-logo {
 		float: right;
 		max-width: 25%;
@@ -305,3 +318,36 @@ footer {
 	.section-invisible {
 		display: none;
 	}
+
+
+
+@media (min-width: 550px) {
+
+    .navi__list {
+    	float: left;
+    	display:block;
+    	margin-top: 0px;
+    	height:130px;
+    	margin-bottom: 0px;
+    	padding-top: 0px;
+    	padding-bottom: 0px;
+    	width: auto;
+    	position: relative;
+    	top: 30px; left: 100px;
+    	background-color: transparent;
+    }
+
+    .navi__listItem {
+      display: inline-table;
+      height: inherit;
+      width: auto;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .navi__listItem a {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 10px;
+    }
+  }
