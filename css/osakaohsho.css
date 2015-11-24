@@ -277,3 +277,26 @@ nav {
 footer {
 	z-index: -1000;
 }
+
+
+  	.osaka-section-title {
+	  background: none;
+	  padding: 10px 20px;
+	  position: relative;
+	  z-index: 1;
+	  color: #fff;
+	}
+
+	.osaka-section-title.fixed {
+	  position: fixed;
+	  top: 100px;
+	  width: 240px;
+	  box-sizing: border-box;
+	  z-index: 0;
+	  background: #c2121a;
+	}
+
+	.osaka-section-title.fixed.absolute {
+	  position: absolute;
+	  background: none;
+	}
