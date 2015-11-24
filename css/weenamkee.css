@@ -99,6 +99,10 @@
 		margin-right: 20px;
 	}
 
+		.logo-invisible {
+			display: none;
+		}
+
 	#relish-logo img {
 		margin-top: 20px;
 		transform: translateY(-20px);
@@ -165,7 +169,7 @@
 
 	.main-nav-scrolled {
 		position: fixed !important;
-		height: 115px;
+		height: 120px;
 		top: 0px !important; bottom: auto !important;
 		box-shadow: 0 0 5px rgba(0,0,0,0.6);
 	}
@@ -221,3 +225,14 @@
 	height: calc(100% + 50px) !important;
 	pointer-events:none;
 }
+
+
+.ghost-120 {
+	width: 100%;
+	height: 120px;
+	display: none;
+}
+
+	.unghost {
+		display: table;
+	}
