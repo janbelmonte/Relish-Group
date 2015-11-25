@@ -356,6 +356,8 @@ footer {
       vertical-align: middle;
       padding: 10px;
     }
+
+    .osaka-section-title.fixed > .osaka-caption { color: #fff; }
   }
 
 @media (max-width: 960px) {
