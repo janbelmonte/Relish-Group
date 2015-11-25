@@ -108,6 +108,11 @@ nav {
     z-index: 10000;
   }
 
+    #relish-logo:hover {
+      border-radius: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
   .navi__list {
     font-family: 'Libre Baskerville', serif;
     list-style: none;
