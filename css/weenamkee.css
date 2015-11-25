@@ -7,7 +7,7 @@
 /* TYPOGRAPHY */
 
 .menu-title h1 {
-	color: #d2686b;
+	color: #5e0d0e;
 	font-size: 2.5em;
 	font-family: 'Playfair Display', serif; 
 }
@@ -192,9 +192,14 @@
 
 	min-height: 100px;
 	height: auto;
-	background-color: #5e0d0e;
+	background-color: #fffbe5;
 	padding-bottom: 25px;
 	z-index: 12000 !important;
+	background-size: contain;
+	background-attachment: fixed;
+	background-image: url(../images/wnk/wnk-carousel.jpg);
+	background-position: center center;
+	background-repeat: repeat-y;
 }
 
 	.menu-title {
@@ -241,3 +246,25 @@
 	.unghost {
 		display: table;
 	}
+
+table {
+	border-color: 1px solid rgba(0,0,0,0) !important;
+}
+
+th, td {
+	padding: 8px 0 !important;
+	color: #5e0d0e;
+	font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid rgba(0,0,0,0);
+} 
+
+table h5 {
+	color: #d2686b;
+	font-family: 'Playfair Display', serif;
+	margin-top: 15px !important;
+	margin-bottom: 0px !important;
+}
+
+.indent {
+	padding-left: 20px !important;
+}
