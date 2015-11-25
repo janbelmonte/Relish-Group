@@ -43,6 +43,10 @@
   	
   	<nav class="nav-collapse">
   		<div class="limit">
+  			<ul class="navi__list" style="margin-top: -30px; height: 30px; font-size: 0.75em;">
+				<li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
+				<li class="navi__listItem"><a id="careersPull">Work With Us</a></li>
+			</ul>
   			<img id="relish-logo" src="images/relish-logo.png" />
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
@@ -54,6 +58,56 @@
 		<div id="brand-bar">
 			<div class="limit">
 				<div class="container brand__row">
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo"src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popover" id="careers">
+			<div class="limit">
+				<div class="container brand__row">
+					<p style="color:black;">Career</p>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo"src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+					<div class="two columns brand__item">
+						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popover" id="contact">
+			<div class="limit">
+				<div class="container brand__row">
+					<p style="color:black;">Contact</p>
 					<div class="two columns brand__item">
 						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
 					</div>
@@ -170,6 +224,12 @@
 <script>
 	$(".brandsOn").click(function () {
 	    $("#brand-bar").toggle();
+	});
+	$("#careersPull").click(function () {
+	    $("#careers").toggle();
+	});
+	$("#contactPull").click(function () {
+	    $("#contact").toggle();
 	});
 	$(function() {
 	    var pull        = $('#pull');
