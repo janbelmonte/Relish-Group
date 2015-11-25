@@ -16,14 +16,14 @@
 	    $email = htmlspecialchars($_POST['email']);
 	    $message = htmlspecialchars($_POST['message']);
 	                
-	    $body = "The Relish Group \n " .
-	        "From: " . $name.
-	        "Email: " . $email .
+	    $body = "You have received a new message from your website, relish-group.com: \n" .
+	        "From: " . $fullname. "\n" .
+	        "Email: " . $email . "\n" .
 	        "Message: " . $message;
 	    
 
 	    #mail("basil.begonia@gmail.com", "New Geekshirt Order [".$firstname." ".$lastname."]", $body);
-	    mail("jandanbel@gmail.com", "[CompSAt Website Contact Form]", $body);
+	    mail("jandanbel@gmail.com", "Relish Group - New Form Submission", $body);
 	    // header ("Location: thanks.php");
   // }
     
