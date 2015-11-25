@@ -205,13 +205,13 @@ nav {
       max-width: 165px;
     }
 
-    #brand-bar {
+    #brand-bar, #careers, #contact {
       transform: translateY(-67px);
       -webkit-transform: translateY(-67px);
       -moz-transform: translateY(-67px);
       -ms-transform: translateY(-67px);
       -o-transform: translateY(-67px);
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     .brand__row {

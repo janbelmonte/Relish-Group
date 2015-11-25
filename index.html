@@ -49,11 +49,11 @@
 			 	<li class="navi__listItem"><a href="#">Home</a></li>
 			    <li class="navi__listItem"><a href="#">About</a></li>
 			    <li class="navi__listItem"><a class="brandsOn">Our Brands</a></li>
-			    <li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
 				<li class="navi__listItem"><a id="careersPull">Work With Us</a></li>
+			    <li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
 			</ul>
 		</div>
-		<div class="popover" id="brand-bar">
+		<div class="popover" id="brand-bar" style="margin-top: 17px;">
 			<div class="limit">
 				<div class="container brand__row">
 					<div class="four columns brand__item">
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popover" id="careers">
+		<div class="popover" id="careers" style="margin-top: 32px;height:170px;">
 			<div class="limit">
 				<div class="container brand__row">
 					<div class="two columns brand__item">
@@ -101,7 +101,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popover" id="contact">
+		<div class="popover" id="contact" style="margin-top:32px;height:170px;">
 			<div class="limit">
 				<div class="container brand__row">
 					<div class="two columns brand__item">
@@ -137,7 +137,7 @@
 		<li><p style="background-image:url('images/img2.jpg)">3</p></li>
 	</ul>
 </div> -->
-<div style="display:block; width:100vw; height:90vh; position:relative; z-index: -2000;" class="carousel__container">
+<div style="display:block; height:90vh; position:relative; z-index: -2000;" class="carousel__container">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 90vh;">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -220,12 +220,18 @@
 <script>
 	$(".brandsOn").click(function () {
 	    $("#brand-bar").toggle();
+	    	$("#careers").css("display", "none");
+	    	$("#contact").css("display", "none");
 	});
 	$("#careersPull").click(function () {
-	    $("#careers").toggle();
+		$("#careers").toggle();
+	    	$("#brand-bar").css("display", "none");
+	    	$("#contact").css("display", "none");
 	});
 	$("#contactPull").click(function () {
-	    $("#contact").toggle();
+		$("#contact").toggle();
+	    	$("#careers").css("display", "none");
+	    	$("#brand-bar").css("display", "none");
 	});
 	$(function() {
 	    var pull        = $('#pull');
