@@ -401,3 +401,13 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     border-radius: 0;
     margin-bottom: 20px;
 }
+
+@media (max-width: 500px) {
+  .popover {
+    margin-top: 90px !important;
+    padding: 25px;
+  }  
+}
+
+
+
