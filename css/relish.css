@@ -142,6 +142,15 @@ nav {
     padding: 40px 0;
   }
 
+    @media (max-width: 500px) {
+      .brand__item {
+        padding: 0;
+      }
+      .brand__row {
+        padding: 50px 0 !important;
+      }
+    }
+
   .brand__item a {
     display: block;
     width: initial;
@@ -202,7 +211,7 @@ nav {
       -moz-transform: translateY(-67px);
       -ms-transform: translateY(-67px);
       -o-transform: translateY(-67px);
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .brand__row {
@@ -248,14 +257,20 @@ nav {
         margin: 35px 0;
       }
       .brand__logo {
-        max-height: 70%;
-        max-width: 70%;
+          height: 100px;
+          width: auto;
       }
 
       .brandsOn {
         cursor: pointer;
       }
   }
+
+    .brands-wnk-logo {
+      height: 100px;
+      width: auto;
+      padding: 10px 0;
+    }
 
 /* CAROUSEL */
 
@@ -341,4 +356,12 @@ footer {
       width: 1100px;
       margin: 0 auto;
     }
+  }
+
+
+  .fade {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
   }
