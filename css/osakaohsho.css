@@ -236,9 +236,8 @@ nav {
 	.osaka-menu-item {
 		position: relative;
 		width: auto;
-		height: 500px;
 		margin-bottom: 50px;
-		background: #d3d3d3;
+		background: none;
 	}
 	.osaka-menu-title {
 		width: 100%;
@@ -372,4 +371,50 @@ footer {
   	display: none;
   }	
 }
-  
+
+
+/* TABLE STYLES */
+
+.tg  {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.tg td{
+	font-family: 'DINPro', sans-serif;
+	font-size:14px;
+	padding:5px 5px;
+	border-style:solid;
+	border-width:0;
+	overflow:hidden;
+	word-break:normal;
+}
+.tg th{
+	font-family: 'HelveticaNeueLTCom-LtCn', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	padding:5px 5px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;}
+.tg .tg-yw4l{
+	vertical-align:top
+}
+ 
+
+table {
+	border-color: 1px solid rgba(0,0,0,0) !important;
+}
+
+th, td {
+    border-bottom: 1px solid rgba(0,0,0,0);
+} 
+
+table h5 {
+	margin-top: 15px !important;
+	margin-bottom: 0px !important;
+}
+
+.indent {
+	padding-left: 20px !important;
+}
