@@ -63,13 +63,13 @@
 	<div class="limit">
 		<img class="wnk-logo" src="images/wnk/wnk-logo.png" />
 		<ul class="navi__list">
-		 	<li class="navi__listItem"><a href="#">Home</a></li>
+		 	<li class="navi__listItem"><a class="active" href="#carousel">Home</a></li>
 		    <li class="navi__listItem"><a href="#wnk-menu">Menu</a></li>
 		    <li class="navi__listItem"><a href="#wnk-branches">Branches</a></li>
 		</ul>
 	</div>
 </nav>
-<div class="ghost-120"></div>
+<div id="wnk-menu-ghost" class="ghost-120"></div>
 <div id="wnk-menu">
 	<div class="row	">
 		<div class="menu-title std-padding-left">
@@ -236,6 +236,48 @@
 	    $(window).scroll(kill_logo);
 	    kill_logo();
 	});
+
+	// SMOOTH SCROLLING
+
+	$(document).ready(function () {
+		    $(document).on("scroll", onScroll);
+		    
+		    //smoothscroll
+		    $('a[href^="#"]').on('click', function (e) {
+		        e.preventDefault();
+		        $(document).off("scroll");
+		        
+		        $('a').each(function () {
+		            $(this).removeClass('active');
+		        })
+		        $(this).addClass('active');
+		      
+		        var target = this.hash,
+		            menu = target;
+		        $target = $(target);
+		        $('html, body').stop().animate({
+		            'scrollTop': $target.offset().top+2
+		        }, 500, 'swing', function () {
+		            window.location.hash = target;
+		            $(document).on("scroll", onScroll);
+		        });
+		    });
+		});
+
+		function onScroll(event){
+		    var scrollPos = $(document).scrollTop();
+		    $('#menu-center a').each(function () {
+		        var currLink = $(this);
+		        var refElement = $(currLink.attr("href"));
+		        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+		            $('#menu-center ul li a').removeClass("active");
+		            currLink.addClass("active");
+		        }
+		        else{
+		            currLink.removeClass("active");
+		        }
+		    });
+		}
 
 </script>
 
