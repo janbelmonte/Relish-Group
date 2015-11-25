@@ -121,7 +121,28 @@ nav {
 	background-size: cover;
 	background-color: #542d24;
 	background-attachment: fixed;
+	padding: 120px 0 0 0;
 }
+
+	@media (max-width: 768px) {
+		#kumori-desc {
+			padding: 120px 50px 50px 50px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		#kumori-desc {
+			padding: 120px 20px 50px 20px;
+		}
+	}
+
+	h1.its-japan {
+		font-family: 'Futura Std', sans-serif;
+		color: #a76b37;
+		font-size: 4em;
+		text-align: right;
+		margin-top: 0;
+	}
 
 .kumori-menu {
 	width: 100%;
@@ -136,6 +157,39 @@ nav {
 		margin: 0 !important;
 		margin-bottom: -7px !important;
 		background-size: cover !important;
+	}
+
+	p.menu-item-name {
+		color: #ffe8b9;
+		font-size: 1.5em;
+		text-align: left;
+		font-family: "Minion Pro", serif;
+		padding-right: 20%;
+	}
+	p.menu-item-desc {
+		font-size: 1em;
+		color: #351108;
+		font-family: "Minion Pro", serif;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+		@media (max-width: 400px) {
+			p.menu-item-name {
+				padding-right: 0;
+				text-align: center;
+			}
+			h1.its-japan {
+				text-align: center;
+			}
+		}
+	.kumori {
+		color: #ffe8b9;
+		font-size: 1.5em;
+		font-family: 'Century Gothic', sans-serif;
+		text-align: left;
+		margin-top: 0;
+		display: inline-block;
 	}
 
 .kumori-branches {
