@@ -44,14 +44,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   	
   	<nav class="nav-collapse">
-  		<div class="limit">
+  		<div id="menu-center" class="limit">
   			<img id="osaka-logo" src="images/osakaohsho/osaka-logo.png" />
   			<img id="relish-logo" src="images/relish-logo.png" />
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
-			 	<li class="navi__listItem"><a href="#">Home</a></li>
-			    <li class="navi__listItem"><a href="#">About</a></li>
-			    <li class="navi__listItem"><a class="brandsOn">Our Brands</a></li>
+			 	<li class="navi__listItem"><a class="active" href="#">Home</a></li>
+			    <li class="navi__listItem"><a href="#osaka-menu">Our Food</a></li>
+			    <li class="navi__listItem"><a href="#osaka-branches">Branches</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -182,6 +182,8 @@
 	</div>
 </div>
 <script type="text/javascript">
+
+// MAKES .OSAKA-SECTION-TITLE STICKY
 var stickyHeaders = (function() {
 
   var $window = $(window),
@@ -250,7 +252,7 @@ $(function() {
   stickyHeaders.load($(".osaka-section-title"));
 });
 
-
+// MAKES .OSAKA-SECTION-TITLE FADE WHEN SCROLLING
 function kill_logo() {
 	    var window_top = $(window).scrollTop();
 	    var div_top = $('.kill-section').offset().top;
@@ -265,7 +267,7 @@ function kill_logo() {
 	    $(window).scroll(kill_logo);
 	    kill_logo();
 	});
-
+// MAKES .OSAKA-CAPTION DISAPPEAR WHEN SCROLLING TO BRANCHES
 	function kill_paragraph() {
 	    var window_top = $(window).scrollTop();
 	    var div_top = $('#red-strip').offset().top;
@@ -280,6 +282,49 @@ function kill_logo() {
 	    $(window).scroll(kill_paragraph);
 	    kill_paragraph();
 	});
+
+
+	// SMOOTH SCROLLING
+
+	$(document).ready(function () {
+		    $(document).on("scroll", onScroll);
+		    
+		    //smoothscroll
+		    $('a[href^="#"]').on('click', function (e) {
+		        e.preventDefault();
+		        $(document).off("scroll");
+		        
+		        $('a').each(function () {
+		            $(this).removeClass('active');
+		        })
+		        $(this).addClass('active');
+		      
+		        var target = this.hash,
+		            menu = target;
+		        $target = $(target);
+		        $('html, body').stop().animate({
+		            'scrollTop': $target.offset().top+2
+		        }, 500, 'swing', function () {
+		            window.location.hash = target;
+		            $(document).on("scroll", onScroll);
+		        });
+		    });
+		});
+
+		function onScroll(event){
+		    var scrollPos = $(document).scrollTop();
+		    $('#menu-center a').each(function () {
+		        var currLink = $(this);
+		        var refElement = $(currLink.attr("href"));
+		        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+		            $('#menu-center ul li a').removeClass("active");
+		            currLink.addClass("active");
+		        }
+		        else{
+		            currLink.removeClass("active");
+		        }
+		    });
+		}
 
 </script>
 
