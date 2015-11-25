@@ -108,6 +108,11 @@ nav {
     z-index: 10000;
   }
 
+    #relish-logo:hover {
+      border-radius: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
   .navi__list {
     font-family: 'Libre Baskerville', serif;
     list-style: none;
@@ -396,3 +401,17 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     border-radius: 0;
     margin-bottom: 20px;
 }
+
+@media (max-width: 500px) {
+  .popover {
+    margin-top: 90px !important;
+  }  
+}
+
+@media (max-width: 1000px) {
+  .popover {
+    padding: 25px;
+  }   
+}
+
+

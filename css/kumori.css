@@ -218,3 +218,10 @@ nav {
 	    padding: 10px;
 	  }
 }
+
+@media (min-width: 550px) {
+	.navi__list {
+	    float: left;
+	    margin-left: 25px;
+	}
+}
