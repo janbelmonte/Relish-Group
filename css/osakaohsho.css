@@ -189,7 +189,7 @@ nav {
 	min-height: 100vh;
 	height: auto;
 	background: url(../images/osakaohsho/osaka-menu-bg.jpg);
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	z-index: 16000;
 	-webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
