@@ -30,12 +30,14 @@ p {
 
 p.caption {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   font-size: 0.70em;
   text-transform: uppercase;
   margin-bottom: 0.2em;
 }
 p.detail {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   font-size: 0.9em;
   margin-bottom: 0;
 }
@@ -45,6 +47,20 @@ p.brand-promise {
   color: #67bc29;
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 400;
+}
+
+h1.popover-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+p.popover-text {
+  color: #a8a8a8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 /* NAVIGATION */
@@ -365,3 +381,18 @@ footer {
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
   }
+
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    border-radius: 0;
+    background: #67bc29;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 1em !important;
+  }
+
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
