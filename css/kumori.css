@@ -135,6 +135,7 @@ nav {
 		height: 33.33vw;
 		margin: 0 !important;
 		margin-bottom: -7px !important;
+		background-size: cover !important;
 	}
 
 .kumori-branches {
