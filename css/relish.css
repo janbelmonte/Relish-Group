@@ -396,6 +396,12 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     font-size: 1em !important;
   }
 
+button:hover,
+input[type="submit"]:hover {
+    background: #fff;
+    color: #67bc29;
+    border: 1px solid #67bc29;
+}
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
     border-radius: 0;
