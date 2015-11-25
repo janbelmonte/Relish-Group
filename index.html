@@ -43,19 +43,17 @@
   	
   	<nav class="nav-collapse">
   		<div class="limit">
-  			<ul class="navi__list" style="margin-top: -30px; height: 30px; font-size: 0.75em;">
-				<li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
-				<li class="navi__listItem"><a id="careersPull">Work With Us</a></li>
-			</ul>
   			<img id="relish-logo" src="images/relish-logo.png" />
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
 			 	<li class="navi__listItem"><a href="#">Home</a></li>
 			    <li class="navi__listItem"><a href="#">About</a></li>
 			    <li class="navi__listItem"><a class="brandsOn">Our Brands</a></li>
+			    <li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
+				<li class="navi__listItem"><a id="careersPull">Work With Us</a></li>
 			</ul>
 		</div>
-		<div id="brand-bar">
+		<div class="popover" id="brand-bar">
 			<div class="limit">
 				<div class="container brand__row">
 					<div class="two columns brand__item">
@@ -256,59 +254,89 @@
 		}
 
 		if (helper.checkForPull()){
-			if( document.getElementsByClassName("close")[0] == undefined ){
-				var close = document.createElement("a");
-				close.setAttribute("class", "fa fa-close fa-2x close");
-				close.setAttribute("id", "closeBtn");
+			// console.log(document.getElementsByClassName("close"));
+			if( document.getElementsByClassName("close").length == 0 ){
+				console.log("hello")
+				var closes = [];
+				for(var i = 0; i < 3; i++){
+					var close = document.createElement("a");
+					close.setAttribute("class", "fa fa-close fa-2x close");
+					closes.push(close);
+				}
 				var parent = document.getElementById("brand-bar");
-				console.log(parent);
-				parent.appendChild(close);	
+				// console.log(parent);
+				parent.appendChild(closes[0]);
+				var careers = document.getElementById("careers");
+				careers.appendChild(closes[1]);
+				var contact = document.getElementById("contact");
+				contact.appendChild(closes[2]);
 			}
 		} else {
-			if( document.getElementsByClassName("close")[0] != undefined ){
-				var close = document.getElementsByClassName("close")[0];
-			var parent = document.getElementById("brand-bar");
-			parent.removeChild(close);
+			if( document.getElementsByClassName("close").length != 0 ){
+				var close = document.getElementsByClassName("close");
+				for( var c = 0; c < close.length; c++ ){
+					var thisParent = close[c].parentNode;
+					thisParent.removeChild(close[c]);
+				}
 			}
 		}
+		var close = document.getElementsByClassName("close");
+		for( var c = 0; c < close.length; c++ ){
+			var self = close[c];
 
-		var close = document.getElementsByClassName("close")[0];
-		var parent = document.getElementById("brand-bar");
-		close.addEventListener("click", function(){
-			event.preventDefault();
-			console.log(getComputedStyle(parent, null).display);
-			if(getComputedStyle(parent, null).display == "block"){
-				parent.style.display = "none";
-			}
-		});
+			self.addEventListener("click", function(){
+				event.preventDefault();
+				var parent = this.parentNode;
+				console.log(getComputedStyle(parent, null).display);
+				if(getComputedStyle(parent, null).display == "block"){
+					parent.style.display = "none";
+				}
+			});
+		}
 	}
 
 	window.onload = function(){
 		if (helper.checkForPull()){
-			if( document.getElementsByClassName("close")[0] == undefined ){
-				var close = document.createElement("a");
-				close.setAttribute("class", "fa fa-close fa-2x close");
+			// console.log(document.getElementsByClassName("close"));
+			if( document.getElementsByClassName("close").length == 0 ){
+				console.log("hello")
+				var closes = [];
+				for(var i = 0; i < 3; i++){
+					var close = document.createElement("a");
+					close.setAttribute("class", "fa fa-close fa-2x close");
+					closes.push(close);
+				}
 				var parent = document.getElementById("brand-bar");
-				console.log(parent);
-				parent.appendChild(close);	
-
+				// console.log(parent);
+				parent.appendChild(closes[0]);
+				var careers = document.getElementById("careers");
+				careers.appendChild(closes[1]);
+				var contact = document.getElementById("contact");
+				contact.appendChild(closes[2]);
 			}
 		} else {
-			if( document.getElementsByClassName("close")[0] != undefined ){
-				var close = document.getElementsByClassName("close")[0];
-			var parent = document.getElementById("brand-bar");
-			parent.removeChild(close);
+			if( document.getElementsByClassName("close").length != 0 ){
+				var close = document.getElementsByClassName("close");
+				for( var c = 0; c < close.length; c++ ){
+					var thisParent = close[c].parentNode;
+					thisParent.removeChild(close[c]);
+				}
 			}
 		}
-		var close = document.getElementsByClassName("close")[0];
-		var parent = document.getElementById("brand-bar");
-		close.addEventListener("click", function(){
-			event.preventDefault();
-			console.log(getComputedStyle(parent, null).display);
-			if(getComputedStyle(parent, null).display == "block"){
-				parent.style.display = "none";
-			}
-		});
+		var close = document.getElementsByClassName("close");
+		for( var c = 0; c < close.length; c++ ){
+			var self = close[c];
+
+			self.addEventListener("click", function(){
+				event.preventDefault();
+				var parent = this.parentNode;
+				console.log(getComputedStyle(parent, null).display);
+				if(getComputedStyle(parent, null).display == "block"){
+					parent.style.display = "none";
+				}
+			});
+		}
+		
 		
 	}
 	var helper = {
