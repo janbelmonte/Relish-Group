@@ -144,3 +144,23 @@ nav {
 	background: #ebebeb;
 	padding: 35px 0;
 }
+
+
+@media (max-width: 750px) {
+	.navi__list {
+	    list-style: none;
+	    float: left;
+	    display: table;
+	    background: #351108;
+	    position: absolute;
+	    top: 80px;
+	    width: 100%;
+	    text-align: center;
+	    padding: 15px 0;
+	    z-index: 1000;
+	}
+	.navi__listItem {
+	    display: inline;
+	    padding: 10px;
+	  }
+}
