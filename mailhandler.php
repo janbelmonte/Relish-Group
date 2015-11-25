@@ -25,6 +25,6 @@
 	    #mail("basil.begonia@gmail.com", "New Geekshirt Order [".$firstname." ".$lastname."]", $body);
 	    mail("jandanbel@gmail.com", "[CompSAt Website Contact Form]", $body);
 	    // header ("Location: thanks.php");
-  }
+  // }
     
 ?>
