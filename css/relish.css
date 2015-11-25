@@ -405,9 +405,13 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 @media (max-width: 500px) {
   .popover {
     margin-top: 90px !important;
-    padding: 25px;
   }  
 }
 
+@media (max-width: 1000px) {
+  .popover {
+    padding: 25px;
+  }   
+}
 
 
