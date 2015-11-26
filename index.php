@@ -84,7 +84,7 @@
 						<p class="popover-text">We're constantly on the lookout for individuals who are hardworking, talented and passionate about food, so join our rapidly growing team now! A rewarding career with opportunities of growth and advancement awaits you.</p>
 					</div>
 					<div class="four columns">
-						<button>Click here to become part of Relish Group!</button>
+						<button>Click here to apply!</button>
 					</div>
 				</div>
 			</div>
