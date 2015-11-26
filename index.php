@@ -76,7 +76,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popover" id="careers" style="margin-top: 32px;height:auto;">
+		<div class="popover" id="careers" style="margin-top: 32px;height:auto;padding-top: 25px;">
 			<div class="limit">
 				<h1 class="popover-title">WORK WITH US</h1>
 				<div class="row">
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:15px;">
+		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:0px;padding-top: 25px;">
 			<form method="post" action="<?php echo htmlspecialchars('mailhandler.php'); ?>" id="contactForm">
 				<div class="limit">
 					<div class="row">
