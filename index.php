@@ -124,7 +124,7 @@
 		<li><p style="background-image:url('images/img2.jpg)">3</p></li>
 	</ul>
 </div> -->
-<div style="display:block; height:90vh; position:relative; z-index: -2000;" class="carousel__container">
+<div style="display:block; height:100vh; position:relative; z-index: -2000;" class="carousel__container">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 100vh;">
 	  <!-- Indicators -->
 	  <!-- <ol class="carousel-indicators">
