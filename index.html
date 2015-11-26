@@ -135,7 +135,7 @@
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
-	    <div class="item active" style="background-image:url('images/relish-carousel-kum.jpg'); background-size:cover; background-position: center center; height:90vh;">
+	    <div class="item active" style="background-image:url('images/relish-carousel-kum.jpg'); background-size:cover; background-position: center center; height:100vh;">
 	      <div class="carousel-caption">
 	        ...
 	      </div>
