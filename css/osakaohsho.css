@@ -20,6 +20,10 @@
   src: url('../fonts/HelveticaNeueLight.ttf')  format('truetype');
 }
 
+p {
+	color: #000;
+}
+
 h1 {
 	color: #d71921;
 	font-size: 52px;
@@ -50,7 +54,7 @@ h1 {
 	}
 
 	p.osaka-caption {
-		font-size: 18px;
+		font-size: 16px;
 		font-family: 'DINPro', Arial, sans-serif;
 		line-height: 28px;
 		overflow-x: auto; /* Use horizontal scroller if needed */
@@ -417,4 +421,28 @@ table h5 {
 
 .indent {
 	padding-left: 20px !important;
+}
+
+.osaka-carousel-img {
+	position: absolute;
+	top: 200px;
+	max-width: 60%;
+}
+
+@media (max-width: 1100px) {
+	.osaka-carousel-img {
+		max-width: 100%;
+		margin-top: 100px;
+		position: relative;
+		z-index: 20000;
+	}
+}
+
+@media (max-width: 500px) {
+	.osaka-carousel-img {
+		max-width: 100%;
+		margin-top: 30px;
+		position: relative;
+		z-index: 20000;
+	}
 }
