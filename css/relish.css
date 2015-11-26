@@ -55,11 +55,59 @@ h1.popover-title {
   font-size: 2.5em;
 }
 
+#about h5 {
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+#about p.popover-text {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
 p.popover-text {
   color: #a8a8a8;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder {
+   color: #a8a8a8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #a8a8a8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #a8a8a8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+:-ms-input-placeholder {  
+   color: #a8a8a8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
   margin-bottom: 30px;
 }
 
@@ -301,6 +349,11 @@ nav {
   }
 }
 
+
+#about {
+  padding-top: 30px;
+  background: #545454;
+}
 
 /* FOOTER */
 

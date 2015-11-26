@@ -46,7 +46,7 @@
   			<img id="relish-logo" src="images/relish-logo.png" />
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
-			    <li class="navi__listItem"><a href="#">About</a></li>
+			    <li class="navi__listItem"><a href="#about">About</a></li>
 			    <li class="navi__listItem"><a class="brandsOn">Our Brands</a></li>
 				<li class="navi__listItem"><a id="careersPull">Work With Us</a></li>
 			    <li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
@@ -161,6 +161,23 @@
 	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
 	  </a>
+	</div>
+</div>
+
+<div id="about">
+	<div class="row limit">
+		<div class="four columns">
+			<h5>About The Relish Group</h5>
+			<p class="popover-text">Purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.</p>
+		</div>
+		<div class="four columns">
+			<h5>Mission</h5>
+			<p class="popover-text">We commit to bring the flavors of the world to every FIlipino, and for our brands to become the top of mind choice in markets we operate.</p>
+		</div>
+		<div class="four columns">
+			<h5>Vision</h5>
+			<p class="popover-text">We value total customer satisfaction, from the great food that we serve up to the excellent customer service we provide.</p>
+		</div>
 	</div>
 </div>
 
@@ -375,6 +392,49 @@
 			}
 		}
 	}
+
+
+	// SMOOTH SCROLLING
+
+	$(document).ready(function () {
+		    $(document).on("scroll", onScroll);
+		    
+		    //smoothscroll
+		    $('a[href^="#"]').on('click', function (e) {
+		        e.preventDefault();
+		        $(document).off("scroll");
+		        
+		        $('a').each(function () {
+		            $(this).removeClass('active');
+		        })
+		        $(this).addClass('active');
+		      
+		        var target = this.hash,
+		            menu = target;
+		        $target = $(target);
+		        $('html, body').stop().animate({
+		            'scrollTop': $target.offset().top-140
+		        }, 500, 'swing', function () {
+		            window.location.hash = target;
+		            $(document).on("scroll", onScroll);
+		        });
+		    });
+		});
+
+		function onScroll(event){
+		    var scrollPos = $(document).scrollTop();
+		    $('#menu-center a').each(function () {
+		        var currLink = $(this);
+		        var refElement = $(currLink.attr("href"));
+		        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+		            $('#menu-center ul li a').removeClass("active");
+		            currLink.addClass("active");
+		        }
+		        else{
+		            currLink.removeClass("active");
+		        }
+		    });
+		}
 </script>
 
 <!-- End Document
