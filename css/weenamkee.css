@@ -252,7 +252,8 @@ table {
 }
 
 th, td {
-	padding: 8px 0 !important;
+	vertical-align: top;
+	padding: 6px 0 !important;
 	color: #5e0d0e;
 	font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid rgba(0,0,0,0);

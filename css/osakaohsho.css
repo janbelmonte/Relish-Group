@@ -259,16 +259,17 @@ nav {
 
 #osaka-branches {
 	width: 100%;
-	min-height: 200px;
+	height: auto;
 	background: #d3d3d3;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+	background: url(../images/osakaohsho/osaka-wood.jpg);
+	background-repeat: repeat-y;
 }
 
 	.osaka-branch-row {
 		width: 100%;
 		min-height: 140px;
 		padding-top: 25px;
-		background: url(../images/osakaohsho/osaka-wood.jpg);
-		background-repeat: repeat-y;
 	}
 
 	.osaka-map {
