@@ -110,7 +110,7 @@ nav {
 
     #relish-logo:hover {
       border-radius: 200px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      box-shadow: 0 0 10px rgba(0,0,0,0.9);
     }
 
   .navi__list {
@@ -321,12 +321,11 @@ footer {
 
   footer .limit {
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 0 20px;;
   }
 
   .footer-details {
     margin-top: 20px;
-    margin-bottom: 20px;
   }
 
   footer ul {
