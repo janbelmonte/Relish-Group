@@ -46,7 +46,7 @@
   			<img id="relish-logo" src="images/relish-logo.png" />
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
-			    <li class="navi__listItem"><a href="#">About</a></li>
+			    <li class="navi__listItem"><a href="#about">About</a></li>
 			    <li class="navi__listItem"><a class="brandsOn">Our Brands</a></li>
 				<li class="navi__listItem"><a id="careersPull">Work With Us</a></li>
 			    <li class="navi__listItem"><a id="contactPull">Contact Us</a></li>
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popover" id="careers" style="margin-top: 32px;height:auto;">
+		<div class="popover" id="careers" style="margin-top: 32px;height:auto;padding-top: 25px;">
 			<div class="limit">
 				<h1 class="popover-title">WORK WITH US</h1>
 				<div class="row">
@@ -84,12 +84,12 @@
 						<p class="popover-text">We're constantly on the lookout for individuals who are hardworking, talented and passionate about food, so join our rapidly growing team now! A rewarding career with opportunities of growth and advancement awaits you.</p>
 					</div>
 					<div class="four columns">
-						<button>Click here to become part of Relish Group!</button>
+						<button>Click here to apply!</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:15px;">
+		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:0px;padding-top: 25px;">
 			<form method="post" action="<?php echo htmlspecialchars('mailhandler.php'); ?>" id="contactForm">
 				<div class="limit">
 					<div class="row">
@@ -124,30 +124,27 @@
 		<li><p style="background-image:url('images/img2.jpg)">3</p></li>
 	</ul>
 </div> -->
-<div style="display:block; height:90vh; position:relative; z-index: -2000;" class="carousel__container">
-	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" style="height: 90vh;">
+<div style="display:block; height:100vh; position:relative; z-index: -2000;" class="carousel__container">
+	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" style="height: 100vh;">
 	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
+	  <!-- <ol class="carousel-indicators">
 	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	  </ol>
+	  </ol> -->
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
-	    <div class="item active" style="background-image:url('images/relish-carousel-kum.jpg'); background-size:cover; background-position: center center; height:90vh;">
+	    <div class="item active" style="background-image:url('images/relish-carousel-kum.jpg'); background-size:cover; background-position: center center; height:100vh;">
 	      <div class="carousel-caption">
-	        ...
 	      </div>
 	    </div>
 	    <div class="item" style="background-image:url('images/relish-carousel-wnk.jpg'); background-size:cover; background-position: center center; height:100vh;">
 	      <div class="carousel-caption">
-	        ...
 	      </div>
 	    </div>
 	    <div class="item" style="background-image:url('images/relish-carousel-oo.jpg');background-size:cover; background-position: center center; height:100vh;">
 	      <div class="carousel-caption">
-	        ...
 	      </div>
 	    </div>
 	  </div>
@@ -164,20 +161,37 @@
 	</div>
 </div>
 
+<div id="about">
+	<div class="row limit">
+		<div class="four columns">
+			<h5>About The Relish Group</h5>
+			<p class="popover-text">Purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.</p>
+		</div>
+		<div class="four columns">
+			<h5>Mission</h5>
+			<p class="popover-text">We commit to bring the flavors of the world to every FIlipino, and for our brands to become the top of mind choice in markets we operate.</p>
+		</div>
+		<div class="four columns">
+			<h5>Vision</h5>
+			<p class="popover-text">We value total customer satisfaction, from the great food that we serve up to the excellent customer service we provide.</p>
+		</div>
+	</div>
+</div>
+
 <footer>
 	<div class="row limit">
 		<div class="three columns">
 			<img class="footer-details" src="images/relish-footer-logo.jpg" />
 		</div>
-		<div id="footer-menu" class="two columns footer-details">
+		<!-- <div id="footer-menu" class="two columns footer-details">
 			<ul>
 				<li><a href="#">Home</a></li>
 		    	<li><a href="#">About</a></li>
-		    	<li><a class="brandsOn">Our Brands</a></li>
-		    	<li><a href="#">Careers</a></li>
+		    	<li><a href="#careersPull">Careers</a></li>
+		    	<li><a href="#contactPull">Careers</a></li>
 		    </ul>
-		</div>
-		<div class="seven columns footer-details">
+		</div> -->
+		<div class="nine columns footer-details">
 			<div class="row">
 				<p class="brand-promise">The purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.</p>
 			</div>
@@ -375,6 +389,49 @@
 			}
 		}
 	}
+
+
+	// SMOOTH SCROLLING
+
+	$(document).ready(function () {
+		    $(document).on("scroll", onScroll);
+		    
+		    //smoothscroll
+		    $('a[href^="#"]').on('click', function (e) {
+		        e.preventDefault();
+		        $(document).off("scroll");
+		        
+		        $('a').each(function () {
+		            $(this).removeClass('active');
+		        })
+		        $(this).addClass('active');
+		      
+		        var target = this.hash,
+		            menu = target;
+		        $target = $(target);
+		        $('html, body').stop().animate({
+		            'scrollTop': $target.offset().top-140
+		        }, 500, 'swing', function () {
+		            window.location.hash = target;
+		            $(document).on("scroll", onScroll);
+		        });
+		    });
+		});
+
+		function onScroll(event){
+		    var scrollPos = $(document).scrollTop();
+		    $('#menu-center a').each(function () {
+		        var currLink = $(this);
+		        var refElement = $(currLink.attr("href"));
+		        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+		            $('#menu-center ul li a').removeClass("active");
+		            currLink.addClass("active");
+		        }
+		        else{
+		            currLink.removeClass("active");
+		        }
+		    });
+		}
 </script>
 
 <!-- End Document
