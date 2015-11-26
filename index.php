@@ -90,14 +90,14 @@
 			</div>
 		</div>
 		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:15px;">
-			<form method="post" action="<?php echo htmlspecialchars('mailhandler.php'); ?>">
+			<form method="post" action="<?php echo htmlspecialchars('mailhandler.php'); ?>" id="contactForm">
 				<div class="limit">
 					<div class="row">
 						<div class="ten columns">
 							<h1 class="popover-title">CONTACT US</h1>
 						</div>
 						<div class="two columns">
-							<input type="submit" value="Send">
+							<input type="submit" value="Submit">
 						</div>
 					</div>
 					<div class="row">
@@ -205,6 +205,37 @@
 </div> -->
 
 <script>
+
+	// AJAX form submit
+	$("#contactForm").click(function(){
+		event.preventDefault();
+		var name = document.getElementById("fullname").value,
+			email = document.getElementById("email").value,
+			message = document.getElementById("message");
+		jQuery.ajax({
+			url: "mailhandler.php",
+			type: "POST",
+			data: {
+				fullname: name,
+				email: email,
+				message: message
+			}, 
+			success: function(){
+				var parent = document.getElementById("contact");
+				var message = document.createElement("p");
+				message.addClass("formSuccess");
+				message.innerHTML = "Form Submit Successful";
+				parent.appendChild(message);
+			},
+			error: function(err){
+				var parent = document.getElementById("contact");
+				var message = document.createElement("p");
+				message.addClass("formError");
+				message.innerHTML = "The server seems to have a problem. Please try again later.";
+				parent.appendChild(message);
+			}
+		});
+	});
 
 	// TOGGLE POPOVERS
 	$(".brandsOn").click(function () {
