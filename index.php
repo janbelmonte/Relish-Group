@@ -191,36 +191,36 @@
 
 <script>
 
-	// AJAX form submit
-	$("#contactForm").click(function(){
-		event.preventDefault();
-		var name = document.getElementById("fullname").value,
-			email = document.getElementById("email").value,
-			message = document.getElementById("message");
-		jQuery.ajax({
-			url: "mailhandler.php",
-			type: "POST",
-			data: {
-				fullname: name,
-				email: email,
-				message: message
-			}, 
-			success: function(){
-				var parent = document.getElementById("contact");
-				var message = document.createElement("p");
-				message.addClass("formSuccess");
-				message.innerHTML = "Form Submit Successful";
-				parent.appendChild(message);
-			},
-			error: function(err){
-				var parent = document.getElementById("contact");
-				var message = document.createElement("p");
-				message.addClass("formError");
-				message.innerHTML = "The server seems to have a problem. Please try again later.";
-				parent.appendChild(message);
-			}
-		});
-	});
+	// // AJAX form submit
+	// $("#contactForm").click(function(){
+	// 	event.preventDefault();
+	// 	var name = document.getElementById("fullname").value,
+	// 		email = document.getElementById("email").value,
+	// 		message = document.getElementById("message");
+	// 	jQuery.ajax({
+	// 		url: "mailhandler.php",
+	// 		type: "POST",
+	// 		data: {
+	// 			fullname: name,
+	// 			email: email,
+	// 			message: message
+	// 		}, 
+	// 		success: function(){
+	// 			var parent = document.getElementById("contact");
+	// 			var message = document.createElement("p");
+	// 			message.addClass("formSuccess");
+	// 			message.innerHTML = "Form Submit Successful";
+	// 			parent.appendChild(message);
+	// 		},
+	// 		error: function(err){
+	// 			var parent = document.getElementById("contact");
+	// 			var message = document.createElement("p");
+	// 			message.addClass("formError");
+	// 			message.innerHTML = "The server seems to have a problem. Please try again later.";
+	// 			parent.appendChild(message);
+	// 		}
+	// 	});
+	// });
 
 	// TOGGLE POPOVERS
 	$(".brandsOn").click(function () {
@@ -360,8 +360,6 @@
 			}
 		}
 	}
-
-
 	// SMOOTH SCROLLING
 
 	$(document).ready(function () {
