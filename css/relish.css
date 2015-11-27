@@ -286,6 +286,13 @@ footer {
     margin: 0 auto;
     padding: 20px 0 0 0;
   }
+
+    @media (max-width: 550px) {
+      footer .limit {
+        padding: 20px;
+      }
+    }
+
   footer ul {
     list-style: none;
     font-family: 'Libre Baskerville', sans-serif;
