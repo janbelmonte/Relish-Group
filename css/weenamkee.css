@@ -70,7 +70,6 @@ nav.wnk-nav {
 	}
 	nav img {
 		height: 85px;
-    	padding: 25px 15px;
 	}
 	.navi__listItem {
 		font-family: 'Playfair Display', serif;
@@ -84,7 +83,7 @@ nav.wnk-nav {
 
 #relish-logo {
 	float: right;
-	margin-right: 20px;
+	margin-right: 20px !important;
 }
 	#relish-logo img {
 		margin-top: 20px;
@@ -98,8 +97,6 @@ nav.wnk-nav {
 	@media (min-width: 750px) {
 		#relish-logo {
 			margin-right: 0;
-			max-width: 165px;
-			max-width: 165px;
 		}
 	}
 	@media (min-width: 1100px) {
@@ -112,7 +109,6 @@ nav.wnk-nav {
 		}
 		nav img {
 			height: 100px;
-			padding: 15px;
 		}
 	}
 .logo-invisible {
@@ -123,7 +119,9 @@ nav.wnk-nav {
 /* CAROUSEL */
 
 #carousel {
+	padding-top: 150px;
 	width: 100vw;
+	overflow: hidden;
 	background-size: contain;
 	background-attachment: fixed;
 	background-image: url(../images/wnk/wnk-carousel.jpg);
@@ -187,7 +185,6 @@ nav.wnk-nav {
 /* MENU */
 
 #wnk-menu {
-
 	min-height: 100px;
 	height: auto;
 	background-color: #fffbe5;
@@ -200,7 +197,7 @@ nav.wnk-nav {
 	background-repeat: repeat-y;
 }
 	
-	@media (max-width: 550px) {
+	@media (max-width: 1100px) {
 		#wnk-menu {
 			padding: 20px;
 		}
@@ -272,23 +269,22 @@ nav.wnk-nav {
 /* CAROUSEL EFFECTS/ANIMATIONS */
 .wnk-carousel-img {
 	position: absolute;
-	/*top: 200px;*/
 	max-width: 60%;
 }
 	@media (max-width: 500px) {
 		.wnk-carousel-img {
 			max-width: 100%;
 			margin-top: 30px;
-			position: relative;
-			z-index: 20000;
+			position: absolute;
+			bottom: 0;
+			z-index: 1;
 		}
 	}
 	@media (max-width: 1100px) {
 		.wnk-carousel-img {
 			max-width: 100%;
-			margin-top: 100px;
-			position: relative;
-			z-index: 20000;
+			position: absolute;
+			z-index: 1;
 		}
 	}
 
@@ -299,14 +295,18 @@ nav.wnk-nav {
 			height: 600px; /* Height of images */
 			position: absolute;
 			right: 0; top: 0;
-			margin-top: -100px;
+			margin-top: 250px;
 			overflow: hidden;
 			display: block;
 		}	
 	}
 
 	@media (min-width: 768px) {
-		.css-carousel { top: 200px; }
+		.css-carousel { margin-top: 100px; }
+	}
+
+	@media (min-width: 1100px) {
+		.css-carousel { margin-top: 250px; }
 	}
 
 		.css-carousel .wnk-carousel-img {
