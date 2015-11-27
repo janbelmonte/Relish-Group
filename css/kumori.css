@@ -176,7 +176,7 @@ nav {
 	.menu-item {
 		position: relative;
 		display: inline-table;
-		width: 33.33vw;
+		width: 33.333vw;
 		height: 30vw;
 		margin: 0 !important;
 		margin-bottom: -17px !important;
