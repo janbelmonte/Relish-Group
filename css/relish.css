@@ -53,6 +53,7 @@ h1.popover-title {
 /* NAVIGATION */
 
 nav {
+  position: absolute;
   width: 100%;
   top: 0; left: 0; right: 0;
   border-top: 30px solid #333;
@@ -81,8 +82,8 @@ nav {
     color: white;
   }
   #relish-logo {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     margin-left: 20px;
     transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
@@ -272,6 +273,11 @@ nav {
     font-weight: 300;
     font-size: 1.1em;
     margin-bottom: 30px;
+  }
+  @media (max-width: 1100px) {
+    #about {
+      padding: 30px 20px;
+    }
   }
 
 /* FOOTER */
