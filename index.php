@@ -354,14 +354,23 @@
 		},
 		sendForm : function(formElement, url){
 			event.preventDefault();
-			var formPromise = new Promise(function(resolve, reject){
+			return new Promise(function(resolve, reject){
 				// var formElement = document.getElementById(formID);
 				var formData = new FormData(formElement);
-				var request = new XMLHttpRequest();
-				request.open("POST", url);
-				request.send(formData);
+				var req = new XMLHttpRequest();
+				req.open("POST", url);
+				req.onload = function(){
+					if (req.status == 200){
+						resolve(req.response)
+					} else {
+						reject(Error(req.statsText));
+					}
+				};
+				req.onerror = function(){
+					reject("Network Error");
+				}
+				req.send(formData);
 			});
-			return formPromise;
 		}
 	}
 	// SMOOTH SCROLLING
