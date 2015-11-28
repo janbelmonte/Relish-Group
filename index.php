@@ -17,7 +17,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>1
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -79,8 +79,7 @@
 				<h1 class="popover-title">WORK WITH US</h1>
 				<div class="row">
 					<div class="eight columns">
-						<p class="popover-text">We're constantly on the lookout for individuals who are hardworking, talented and passionate about food, 
-						so join our rapidly growing team now! A rewarding career with opportunities of growth and advancement awaits you.</p>
+						<p class="popover-text">We're constantly on the lookout for individuals who are hardworking, talented and passionate about food, so join our rapidly growing team now! A rewarding career with opportunities of growth and advancement awaits you.</p>
 					</div>
 					<div class="four columns">
 						<button>Click here to apply!</button>
@@ -89,7 +88,7 @@
 			</div>
 		</div>
 		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:0px;padding-top: 25px;">
-			<form method="post" action="<?php echo htmlspecialchars('mailhandler.php'); ?>" id="contactForm">
+			<form method="post" action="" id="contactForm">
 				<div class="limit">
 					<div class="row">
 						<div class="ten columns">
@@ -112,10 +111,14 @@
 			</form>
 		</div>
 	</nav>
-
-
 <div style="display:block; height:100vh; position:relative; z-index: -2000;" class="carousel__container">
 	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" style="height: 100vh;">
+	  <!-- Indicators -->
+	  <!-- <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol> -->
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
@@ -190,36 +193,27 @@
 </footer>
 
 <script>
-	// AJAX form submit
-	$("#contactForm").submit(function(){
-		event.preventDefault();
-		var name = document.getElementById("fullname").value,
-			email = document.getElementById("email").value,
-			message = document.getElementById("message");
-		jQuery.ajax({
-			url: "mailhandler.php",
-			type: "POST",
-			data: {
-				fullname: name,
-				email: email,
-				message: message
-			}, 
-			success: function(){
-				var parent = document.getElementById("contact");
-				var message = document.createElement("p");
-				message.addClass("formSuccess");
-				message.innerHTML = "Form Submit Successful";
-				parent.appendChild(message);
-			},
-			error: function(err){
-				var parent = document.getElementById("contact");
-				var message = document.createElement("p");
-				message.addClass("formError");
-				message.innerHTML = "The server seems to have a problem. Please try again later.";
-				parent.appendChild(message);
-			}
+	var form = document.getElementById("contactForm");
+	form.addEventListener('submit', function(ev) {
+		ev.preventDefault();
+	  	helper.sendForm("contactForm","http://www.relish-group.com/new_test/mailhandler.php")
+		.then(function(){
+			var parent = document.getElementById("contact");
+			var message = document.createElement("p");
+			message.addClass("formSuccess");
+			message.innerHTML = "Form Submit Successful";
+			parent.appendChild(message);
+		})
+		.catch(function(){
+			var parent = document.getElementById("contact");
+			var message = document.createElement("p");
+			message.addClass("formError");
+			message.innerHTML = "The server seems to have a problem. Please try again later.";
+			parent.appendChild(message);
 		});
-	});
+	  
+	}, false);
+
 
 	// TOGGLE POPOVERS
 	$(".brandsOn").click(function () {
@@ -357,6 +351,16 @@
 			} else {
 				return false;
 			}
+		},
+		sendForm : function(formElement, url){
+			var formPromise = new Promise(function(resolve, reject){
+				// var formElement = document.getElementById(formID);
+				var formData = new FormData(formElement);
+				var request = new XMLHttpRequest();
+				request.open("POST", url);
+				request.send(formData);
+			});
+			return formPromise;
 		}
 	}
 	// SMOOTH SCROLLING
