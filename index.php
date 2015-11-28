@@ -95,7 +95,7 @@
 							<h1 class="popover-title">CONTACT US</h1>
 						</div>
 						<div class="two columns">
-							<input type="submit" value="Submit">
+							<input type="submit" value="Submit" id="contactBtn">
 						</div>
 					</div>
 					<div class="row">
@@ -192,10 +192,10 @@
 	</div>
 </footer>
 
-<script>
-	var form = document.getElementById("contactForm");
-	form.addEventListener('submit', function(ev) {
-		ev.preventDefault();
+// <script>
+	var formBtn = document.getElementById("contactBtn");
+	formBtn.addEventListener('click', function(ev) {
+		
 	  	helper.sendForm("contactForm","http://www.relish-group.com/new_test/mailhandler.php")
 		.then(function(){
 			var parent = document.getElementById("contact");
@@ -211,7 +211,7 @@
 			message.innerHTML = "The server seems to have a problem. Please try again later.";
 			parent.appendChild(message);
 		});
-	  
+	  	ev.preventDefault();
 	}, false);
 
 
@@ -353,6 +353,7 @@
 			}
 		},
 		sendForm : function(formElement, url){
+			event.preventDefault();
 			var formPromise = new Promise(function(resolve, reject){
 				// var formElement = document.getElementById(formID);
 				var formData = new FormData(formElement);
