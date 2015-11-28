@@ -88,7 +88,7 @@
 			</div>
 		</div>
 		<div class="popover" id="contact" style="margin-top:32px;height:auto;padding-bottom:0px;padding-top: 25px;">
-			<form method="post" action="" id="contactForm">
+			<form method="post" action="" id="contactForm" name="contactForm">
 				<div class="limit">
 					<div class="row">
 						<div class="ten columns">
@@ -193,10 +193,10 @@
 </footer>
 
 // <script>
-	var formBtn = document.getElementById("contactBtn");
-	formBtn.addEventListener('click', function(ev) {
+	var form = document.forms.namedItem("contactForm");
+	form.addEventListener('submit', function(ev) {
 		
-	  	helper.sendForm("contactForm","http://www.relish-group.com/new_test/mailhandler.php")
+	  	helper.sendForm(form,"http://www.relish-group.com/new_test/mailhandler.php")
 		.then(function(){
 			var parent = document.getElementById("contact");
 			var message = document.createElement("p");
