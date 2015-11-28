@@ -12,7 +12,7 @@
   //        "(reCAPTCHA said: " . $resp->error . ")");
   // } else {
     // Your code here to handle a successful verification
-    	$firstname = htmlspecialchars($_POST['fullname']);
+    	$fullname = htmlspecialchars($_POST['fullname']);
 	    $email = htmlspecialchars($_POST['email']);
 	    $message = htmlspecialchars($_POST['message']);
 	                
