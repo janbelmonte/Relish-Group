@@ -4,22 +4,12 @@
   transition: 0.5s;
   box-sizing:border-box;
 }
-
 .limit {
   max-width: 1100px;
   margin: 0 auto;
 }
-
 .container {
   max-width: 1100px;
-}
-
-.no-margin {
-  margin: 0 !important;
-}
-
-.display-none {
-  display: none;
 }
 
 /* TYPOGRAPHY */
@@ -27,108 +17,58 @@
 p {
   color: #404040;
 }
-
-p.caption {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 0.70em;
-  text-transform: uppercase;
-  margin-bottom: 0.2em;
-}
-p.detail {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 0.9em;
-  margin-bottom: 0;
-}
-p.brand-promise {
-  font-size: 16px;
-  line-height: 26px;
-  color: #67bc29;
-  font-family: 'Libre Baskerville', sans-serif;
-  font-weight: 400;
-}
-
+  p.popover-text {
+    color: #a8a8a8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  p.caption {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 0.70em;
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+  }
+  p.detail {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+  p.brand-promise {
+    font-size: 16px;
+    line-height: 26px;
+    color: #67bc29;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 400;
+  }
 h1.popover-title {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 2.5em;
 }
 
-#about h5 {
-  color: #fff;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.3em;
-}
-
-#about p.popover-text {
-  color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-p.popover-text {
-  color: #a8a8a8;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-::-webkit-input-placeholder {
-   color: #a8a8a8;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #a8a8a8;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #a8a8a8;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-:-ms-input-placeholder {  
-   color: #a8a8a8;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
 /* NAVIGATION */
 
-.top-bar {
-  position: fixed;
-  width: 100%;
-  height: 30px;
-  top: 0; left: 0; right: 0;
-  background: #333;
-}
-
 nav {
+  position: absolute;
   width: 100%;
   top: 0; left: 0; right: 0;
   border-top: 30px solid #333;
   background: rgba(0,0,0,0.6);
   height: 120px;
 }
-
+  nav ul li a,
+  nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: #67bc29;
+    text-decoration: none;
+  }
   #pull {
     position: absolute;
     top: 60px;
@@ -137,15 +77,13 @@ nav {
     text-decoration: none;
     color: white;
   }
-
   #pull:visited,
   #pull:hover {
     color: white;
   }
-
   #relish-logo {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     margin-left: 20px;
     transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
@@ -155,12 +93,10 @@ nav {
     position: relative;
     z-index: 10000;
   }
-
     #relish-logo:hover {
       border-radius: 200px;
       box-shadow: 0 0 10px rgba(0,0,0,0.9);
     }
-
   .navi__list {
     font-family: 'Libre Baskerville', serif;
     list-style: none;
@@ -173,53 +109,29 @@ nav {
     text-align: center;
     padding: 15px 0;
   }
-
   .navi__listItem {
     display: block;
     width: 100%;
     padding: 10px;
   }
-
-  nav ul li a,
-  nav ul li a:visited {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  nav ul li a:hover {
-    color: #67bc29;
-    text-decoration: none;
-  }
-
   #brand-bar, #careers, #contact {
     display: none;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      transform: translateY(-97px);
-      -webkit-transform: translateY(-97px);
-      -moz-transform: translateY(-97px);
-      -ms-transform: translateY(-97px);
-      -o-transform: translateY(-97px);
-      background-color: #fff;
-      z-index: 500;
-      margin-top: 15px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transform: translateY(-97px);
+    -webkit-transform: translateY(-97px);
+    -moz-transform: translateY(-97px);
+    -ms-transform: translateY(-97px);
+    -o-transform: translateY(-97px);
+    background-color: #fff;
+    z-index: 500;
+    margin-top: 15px;
   }
-
   .brand__item {
     width: 48%;
     padding: 40px 0;
   }
-
-    @media (max-width: 500px) {
-      .brand__item {
-        padding: 0;
-      }
-      .brand__row {
-        padding: 50px 0 !important;
-      }
-    }
-
   .brand__item a {
     display: block;
     width: initial;
@@ -235,7 +147,11 @@ nav {
     display: block;
     padding: 20px 0;
   }
-
+  .brands-wnk-logo {
+    height: 100px;
+    width: auto;
+    padding: 10px 0;
+  }
   .close {
     display: block;
     position: absolute;
@@ -243,60 +159,60 @@ nav {
     right: 20px;
   }
 
-  @media (min-width: 550px) {
-    #pull {display: none;}
+    @media (max-width: 500px) {
+      .brand__item {
+        padding: 0;
+      }
+      .brand__row {
+        padding: 50px 0 !important;
+      }
+    }  
+    @media (min-width: 550px) {
+      #pull {display: none;}
 
-    nav {
-      height: 160px;
-    } 
-
-    .navi__list {
-      display:block; margin-top: 0px; height:130px;margin-bottom: 0px;padding-top: 0px;padding-bottom: 0px;
-      width: auto; position: relative; top: 0; background-color: transparent;
+      nav {
+        height: 160px;
+      } 
+      #relish-logo {
+        max-width: 165px;
+        max-width: 165px;
+      }
+      .navi__list {
+        display:block; margin-top: 0px; height:130px;margin-bottom: 0px;padding-top: 0px;padding-bottom: 0px;
+        width: auto; position: relative; top: 0; background-color: transparent;
+      }
+      .navi__listItem {
+        display: inline-table;
+        height: inherit;
+        width: auto;
+        padding: 0;
+        margin-bottom: 0;
+      }
+      .navi__listItem a {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+      }
+      #brand-bar, #careers, #contact {
+        transform: translateY(-67px);
+        -webkit-transform: translateY(-67px);
+        -moz-transform: translateY(-67px);
+        -ms-transform: translateY(-67px);
+        -o-transform: translateY(-67px);
+        margin-top: 20px;
+      }
+      .brand__row {
+        padding: 0;
+      }
+      .brand__item {
+        display: block;
+        width: 100%;
+      }
+      .brand__logo {
+        width: 100%;
+        padding: 0;
+      }
     }
-
-    .navi__listItem {
-      display: inline-table;
-      height: inherit;
-      width: auto;
-      padding: 0;
-      margin-bottom: 0;
-    }
-
-    .navi__listItem a {
-      display: table-cell;
-      vertical-align: middle;
-      padding: 10px;
-    }
-
-    #relish-logo {
-      max-width: 165px;
-      max-width: 165px;
-    }
-
-    #brand-bar, #careers, #contact {
-      transform: translateY(-67px);
-      -webkit-transform: translateY(-67px);
-      -moz-transform: translateY(-67px);
-      -ms-transform: translateY(-67px);
-      -o-transform: translateY(-67px);
-      margin-top: 20px;
-    }
-
-    .brand__row {
-      padding: 0;
-    }
-
-    .brand__item {
-      display: block;
-      width: 100%;
-    }
-
-    .brand__logo {
-      width: 100%;
-      padding: 0;
-    }
-  }
 
   @media (min-width: 1000px) {
     nav {
@@ -306,9 +222,7 @@ nav {
     nav .limit {
       width: 1100px;
       margin: 0 auto;
-
     }
-
     #brand-bar {
       display: none;
       position: absolute;
@@ -321,25 +235,17 @@ nav {
       -o-transform: translateY(-52px);
       background-color: #fff;
       z-index: -1000;
+    } 
+    .brand__logo {
+        height: 100px;
+        width: auto;
     }
-      #brand-bar .row {
-        margin: 35px 0;
-      }
-      .brand__logo {
-          height: 100px;
-          width: auto;
-      }
 
-      .brandsOn {
-        cursor: pointer;
-      }
+    .brandsOn {
+      cursor: pointer;
+    }
   }
-
-    .brands-wnk-logo {
-      height: 100px;
-      width: auto;
-      padding: 10px 0;
-    }
+    
 
 /* CAROUSEL */
 
@@ -349,12 +255,30 @@ nav {
   }
 }
 
-
 #about {
   padding-top: 30px;
   background: #545454;
   box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
 }
+  #about h5 {
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3em;
+  }
+  #about p.popover-text {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1100px) {
+    #about {
+      padding: 30px 20px;
+    }
+  }
 
 /* FOOTER */
 
@@ -364,93 +288,58 @@ footer {
   background: #f9f9f9;
   box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
-
-#footer-menu {
-  display: none;
-}
-
-  footer img {
-    max-width: 100%;
-  }
-
   footer .limit {
     margin: 0 auto;
     padding: 20px 0 0 0;
   }
 
-  .footer-details {
-    margin-top: 20px;
-  }
+    @media (max-width: 550px) {
+      footer .limit {
+        padding: 20px;
+      }
+    }
 
   footer ul {
     list-style: none;
     font-family: 'Libre Baskerville', sans-serif;
     font-weight: 700;
   }
-
   footer ul li a,
   footer ul li a:visited {
     color: #a0a0a0;
     text-decoration: none;
   }
-
   footer ul li a:hover {
     color: #67bc29;
   }
-
-  .sub-footer {
-    width: 100%;
-    height: 55px;
-    background: #404040;
+  footer img {
+    max-width: 100%;
   }
-
-  .sub-footer p.detail {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #d3d3d3 !important;
+  .footer-details {
+    margin-top: 20px;
   }
-
-  .sub-footer .limit {
-    padding: 15px;
-  }
-
-  @media (min-width: 750px) {
-    #footer-menu {
-      display: inline;
+    @media (min-width: 1200px) {
+      footer {
+        height: 200px;
+      }
+      footer .limit {
+        width: 1100px;
+      }
     }
-  }
 
-  @media (min-width: 1200px) {
-    footer {
-      height: 200px;
-    }
-    footer .limit {
-      width: 1100px;
-    }
-    .sub-footer .limit {
-      width: 1100px;
-      margin: 0 auto;
-    }
-  }
+/* COMMON ELEMENTS */
 
-
-  .fade {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-  }
-
-
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    border-radius: 0;
-    background: #67bc29;
-    color: #fff;
-    font-family: 'Source Sans Pro', sans-serif !important;
-    font-size: 1em !important;
-    font-weight: 400;
-    float: right;
-  }
-
+button, html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+  border-radius: 0;
+  background: #67bc29;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 1em !important;
+  font-weight: 400;
+  float: right;
+}
 button:hover,
 input[type="submit"]:hover {
     background: #fff;
@@ -462,44 +351,76 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     border-radius: 0;
     margin-bottom: 20px;
 }
+::-webkit-input-placeholder {
+   color: #a8a8a8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+  :-moz-placeholder { /* Firefox 18- */
+     color: #a8a8a8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: #a8a8a8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  :-ms-input-placeholder {  
+     color: #a8a8a8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+    @media (max-width: 500px) {
+      .popover {
+        margin-top: 90px !important;
+      }  
+    }
+    @media (max-width: 1000px) {
+      .popover {
+        padding: 25px;
+      }   
+    }
 
-@media (max-width: 500px) {
-  .popover {
-    margin-top: 90px !important;
-  }  
+/* EFFECTS */
+
+.fade {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
-@media (max-width: 1000px) {
-  .popover {
-    padding: 25px;
-  }   
-}
-
-/* Carousel Fade */
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
           transition-property: opacity;
 }
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-
+  .carousel-fade .carousel-inner .item,
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+  }
+  .carousel-fade .carousel-inner .active,
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  .carousel-fade .carousel-inner .next,
+  .carousel-fade .carousel-inner .prev,
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  }

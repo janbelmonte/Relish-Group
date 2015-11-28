@@ -16,8 +16,8 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>1
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,12 +38,10 @@
 
 </head>
 <body>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   	
   	<nav class="nav-collapse">
-  		<div class="limit">
-  			<img id="relish-logo" src="images/relish-logo.png" />
+  		<div id="menu-center" class="limit">
+  			<a href="index.html"><img id="relish-logo" src="images/relish-logo.png" /></a>
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
 			    <li class="navi__listItem"><a href="#about">About</a></li>
@@ -81,7 +79,8 @@
 				<h1 class="popover-title">WORK WITH US</h1>
 				<div class="row">
 					<div class="eight columns">
-						<p class="popover-text">We're constantly on the lookout for individuals who are hardworking, talented and passionate about food, so join our rapidly growing team now! A rewarding career with opportunities of growth and advancement awaits you.</p>
+						<p class="popover-text">We're constantly on the lookout for individuals who are hardworking, talented and passionate about food, 
+						so join our rapidly growing team now! A rewarding career with opportunities of growth and advancement awaits you.</p>
 					</div>
 					<div class="four columns">
 						<button>Click here to apply!</button>
@@ -114,24 +113,9 @@
 		</div>
 	</nav>
 
-<!-- <div id="carousel" style="top: 300px;">
-	<ul id="lightSlider">
-		<li style="background-image: url('https://source.unsplash.com/category/people/1366x768'); background-size:cover; background-position: center center; height:inherit;"></li>
-		<li><p style="background-image:url('images/img1.jpg)">2</p></li>
-		<li><p style="background-image:url('images/img2.jpg)">3</p></li>
-		<li><p style="background-image:url('images/relish-carousel.jpg)">1</p></li>
-		<li><p style="background-image:url('images/img1.jpg)">2</p></li>
-		<li><p style="background-image:url('images/img2.jpg)">3</p></li>
-	</ul>
-</div> -->
+
 <div style="display:block; height:100vh; position:relative; z-index: -2000;" class="carousel__container">
 	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" style="height: 100vh;">
-	  <!-- Indicators -->
-	  <!-- <ol class="carousel-indicators">
-	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	  </ol> -->
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
@@ -183,14 +167,6 @@
 		<div class="three columns">
 			<img class="footer-details" src="images/relish-footer-logo.jpg" />
 		</div>
-		<!-- <div id="footer-menu" class="two columns footer-details">
-			<ul>
-				<li><a href="#">Home</a></li>
-		    	<li><a href="#">About</a></li>
-		    	<li><a href="#careersPull">Careers</a></li>
-		    	<li><a href="#contactPull">Careers</a></li>
-		    </ul>
-		</div> -->
 		<div class="nine columns footer-details">
 			<div class="row">
 				<p class="brand-promise">The purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.</p>
@@ -212,14 +188,8 @@
 		</div>
 	</div>
 </footer>
-<!-- <div class="sub-footer">
-	<div class="limit">
-		<p class="detail">&copy; 2015 Relish Group</p>
-	</div>
-</div> -->
 
 <script>
-
 	// AJAX form submit
 	$("#contactForm").submit(function(){
 		event.preventDefault();
@@ -389,8 +359,6 @@
 			}
 		}
 	}
-
-
 	// SMOOTH SCROLLING
 
 	$(document).ready(function () {
@@ -433,8 +401,5 @@
 		    });
 		}
 </script>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

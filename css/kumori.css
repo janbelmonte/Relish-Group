@@ -1,15 +1,17 @@
+/* UNIVERSAL */
 * {
   transition: 0.5s;
 }
 
+/* COLORS */
 .bg-light-grey {
 	background-color: #f1f1f1;
 }
-
 .bg-dark-grey {
 	background-color: #d3d3d3;
 }
 
+/* TYPOGRAPHY */
 
 p.title-bar {
 	color: #662003;
@@ -18,7 +20,6 @@ p.title-bar {
 	font-family: "Century Gothic", sans-serif;
 	text-align: center;
 }
-
 	p.item-name {
 		color: #351108;
 		font-size: 1.25em;
@@ -35,30 +36,22 @@ p.title-bar {
 		margin-bottom: 0;
 	}
 
+/* NAVIGATION */
+
 nav {
 	background: #ffb725;
 	z-index: 20000;
 }
-
 	nav ul {
 		list-style: none;
 		float: left;
 		margin: 40px 0;
 		display: none;
 	}
-
 	nav ul li {
 		display: inline-block;
 		padding-left: 2em;
 	}
-
-		@media (max-width: 500px) {
-			nav ul li a {
-				font-size: 0.85em;
-				display: inline;
-			}
-		}
-
 	nav ul li a,
 	nav ul li a:visited {
 		font-family: "Century Gothic", sans-serif;
@@ -66,12 +59,41 @@ nav {
 		text-transform: uppercase;
 		text-decoration: none;
 	}
-
 	nav ul li a:hover {
 		color: #662003;
 		text-decoration: none;
 	}
+		@media (max-width: 500px) {
+			nav ul li a {
+				font-size: 0.85em;
+				display: inline;
+			}
+		}
+		@media (max-width: 750px) {
+			.navi__list {
+			    list-style: none;
+			    float: left;
+			    display: table;
+			    background: #351108;
+			    position: absolute;
+			    top: 80px;
+			    width: 100%;
+			    text-align: center;
+			    padding: 15px 0;
+			    z-index: 1000;
+			}
+			.navi__listItem {
+			    display: inline;
+			    padding: 10px;
+			}
+		}
 
+		@media (min-width: 550px) {
+			.navi__list {
+			    float: left;
+			    margin-left: 25px;
+			}
+		}
 	#relish-logo {
 		float: right;
 		max-width: 25%;
@@ -84,7 +106,6 @@ nav {
 		-o-transform: translateY(-20px);
 		z-index: 10000;
 	}
-
 	#kumori-logo {
 		position: relative;
 		height: 60px;
@@ -92,7 +113,6 @@ nav {
 		float: left;
 		z-index: 10000;
 	}
-
 	@media (min-width: 550px) {
 	    nav ul {
 	      display: block;
@@ -107,11 +127,7 @@ nav {
 	    }
   	}
 
-
-#carousel {
-	background-attachment: scroll;
-}
-
+/* COMMON ELEMENTS */
 
 .title-bar {
 	width: 100%;
@@ -120,6 +136,7 @@ nav {
 	background: #ffb725;
 }
 
+/* CAROUSEL */
 
 #kumori-desc {
 	width: 100%;
@@ -130,7 +147,6 @@ nav {
 	background-attachment: fixed;
 	padding: 150px 0 0 0;
 }
-
 	@media (max-width: 768px) {
 		#kumori-desc {
 			padding: 120px 50px 50px 50px;
@@ -142,7 +158,6 @@ nav {
 			padding: 120px 20px 50px 20px;
 		}
 	}
-
 	h1.its-japan {
 		font-family: 'Futura Std', sans-serif;
 		color: #a76b37;
@@ -151,16 +166,17 @@ nav {
 		margin-top: 0;
 	}
 
+/* MENU */
+
 .kumori-menu {
 	width: 100%;
 	height: auto;
 	background-color: #ffb725;
 }
-
 	.menu-item {
 		position: relative;
 		display: inline-table;
-		width: 33.33vw;
+		width: 33.333vw;
 		height: 30vw;
 		margin: 0 !important;
 		margin-bottom: -17px !important;
@@ -174,14 +190,6 @@ nav {
 		font-family: "Minion Pro", serif;
 		padding-right: 20%;
 	}
-	p.menu-item-desc {
-		font-size: 1em;
-		color: #351108;
-		font-family: "Minion Pro", serif;
-		text-align: center;
-		margin-bottom: 0;
-	}
-
 		.imgDescription {
 			font-family: Century Gothic, sans-serif;
 			font-size: 21px;
@@ -214,14 +222,8 @@ nav {
 				text-align: center;
 			}
 		}
-	.kumori {
-		color: #ffe8b9;
-		font-size: 1.5em;
-		font-family: 'Century Gothic', sans-serif;
-		text-align: left;
-		margin-top: 0;
-		display: inline-block;
-	}
+
+/* BRANCHES */
 
 .kumori-branches {
 	width: 100%;
@@ -231,28 +233,13 @@ nav {
 }
 
 
-@media (max-width: 750px) {
-	.navi__list {
-	    list-style: none;
-	    float: left;
-	    display: table;
-	    background: #351108;
-	    position: absolute;
-	    top: 80px;
-	    width: 100%;
-	    text-align: center;
-	    padding: 15px 0;
-	    z-index: 1000;
-	}
-	.navi__listItem {
-	    display: inline;
-	    padding: 10px;
-	  }
-}
+/* FOOTER */
 
-@media (min-width: 550px) {
-	.navi__list {
-	    float: left;
-	    margin-left: 25px;
-	}
+#footer-menu {
+	display: none;
 }
+    @media (min-width: 750px) {
+      #footer-menu {
+        display: inline;
+      }
+    }
