@@ -221,7 +221,7 @@
 <script>
 
 	// AJAX form submit
-	$("#contactForm").click(function(){
+	$("#contactForm").submit(function(){
 		event.preventDefault();
 		var name = document.getElementById("fullname").value,
 			email = document.getElementById("email").value,
