@@ -192,7 +192,7 @@
 	</div>
 </footer>
 
-// <script>
+<script>
 	var form = document.forms.namedItem("contactForm");
 	form.addEventListener('submit', function(ev) {
 		
