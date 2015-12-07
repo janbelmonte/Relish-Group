@@ -234,8 +234,25 @@ nav {
 	width: 100%;
 	height: auto;
 	background: #ebebeb;
-	padding: 35px 0;
+	padding: 35px 0 0 0;
 }
+
+/* MAP */
+.kumori-map {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	margin-top: 35px;
+}
+
+	.kumori-map iframe {
+		position: absolute;
+	    top: -50px;
+		left: 0;
+		width: 100% !important;
+		height: 450px !important;
+		pointer-events:none;
+	}
 
 
 /* FOOTER */
