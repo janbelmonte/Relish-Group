@@ -13,6 +13,11 @@
 
 /* TYPOGRAPHY */
 
+@font-face {
+  font-family: 'Futura Std';
+  src: url('../fonts/FuturaStd-Book.otf')  format('opentype');
+}
+
 p.title-bar {
 	color: #662003;
 	font-size: 1.2em;
@@ -187,7 +192,7 @@ nav {
 		color: #ffe8b9;
 		font-size: 1.35em;
 		text-align: left;
-		font-family: "Minion Pro", serif;
+		font-family: 'Futura Std', sans-serif;
 		padding-right: 20%;
 	}
 		.imgDescription {
