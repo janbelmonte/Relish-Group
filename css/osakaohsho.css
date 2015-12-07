@@ -424,6 +424,22 @@ nav {
 		padding-top: 25px;
 	}
 
+/* MAP */
+.osaka-map {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+	.osaka-map iframe {
+		position: absolute;
+	    top: -50px;
+		left: 0;
+		width: 100% !important;
+		height: 450px !important;
+		pointer-events:none;
+	}
+
 
 /* FOOTER */
 
