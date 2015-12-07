@@ -218,6 +218,11 @@ nav {
 		  opacity: 1;
 		}
 
+		.menu-item:focus .imgDescription {
+		  visibility: visible;
+		  opacity: 1;
+		}
+
 		@media (max-width: 400px) {
 			p.menu-item-name {
 				padding-right: 0;
