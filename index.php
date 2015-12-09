@@ -6,8 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Welcome to Relish Group</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.">
+  
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
