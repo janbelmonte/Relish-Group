@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <title>Welcome to Relish Group</title>
   <meta name="description" content="Purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.">
+  <meta property="og:image" content="http://www.relish-group.com/images/relish-carousel-oo.jpg" />
   
 
   <!-- Mobile Specific Metas
