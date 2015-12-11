@@ -35,11 +35,12 @@ body {
 
 	@media (max-width: 500px) {
 		.bird {
-			width: 100%;
+			width: 100vw;
 		}
 		.bird img {
-			width: 100vw;
+			width: 90vw;
 			height: auto !important;
 			min-height: 100px;
+			margin-left: calc(10vw / 2);
 		}
 	}
