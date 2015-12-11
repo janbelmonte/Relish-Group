@@ -44,10 +44,10 @@ img.rockseoul-logo {
 		border: 15px solid #DEE3E0;
 	}
 	img.rockseoul-logo {
-		width: 80vw;
+		width: 75vw;
 	}
 	.rock {
-		margin-top: calc((100vh - 450px) / 2);
+		margin-top: calc((100vh - 410px) / 2);
 	}
 }
 
