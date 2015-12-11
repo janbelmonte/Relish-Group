@@ -44,7 +44,8 @@ img.rockseoul-logo {
 		border: 15px solid #DEE3E0;
 	}
 	img.rockseoul-logo {
-		width: 75vw;
+		width: calc(100vw - 90px);
+		transform: translateX(-3px);
 	}
 	.rock {
 		margin-top: calc((100vh - 410px) / 2);
