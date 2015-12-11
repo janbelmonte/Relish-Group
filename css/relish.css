@@ -141,6 +141,7 @@ nav {
     display: block;
     margin: 0 auto;
     padding: 20px;
+    width: 100%;
   }
 
   .brand__row {
@@ -148,9 +149,9 @@ nav {
     padding: 20px 0;
   }
   .brands-wnk-logo {
-    height: 100px;
-    width: auto;
-    padding: 10px 0;
+    padding-top: 30px !important;
+    height: auto !important;
+    width: 100% !important;
   }
   .close {
     display: block;
@@ -165,6 +166,12 @@ nav {
       }
       .brand__row {
         padding: 50px 0 !important;
+      }
+      #pull {
+        top: 30px;
+      }
+      .navi__list {
+        top: 90px;
       }
     }  
     @media (min-width: 550px) {
