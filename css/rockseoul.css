@@ -30,7 +30,7 @@ img.bap {
 }
 
 img.myorb {
-	max-height: 110vh;
+	height: 100vh;
 	margin-top: -5%;
 	z-index: 2000;
 }
