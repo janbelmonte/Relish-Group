@@ -146,7 +146,7 @@ nav {
 
 #carousel {
 	min-height: 1150px;
-	background: url(../images/osakaohsho/osaka-bg.jpg);
+	background: url(../osakaohsho/images/osaka-bg.jpg);
 	background-size: cover;
 	background-position: center top;
 }
@@ -274,7 +274,7 @@ nav {
 	-moz-transform: translateY(-200px);
 	-o-transform: translateY(-200px);
 	-ms-transform: translateY(-200px);
-	background: url(../images/osakaohsho/osaka-redstrip.png);
+	background: url(../osakaohsho/images/osaka-redstrip.png);
 	background-size: cover;
 }
 	@media (max-width: 1100px) {
@@ -321,7 +321,7 @@ nav {
 	position: relative;
 	min-height: 100vh;
 	height: auto;
-	background: url(../images/osakaohsho/osaka-menu-bg.jpg);
+	background: url(../osakaohsho/images/osaka-menu-bg.jpg);
 	background-repeat: repeat;
 	z-index: 16000;
 	-webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
@@ -415,7 +415,7 @@ nav {
 	height: auto;
 	background: #d3d3d3;
 	box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
-	background: url(../images/osakaohsho/osaka-wood.jpg);
+	background: url(../osakaohsho/images/osaka-wood.jpg);
 	background-repeat: repeat-y;
 }
 	.osaka-branch-row {
@@ -445,7 +445,7 @@ nav {
 #social {
 	width: 100%;
 	min-height: 400px;
-	background: url(../images/osakaohsho/osaka-wood.jpg);
+	background: url(../osakaohsho/images/osaka-wood.jpg);
 	background-repeat: repeat-y;
 }
 
