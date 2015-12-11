@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Champion Featherweight';
+  src: url('../fonts/Champion-HTF-Featherweight.otf')  format('opentype');
+}
+
+body {
+	background: url(../seoulstation/images/seoulstation-bg.jpg);
+	background-size: cover;
+}
+
+#coming-soon {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.seoulbox {
+	width: 400px;
+	height: auto;
+	margin: 0 auto;
+	padding: 30px;
+	background: rgba(255,255,255,0.95);
+	margin-top: calc((100vh - 400px) / 2);
+}
+
+	.seoulbox img {
+		width: 100%;
+	}
+
+h4 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+	.seoulbox {
+		width: 100%;
+		margin-top: calc((100vh - 330px) / 2);
+	}
+	.seoulbox img {
+		width: 260px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
