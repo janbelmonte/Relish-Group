@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Champion Featherweight';
+  src: url('../fonts/Champion-HTF-Featherweight.otf')  format('opentype');
+}
+@font-face {
+  font-family: 'Champion Heavyweight';
+  src: url('../fonts/Champion-HTF-Heavyweight.otf')  format('opentype');
+}
+
+#coming-soon {
+	height: 100vh;
+	width: 100%;
+}
+
+.bird {
+	width: 400px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+	@media (max-width: 500px) {
+		.bird {
+			width: 100%;
+		}
+	}
+
+	.bird img {
+		position: absolute;
+		bottom: 0;
+		min-height: 400px;
+		height: 80vh;
+		margin: 0 auto;
+		margin-bottom: -10px;
+	}
+
+	.bird .text {
+		font-family: 'Champion Heavyweight', sans-serif;
+		text-align: center;
+		margin-top: 50px;
+	}
