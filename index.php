@@ -55,13 +55,13 @@
 			<div class="limit">
 				<div class="container brand__row">
 					<div class="four columns brand__item">
-						<a href="kumori.html"><img class="brand__logo" src="images/nav/brands-kumori-logo.png" width="100%"/></a>
+						<a href="/kumori"><img class="brand__logo" src="images/nav/brands-kumori-logo.png" width="100%"/></a>
 					</div>
 					<div class="four columns brand__item">
-						<a href="osakaohsho.html"><img class="brand__logo" src="images/osakaohsho/osaka-logo.png" width="100%"/></a>
+						<a href="/osakaohsho"><img class="brand__logo" src="images/osakaohsho/osaka-logo.png" width="100%"/></a>
 					</div>
 					<div class="four columns brand__item">
-						<a href="weenamkee.html"><img class="brand__logo brands-wnk-logo"src="images/nav/brands-wnk-logo.png"/></a>
+						<a href="/weenamkee"><img class="brand__logo brands-wnk-logo"src="images/nav/brands-wnk-logo.png"/></a>
 					</div>
 					<!-- <div class="two columns brand__item">
 						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
