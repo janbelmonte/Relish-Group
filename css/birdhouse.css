@@ -1,8 +1,4 @@
 @font-face {
-  font-family: 'Champion Featherweight';
-  src: url('../fonts/Champion-HTF-Featherweight.otf')  format('opentype');
-}
-@font-face {
   font-family: 'Champion Heavyweight';
   src: url('../fonts/Champion-HTF-Heavyweight.otf')  format('opentype');
 }
