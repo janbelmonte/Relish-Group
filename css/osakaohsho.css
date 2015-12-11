@@ -427,7 +427,7 @@ nav {
 /* MAP */
 .osaka-map {
 	position: relative;
-	height: 400px;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -439,6 +439,15 @@ nav {
 		height: 450px !important;
 		pointer-events:none;
 	}
+
+
+/* SOCIAL FEED */
+#social {
+	width: 100%;
+	min-height: 400px;
+	background: url(../images/osakaohsho/osaka-wood.jpg);
+	background-repeat: repeat-y;
+}
 
 
 /* FOOTER */
