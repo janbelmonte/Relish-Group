@@ -124,7 +124,7 @@ nav.wnk-nav {
 	overflow: hidden;
 	background-size: contain;
 	background-attachment: fixed;
-	background-image: url(../wnk/images/wnk-carousel.jpg);
+	background-image: url(../weenamkee/images/wnk-carousel.jpg);
 	background-position: center center;
 	background-repeat: repeat-y;
 }
@@ -192,7 +192,7 @@ nav.wnk-nav {
 	z-index: 12000 !important;
 	background-size: contain;
 	background-attachment: fixed;
-	background-image: url(../wnk/images/wnk-carousel.jpg);
+	background-image: url(../weenamkee/images/wnk-carousel.jpg);
 	background-position: center center;
 	background-repeat: repeat-y;
 }
