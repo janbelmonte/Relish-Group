@@ -49,7 +49,8 @@ h1 {
 	margin-bottom: 20px;
 }
 	.osaka-section-title h1,
-	#osaka-branches h1 {
+	#osaka-branches h1,
+	#social h1 {
 		color: #fff;
 		font-family: 'Helvetica Neue LT Com', Arial, sans-serif;
 		z-index: 21000;
@@ -427,7 +428,7 @@ nav {
 /* MAP */
 .osaka-map {
 	position: relative;
-	height: auto;
+	height: 400px;
 	overflow: hidden;
 }
 
@@ -444,7 +445,8 @@ nav {
 /* SOCIAL FEED */
 #social {
 	width: 100%;
-	min-height: 400px;
+	min-height: 100px;
+	height: auto;
 	background: url(../osakaohsho/images/osaka-wood.jpg);
 	background-repeat: repeat-y;
 }
