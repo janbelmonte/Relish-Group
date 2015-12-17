@@ -2,6 +2,9 @@
 * {
   transition: 0.5s;
 }
+.padding-20 {
+	padding: 20px;
+}
 
 /* COLORS */
 .bg-light-grey {
@@ -258,6 +261,16 @@ nav {
 		height: 450px !important;
 		pointer-events:none;
 	}
+
+
+/* SOCIAL FEED */
+#social {
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	background: url(../osakaohsho/images/osaka-wood.jpg);
+	background-repeat: repeat-y;
+}
 
 
 /* FOOTER */
