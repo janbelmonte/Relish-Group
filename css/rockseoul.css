@@ -9,6 +9,16 @@ body {
 	border: 30px solid #DEE3E0;
 }
 
+@font-face {
+  font-family: 'Tungsten Rnd Book';
+  src: url('../fonts/Tungsten Rounded Book.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Tungsten Rnd Bld';
+  src: url('../fonts/Tungsten Rounded Bold.otf')  format('opentype');
+}
+
 p, h4 {
 	font-family: 'Roboto Condensed', sans-serif;
 }
