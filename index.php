@@ -8,7 +8,7 @@
   <title>Welcome to Relish Group</title>
   <meta name="description" content="Purveyors of international hospitality casual dining concepts and brainchild of unique local culinary destinations.">
   <meta property="og:image" content="http://www.relish-group.com/images/relish-carousel-oo.jpg" />
-  
+
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,7 +39,7 @@
 
 </head>
 <body>
-  	
+
   	<nav class="nav-collapse">
   		<div id="menu-center" class="limit">
   			<a href="index.html"><img id="relish-logo" src="images/relish-logo.png" /></a>
@@ -64,7 +64,7 @@
 						<a href="/weenamkee"><img class="brand__logo brands-wnk-logo"src="images/nav/brands-wnk-logo.png"/></a>
 					</div>
 					<div class="two columns brand__item">
-						<a href="/birdhouse"><img class="brand__logo"src="birdhouse/images/birdhouse-logo.png"/></a>						
+						<a href="/birdhouse"><img class="brand__logo"src="birdhouse/images/birdhouse-logo.png"/></a>
 					</div>
 					<div class="two columns brand__item">
 						<a href="/rockseoul"><img class="brand__logo"src="rockseoul/images/rockseoul-logo-square.png"/></a>
@@ -205,19 +205,19 @@
 <script>
 	var form = document.forms.namedItem("contactForm");
 	form.addEventListener('submit', function(ev) {
-		
+
 	  	helper.sendForm(form,"http://www.relish-group.com/new_test/mailhandler.php")
 		.then(function(){
 			var parent = document.getElementById("contact");
 			var message = document.createElement("p");
-			message.addClass("formSuccess");
+			message.classList.add("formSuccess");
 			message.innerHTML = "Form Submit Successful";
 			parent.appendChild(message);
 		})
 		.catch(function(){
 			var parent = document.getElementById("contact");
 			var message = document.createElement("p");
-			message.addClass("formError");
+			message.classList.add("formError");
 			message.innerHTML = "The server seems to have a problem. Please try again later.";
 			parent.appendChild(message);
 		});
@@ -245,7 +245,7 @@
 	    var pull        = $('#pull');
 	        menu        = $('nav ul');
 	        menuHeight  = menu.height();
-	 
+
 	    $(pull).on('click', function(e) {
 	        e.preventDefault();
 	        menu.slideToggle();
@@ -348,8 +348,8 @@
 				}
 			});
 		}
-		
-		
+
+
 	}
 	var helper = {
 		checkForPull : function(){
@@ -387,17 +387,17 @@
 
 	$(document).ready(function () {
 		    $(document).on("scroll", onScroll);
-		    
+
 		    //smoothscroll
 		    $('a[href^="#"]').on('click', function (e) {
 		        e.preventDefault();
 		        $(document).off("scroll");
-		        
+
 		        $('a').each(function () {
 		            $(this).removeClass('active');
 		        })
 		        $(this).addClass('active');
-		      
+
 		        var target = this.hash,
 		            menu = target;
 		        $target = $(target);
