@@ -47,7 +47,7 @@
 	  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-  	
+
   	<nav class="nav-collapse">
   		<div id="menu-center" class="limit">
   			<a href="index.html"><img id="kumori-logo" src="images/kumori-logo.jpg" /></a>
@@ -148,14 +148,14 @@
 				<iframe src="http://widget.websta.me/in/kumoriph?r=1&w=3&h=2&b=0&p=5" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none;overflow:hidden;width:100%; min-height: 300px; height: auto; " ></iframe>
 			</div>
 			<div class="six columns">
-				<div class="fb-page" 
-					data-href="https://www.facebook.com/kumoriph" 
-					data-tabs="timeline" 
-					data-width="600" 
-					data-height="300" 
-					data-small-header="false" 
-					data-adapt-container-width="true" 
-					data-hide-cover="false" 
+				<div class="fb-page"
+					data-href="https://www.facebook.com/kumoriph"
+					data-tabs="timeline"
+					data-width="600"
+					data-height="300"
+					data-small-header="false"
+					data-adapt-container-width="true"
+					data-hide-cover="false"
 					data-show-facepile="true">
 					<div class="fb-xfbml-parse-ignore">
 						<blockquote cite="https://www.facebook.com/kumoriph">
@@ -211,17 +211,18 @@
 
 	$(document).ready(function () {
 		    $(document).on("scroll", onScroll);
-		    
+        $('.menu-item').attr("onclick","return true");
+
 		    //smoothscroll
 		    $('a[href^="#"]').on('click', function (e) {
 		        e.preventDefault();
 		        $(document).off("scroll");
-		        
+
 		        $('a').each(function () {
 		            $(this).removeClass('active');
 		        })
 		        $(this).addClass('active');
-		      
+
 		        var target = this.hash,
 		            menu = target;
 		        $target = $(target);
