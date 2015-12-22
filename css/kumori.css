@@ -226,6 +226,13 @@ nav {
 		  opacity: 1;
 		}
 
+    /*@media (hover:none) {
+      .menu-item .imgDescription {
+        visibility: visible;
+        opacity: 1;
+      }
+    }*/
+
 		@media (max-width: 400px) {
 			p.menu-item-name {
 				padding-right: 0;
