@@ -155,6 +155,10 @@ nav {
 	background-attachment: fixed;
 	padding: 150px 0 0 0;
 }
+
+.limit {
+  margin: 0 auto !important;
+}
 	@media (max-width: 768px) {
 		#kumori-desc {
 			padding: 120px 50px 50px 50px;
