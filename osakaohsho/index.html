@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/relish.css">
   <link rel="stylesheet" href="../css/osakaohsho.css">
-  
+
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -49,7 +49,7 @@
 	  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-  	
+
   	<nav class="nav-collapse">
   		<div id="menu-center" class="limit">
   			<a href="osakaohsho.html"><img id="osaka-logo" src="images/osaka-logo.png" /></a>
@@ -620,7 +620,7 @@
 						</table>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -666,14 +666,14 @@
 				<iframe src="http://widget.websta.me/in/osakaohshoph?r=1&w=2&h=8&b=0&p=5" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none;overflow:hidden;width:100%; min-height: 300px; height: auto; " ></iframe>
 			</div>
 			<div class="four columns">
-				<div class="fb-page" 
-					data-href="https://www.facebook.com/osakaohshoph" 
-					data-tabs="timeline" 
-					data-width="500" 
-					data-height="300" 
-					data-small-header="false" 
-					data-adapt-container-width="true" 
-					data-hide-cover="false" 
+				<div class="fb-page"
+					data-href="https://www.facebook.com/osakaohshoph"
+					data-tabs="timeline"
+					data-width="500"
+					data-height="300"
+					data-small-header="false"
+					data-adapt-container-width="true"
+					data-hide-cover="false"
 					data-show-facepile="true">
 					<div class="fb-xfbml-parse-ignore">
 						<blockquote cite="https://www.facebook.com/osakaohshoph">
@@ -735,29 +735,29 @@ var stickyHeaders = (function() {
       $stickies = stickies.each(function() {
 
         var $thisSticky = $(this).wrap('<div class="followWrap" />');
-  
+
         $thisSticky
             .data('originalPosition', $thisSticky.offset().top)
             .data('originalHeight', $thisSticky.outerHeight())
               .parent()
-              .height($thisSticky.outerHeight()); 			  
+              .height($thisSticky.outerHeight());
       });
 
       $window.off("scroll.stickies").on("scroll.stickies", function() {
-		  _whenScrolling();		
+		  _whenScrolling();
       });
     }
   };
 
   var _whenScrolling = function() {
 
-    $stickies.each(function(i) {			
+    $stickies.each(function(i) {
 
       var $thisSticky = $(this),
           $stickyPosition = $thisSticky.data('originalPosition');
 
-      if ($stickyPosition <= $window.scrollTop()) {        
-        
+      if ($stickyPosition <= $window.scrollTop()) {
+
         var $nextSticky = $stickies.eq(i + 1),
             $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
 
@@ -769,7 +769,7 @@ var stickyHeaders = (function() {
         }
 
       } else {
-        
+
         var $prevSticky = $stickies.eq(i - 1);
 
         $thisSticky.removeClass("fixed");
@@ -821,50 +821,7 @@ function kill_logo() {
 	    $(window).scroll(kill_paragraph);
 	    kill_paragraph();
 	});
-
-
-	// SMOOTH SCROLLING
-
-	$(document).ready(function () {
-		    $(document).on("scroll", onScroll);
-		    
-		    //smoothscroll
-		    $('a[href^="#"]').on('click', function (e) {
-		        e.preventDefault();
-		        $(document).off("scroll");
-		        
-		        $('a').each(function () {
-		            $(this).removeClass('active');
-		        })
-		        $(this).addClass('active');
-		      
-		        var target = this.hash,
-		            menu = target;
-		        $target = $(target);
-		        $('html, body').stop().animate({
-		            'scrollTop': $target.offset().top+2
-		        }, 500, 'swing', function () {
-		            window.location.hash = target;
-		            $(document).on("scroll", onScroll);
-		        });
-		    });
-		});
-
-		function onScroll(event){
-		    var scrollPos = $(document).scrollTop();
-		    $('#menu-center a').each(function () {
-		        var currLink = $(this);
-		        var refElement = $(currLink.attr("href"));
-		        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-		            $('#menu-center ul li a').removeClass("active");
-		            currLink.addClass("active");
-		        }
-		        else{
-		            currLink.removeClass("active");
-		        }
-		    });
-		}
-
 </script>
+<script src="../js/scrolling.js"></script>
 </body>
 </html>

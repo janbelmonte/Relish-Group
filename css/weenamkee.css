@@ -23,7 +23,7 @@
 .menu-title h1 {
 	color: #5e0d0e;
 	font-size: 2.5em;
-	font-family: 'Playfair Display', serif; 
+	font-family: 'Playfair Display', serif;
 }
 	p.item-name {
 		color: #fffbe5;
@@ -68,7 +68,7 @@ nav.wnk-nav {
 		color: #fff;
 		text-decoration: none;
 	}
-	nav ul li a:hover {
+	nav ul li a:hover, na ul li a.active {
 		color: #f1be06;
 	}
 	nav img {
@@ -205,7 +205,7 @@ nav.wnk-nav {
 	background-position: center center;
 	background-repeat: repeat-y;
 }
-	
+
 	@media (max-width: 1100px) {
 		#wnk-menu {
 			padding: 20px;
@@ -229,7 +229,7 @@ nav.wnk-nav {
 		color: #5e0d0e;
 		font-family: 'Montserrat', sans-serif;
 	    border-bottom: 1px solid rgba(0,0,0,0);
-	} 
+	}
 	table h5 {
 		color: #d2686b;
 		font-family: 'Playfair Display', serif;
@@ -307,7 +307,7 @@ nav.wnk-nav {
 			margin-top: 250px;
 			overflow: hidden;
 			display: block;
-		}	
+		}
 	}
 
 	@media (min-width: 768px) {

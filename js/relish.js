@@ -7,7 +7,7 @@ body[0].appendChild(overlay);
 var form = document.getElementById("contactForm");
 form.addEventListener('submit', function(ev) {
 	ev.preventDefault();
-  	helper.sendForm("contactForm","http://www.relish-group.com/new_test/mailhandler.php")
+  	helper.sendForm("contactForm","http://www.relish-group.com/mailhandler.php")
 	.then(function(){
 		var parent = document.getElementById("contact");
 		var message = document.createElement("p");

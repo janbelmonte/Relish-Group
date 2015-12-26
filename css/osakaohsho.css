@@ -79,6 +79,9 @@ nav {
 		color: #d71921;
 		text-decoration: none;
 	}
+	nav ul li a.active {
+		color: #d71921;
+	}
 	#relish-logo {
 		float: right;
 		max-width: 25%;
@@ -200,7 +203,7 @@ nav {
 			top: 400px;
 			overflow: hidden;
 			display: block;
-		}	
+		}
 	}
 
 	@media (min-width: 768px) {
@@ -316,7 +319,7 @@ nav {
 			z-index: 0;
 		}
 	}
-	
+
 #osaka-menu {
 	width: 100%;
 	position: relative;
@@ -400,7 +403,7 @@ nav {
 		}
 		th, td {
 		    border-bottom: 1px solid rgba(0,0,0,0);
-		} 
+		}
 		table h5 {
 			margin-top: 15px !important;
 			margin-bottom: 0px !important;
@@ -467,7 +470,7 @@ footer {
 	    }
 
 /* EFFECTS */
-  	
+
 .fade {
 	opacity: 0;
 	transition: opacity .25s ease-in-out;
@@ -478,5 +481,5 @@ footer {
 @media (max-width: 960px) {
 	.disappear {
   	display: none;
-  }	
+  }
 }

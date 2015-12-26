@@ -71,6 +71,9 @@ nav {
 		color: #662003;
 		text-decoration: none;
 	}
+  nav ul li a.active {
+    color: #662003;
+  }
 		@media (max-width: 500px) {
 			nav ul li a {
 				font-size: 0.85em;
