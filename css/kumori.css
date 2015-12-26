@@ -74,10 +74,13 @@ nav {
   nav ul li a.active {
     color: #662003;
   }
-		@media (max-width: 500px) {
+		@media (max-width: 550px) {
 			nav ul li a {
 				font-size: 0.85em;
 				display: inline;
+			}
+			.navi__list {
+				top: 50px !important;
 			}
 		}
 		@media (max-width: 750px) {
