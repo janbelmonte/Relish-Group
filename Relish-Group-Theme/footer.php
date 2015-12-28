@@ -24,6 +24,7 @@
 		</div>
 	</div>
 </footer>
+<?php wp_footer(); ?>
 <script src="<?php bloginfo('template_directory');?>/js/relish.js" charset="utf-8"></script>
 </body>
 </html>

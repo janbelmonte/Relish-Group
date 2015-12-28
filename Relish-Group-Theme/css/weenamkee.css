@@ -1,0 +1,385 @@
+/* UNIVERSAL */
+
+.std-padding-left {
+	padding-left: 6% !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.ghost-120 {
+	width: 100%;
+	height: 120px;
+	display: none;
+}
+	.unghost {
+		display: table;
+	}
+.padding-20 {
+	padding: 20px;
+}
+
+/* TYPOGRAPHY */
+
+.menu-title h1 {
+	color: #5e0d0e;
+	font-size: 2.5em;
+	font-family: 'Playfair Display', serif;
+}
+	p.item-name {
+		color: #fffbe5;
+		font-size: 1.25em;
+		margin-bottom: 0;
+		font-family: 'Playfair Display', serif;
+	}
+	p.item-desc {
+		font-size: 0.85em;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+	}
+
+/* NAVIGATION */
+
+.top-bar {
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	top: 0; left: 0; right: 0;
+	background: #333;
+}
+	@media (min-width: 750px) {
+		nav.no-bg {
+			background: none;
+		}
+	}
+nav.wnk-nav {
+	position: relative;
+	top: auto; bottom: 0; left: 0; right: 0;
+	border: none;
+	background: #7c1315;
+	z-index: 12000;
+}
+	nav ul {
+    	font-family: 'Playfair Display', serif;
+    	font-size: 1.2em;
+    }
+	nav ul li a,
+	nav ul li a:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+	nav ul li a:hover, na ul li a.active {
+		color: #f1be06;
+	}
+	nav img {
+		height: 85px;
+	}
+	.navi__listItem {
+		font-family: 'Playfair Display', serif;
+	}
+	.main-nav-scrolled {
+		position: fixed !important;
+		height: 120px;
+		top: 0px !important; bottom: auto !important;
+		box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	}
+
+#relish-logo {
+	float: right;
+	margin-right: 20px !important;
+}
+	#relish-logo img {
+		margin-top: 20px;
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+		z-index: 10000;
+	}
+	@media (min-width: 750px) {
+		#relish-logo {
+			margin-right: 0;
+		}
+	}
+	@media (min-width: 1100px) {
+		nav {
+			height: 120px;
+		}
+		.wnk-logo {
+			padding-top: 25px;
+			padding-bottom: 15px;
+		}
+		nav img {
+			height: 100px;
+		}
+	}
+.logo-invisible {
+	display: none;
+}
+
+
+/* CAROUSEL */
+
+#carousel {
+	padding-top: 150px;
+	width: 100vw;
+	overflow: hidden;
+	background-size: contain;
+	background-attachment: fixed;
+	background-image: url(../weenamkee/images/wnk-carousel.jpg);
+	background-position: center center;
+	background-repeat: repeat-y;
+}
+	#carousel h1 {
+		font-size: 1.5em;
+		color: #7c1315;
+		font-family: 'Playfair Display', serif;
+	}
+	#carousel p {
+		font-size: 0.8em;
+		font-family: 'Montserrat', sans-serif;
+	}
+		@media (min-width: 400px) {
+			#carousel h1 {
+				font-size: 2.25em;
+			}
+			#carousel p {
+				font-size: 0.9em;
+			}
+		}
+
+		@media (min-width: 550px) {
+			#carousel h1 {
+				font-size: 2em;
+			}
+			#carousel p {
+				font-size: 0.8em;
+			}
+		}
+
+		@media (min-width: 700px) {
+			#carousel {
+				padding-top: 0 !important;
+			}
+		}
+
+		@media (min-width: 1100px) {
+			#carousel h1 {
+				font-size: 3.6em;
+			}
+
+			#carousel p {
+				font-size: 1em;
+			}
+		}
+	#carousel .header {
+		margin-left: 0px;
+		margin-top: 0px;
+		padding: 20px;
+	}
+		@media (min-width: 750px) {
+			#carousel .header {
+				margin-bottom: 20px;
+			}
+		}
+		@media (min-width: 1100px) {
+			#carousel .header {
+				margin-left: 0px;
+				margin-top: 120px;
+				margin-bottom: 45px;
+			}
+		}
+
+/* MENU */
+
+#wnk-menu {
+	min-height: 100px;
+	height: auto;
+	background-color: #fffbe5;
+	padding-bottom: 25px;
+	z-index: 12000 !important;
+	background-size: contain;
+	background-attachment: fixed;
+	background-image: url(../weenamkee/images/wnk-carousel.jpg);
+	background-position: center center;
+	background-repeat: repeat-y;
+}
+
+	@media (max-width: 1100px) {
+		#wnk-menu {
+			padding: 20px;
+		}
+	}
+
+	.menu-title {
+		width: 100%;
+		height: 100px;
+		padding-top: 35px;
+	}
+	.wnk-menu-item {
+		margin: 0 0 30px 0;
+	}
+	table {
+		border-color: 1px solid rgba(0,0,0,0) !important;
+	}
+	th, td {
+		vertical-align: top;
+		padding: 6px 0 !important;
+		color: #5e0d0e;
+		font-family: 'Montserrat', sans-serif;
+	    border-bottom: 1px solid rgba(0,0,0,0);
+	}
+	table h5 {
+		color: #d2686b;
+		font-family: 'Playfair Display', serif;
+		margin-top: 15px !important;
+		margin-bottom: 0px !important;
+	}
+	.indent {
+		padding-left: 20px !important;
+	}
+
+
+/* BRANCHES */
+
+#wnk-branches {
+	min-height: 100px;
+	height: auto;
+	background-color: #002524;
+}
+.wnk-map {
+	position: relative;
+	padding-bottom: 100%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+	.wnk-map iframe {
+		position: absolute;
+	    top: -50px;
+		left: 0;
+		width: 100% !important;
+		height: calc(100% + 50px) !important;
+		pointer-events:none;
+	}
+
+/* FOOTER */
+
+#footer-menu {
+	display: none;
+}
+    @media (min-width: 750px) {
+    	#footer-menu {
+        	display: inline;
+      	}
+    }
+
+
+/* CAROUSEL EFFECTS/ANIMATIONS */
+.wnk-carousel-img {
+	position: absolute;
+	max-width: 60%;
+}
+	@media (max-width: 500px) {
+		.wnk-carousel-img {
+			max-width: 100%;
+			margin-top: 30px;
+			position: absolute;
+			bottom: 0;
+			z-index: 1;
+		}
+	}
+	@media (max-width: 1100px) {
+		.wnk-carousel-img {
+			max-width: 100%;
+			position: absolute;
+			z-index: 1;
+		}
+	}
+
+.css-carousel {display: none;}
+	@media (min-width: 550px){
+		.css-carousel {
+			width: 60%;
+			height: 600px; /* Height of images */
+			position: absolute;
+			right: 0; top: 0;
+			margin-top: 250px;
+			overflow: hidden;
+			display: block;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.css-carousel { margin-top: 100px; }
+	}
+
+	@media (min-width: 1100px) {
+		.css-carousel { margin-top: 100px; }
+	}
+
+		.css-carousel .wnk-carousel-img {
+		max-width: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		-webkit-animation: css-carousel-fade 30s linear infinite;
+		-moz-animation: css-carousel-fade 30s linear infinite;
+		-ms-animation: css-carousel-fade 30s linear infinite;
+		animation: css-carousel-fade 30s linear infinite;
+	}
+		.css-carousel .wnk-carousel-img:nth-child(2) {
+		-webkit-animation-delay: 5s;
+		-moz-animation-delay: 5s;
+		-ms-animation-delay: 5s;
+		animation-delay: 5s;
+	}
+		.css-carousel .wnk-carousel-img:nth-child(3) {
+		-webkit-animation-delay: 10s;
+		-moz-animation-delay: 10s;
+		-ms-animation-delay: 10s;
+		animation-delay: 10s;
+	}
+		.css-carousel .wnk-carousel-img:nth-child(4) {
+		-webkit-animation-delay: 15s;
+		-moz-animation-delay: 15s;
+		-ms-animation-delay: 15s;
+		animation-delay: 15s;
+	}
+		.css-carousel .wnk-carousel-img:nth-child(5) {
+		-webkit-animation-delay: 20s;
+		-moz-animation-delay: 20s;
+		-ms-animation-delay: 20s;
+		animation-delay: 20s;
+	}
+		.css-carousel .wnk-carousel-img:nth-child(6) {
+		-webkit-animation-delay: 25s;
+		-moz-animation-delay: 25s;
+		-ms-animation-delay: 25s;
+		animation-delay: 25s;
+	}
+	@-webkit-keyframes css-carousel-fade {
+	    0%, 20%, 100% { opacity: 0; }
+	    5%, 15% { opacity: 1;}
+	}
+	@-moz-keyframes css-carousel-fade {
+	    0%, 20%, 100% { opacity: 0; }
+	    5%, 15% { opacity: 1;}
+	}
+	@-ms-keyframes css-carousel-fade {
+	    0%, 20%, 100% { opacity: 0; }
+	    5%, 15% { opacity: 1;}
+	}
+	@keyframes css-carousel-fade {
+		0%, 20%, 100% { opacity: 0; }
+		5%, 15% { opacity: 1;}
+
+/* SOCIAL FEED */
+#social {
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	background: #002524;
+	padding-bottom: 20px;
+}

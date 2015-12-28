@@ -1,0 +1,78 @@
+body {
+	background: #FFF;
+}
+
+#coming-soon {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	border: 30px solid #cc2c32;
+	background: url(../rockseoul/images/bg-illus.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+@font-face {
+  font-family: 'Tungsten Rnd Book';
+  src: url('../fonts/Tungsten Rounded Book.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Tungsten Rnd Bld';
+  src: url('../fonts/Tungsten Rounded Bold.otf')  format('opentype');
+}
+
+.rock {
+	margin-top: calc((100vh - 480px) / 2);
+}
+	
+	.rock h4 {
+		font-family: 'Tungsten Rnd Book', sans-serif;
+		letter-spacing: 3px;
+	}
+
+	.rock p {
+		font-size: 20px;
+		font-family: 'Tungsten Rnd Book', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.rock h4 {
+		margin-bottom: 0.5rem;
+	}
+
+img.rockseoul-logo {
+	margin-bottom: 25px;
+}
+
+@media (max-width: 400px) {
+	#coming-soon {
+		border: 15px solid #cc2c32;
+	}
+	img.rockseoul-logo {
+		width: calc(100vw - 90px);
+		transform: translateX(-3px);
+	}
+	.rock {
+		margin-top: calc((100vh - 410px) / 2);
+	}
+}
+
+@media (max-width: 768px) {
+	.rock {
+		padding: 20px;
+	}
+
+	img.bap {
+		display: none;
+	}
+	img.myorb {
+		display: none;
+	}
+	.kill {
+		display: none !important;
+	}
+	.six.columns {
+		width: 100% !important;
+	}
+}

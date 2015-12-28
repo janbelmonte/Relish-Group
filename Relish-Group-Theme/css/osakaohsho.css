@@ -1,0 +1,485 @@
+/* UNIVERSAL */
+
+.padding-20 {
+	padding: 20px;
+}
+
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro-Regular.otf')  format('opentype');
+}
+@font-face {
+  font-family: 'Helvetica Neue LT Com';
+  src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url('../fonts/HelveticaNeueLight.ttf')  format('truetype');
+}
+
+p {
+	color: #000;
+}
+
+	.osaka-desc p,
+	#osaka-branches p {
+		font-size: 18px;
+		font-family: 'DINPro', Arial, sans-serif;
+		line-height: 28px;
+	}
+	p.osaka-caption {
+		font-size: 16px;
+		font-family: 'DINPro', Arial, sans-serif;
+		line-height: 28px;
+		overflow-x: auto; /* Use horizontal scroller if needed */
+	    white-space: pre-wrap; /* css-3 */
+	    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	    word-wrap: break-word; /* Internet Explorer 5.5+ */
+	    white-space : normal;
+	}
+
+h1 {
+	color: #d71921;
+	font-size: 52px;
+	font-family: 'Helvetica Neue Light', Arial, sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+	.osaka-section-title h1,
+	#osaka-branches h1,
+	#social h1 {
+		color: #fff;
+		font-family: 'Helvetica Neue LT Com', Arial, sans-serif;
+		z-index: 21000;
+		display: table;
+		overflow-x: auto; /* Use horizontal scroller if needed */
+    	white-space: pre-wrap; /* css-3 */
+    	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    	word-wrap: break-word; /* Internet Explorer 5.5+ */
+    	white-space : normal;
+	}
+
+/* NAVIGATION */
+
+nav {
+	position: absolute;
+	background: none;
+}
+	nav ul li a,
+	nav ul li a:visited {
+	  	font-family: 'DINPro', sans-serif;
+	  	font-size: 18px;
+	    color: #000;
+	    text-decoration: none;
+	}
+	nav ul li a:hover {
+		color: #d71921;
+		text-decoration: none;
+	}
+	nav ul li a.active {
+		color: #d71921;
+	}
+	#relish-logo {
+		float: right;
+		max-width: 25%;
+		height: 25%;
+		margin-right: 20px;
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+		z-index: 10000;
+	}
+	#osaka-logo {
+		position: relative;
+		margin-top: 50px;
+		float: left;
+		z-index: 10000;
+		transform: translateX(-10px);
+	}
+	@media (min-width: 550px) {
+	    nav ul {
+			display: block;
+			padding: 0 !important;
+	    }
+	    #relish-logo {
+			max-width: 165px;
+			max-width: 165px;
+	    }
+  	}
+  	@media (max-width: 750px) {
+  		#osaka-logo {
+  			width: 150px;
+  			transform: translateX(20px);
+  		}
+  	}
+  	@media (min-width: 550px) {
+    	.navi__list {
+	    	float: left;
+	    	display:block;
+	    	margin-top: 0px;
+	    	height:130px;
+	    	margin-bottom: 0px;
+	    	padding-top: 0px;
+	    	padding-bottom: 0px;
+	    	width: auto;
+	    	position: relative;
+	    	top: 30px; left: 100px;
+	    	background-color: transparent;
+	    }
+	    .navi__listItem {
+	      display: inline-table;
+	      height: inherit;
+	      width: auto;
+	      padding: 0;
+	      margin-bottom: 0;
+	    }
+	    .navi__listItem a {
+	      display: table-cell;
+	      vertical-align: middle;
+	      padding: 10px;
+	    }
+	    .osaka-section-title.fixed > .osaka-caption { color: #fff; }
+	}
+
+/* CAROUSEL */
+
+#carousel {
+	min-height: 1150px;
+	background: url(../osakaohsho/images/osaka-bg.jpg);
+	background-size: cover;
+	background-position: center top;
+}
+	.osaka-desc {
+		position: relative;
+		width: auto;
+		top: 350px;
+	}
+	@media (max-width: 1100px) {
+		.osaka-desc {
+			padding: 20px;
+			top: 300px;
+		}
+	}
+	@media (min-width: 1100px) {
+		#carousel {
+			min-height: 900px;
+		}
+	}
+
+/* CAROUSEL EFFECTS/ANIMATIONS */
+.osaka-carousel-img {
+	position: absolute;
+	/*top: 200px;*/
+	max-width: 60%;
+}
+	@media (max-width: 500px) {
+		.osaka-carousel-img {
+			max-width: 100%;
+			margin-top: 30px;
+			position: relative;
+			z-index: 20000;
+		}
+	}
+	@media (max-width: 1100px) {
+		.osaka-carousel-img {
+			max-width: 100%;
+			margin-top: 100px;
+			position: relative;
+			z-index: 20000;
+		}
+	}
+
+.css-carousel {display: none;}
+	@media (min-width: 550px){
+		.css-carousel {
+			width: inherit;
+			height: 600px; /* Height of images */
+			position: absolute;
+			top: 400px;
+			overflow: hidden;
+			display: block;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.css-carousel { top: 200px; }
+	}
+
+	.css-carousel .osaka-carousel-img {
+		max-width: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		-webkit-animation: css-carousel-fade 30s linear infinite;
+		-moz-animation: css-carousel-fade 30s linear infinite;
+		-ms-animation: css-carousel-fade 30s linear infinite;
+		animation: css-carousel-fade 30s linear infinite;
+	}
+	.css-carousel .osaka-carousel-img:nth-child(2) {
+		-webkit-animation-delay: 5s;
+		-moz-animation-delay: 5s;
+		-ms-animation-delay: 5s;
+		animation-delay: 5s;
+	}
+	.css-carousel .osaka-carousel-img:nth-child(3) {
+		-webkit-animation-delay: 10s;
+		-moz-animation-delay: 10s;
+		-ms-animation-delay: 10s;
+		animation-delay: 10s;
+	}
+	.css-carousel .osaka-carousel-img:nth-child(4) {
+		-webkit-animation-delay: 15s;
+		-moz-animation-delay: 15s;
+		-ms-animation-delay: 15s;
+		animation-delay: 15s;
+	}
+	.css-carousel .osaka-carousel-img:nth-child(5) {
+		-webkit-animation-delay: 20s;
+		-moz-animation-delay: 20s;
+		-ms-animation-delay: 20s;
+		animation-delay: 20s;
+	}
+	.css-carousel .osaka-carousel-img:nth-child(6) {
+		-webkit-animation-delay: 25s;
+		-moz-animation-delay: 25s;
+		-ms-animation-delay: 25s;
+		animation-delay: 25s;
+	}
+	@-webkit-keyframes css-carousel-fade {
+	    0%, 20%, 100% { opacity: 0; }
+	    5%, 15% { opacity: 1;}
+	}
+	@-moz-keyframes css-carousel-fade {
+	    0%, 20%, 100% { opacity: 0; }
+	    5%, 15% { opacity: 1;}
+	}
+	@-ms-keyframes css-carousel-fade {
+	    0%, 20%, 100% { opacity: 0; }
+	    5%, 15% { opacity: 1;}
+	}
+	@keyframes css-carousel-fade {
+		0%, 20%, 100% { opacity: 0; }
+		5%, 15% { opacity: 1;}
+	}
+
+/* MENU */
+
+#red-strip {
+	width: 100%;
+	height: 740px;
+	transform: translateY(-200px);
+	-webkit-transform: translateY(-200px);
+	-moz-transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	background: url(../osakaohsho/images/osaka-redstrip.png);
+	background-size: cover;
+}
+	@media (max-width: 1100px) {
+		#red-strip {
+			top: 900px;
+			width: 100%;
+		}
+	}
+
+.osaka-section-title {
+	position: relative;
+	color: #fff;
+	z-index: 1;
+    padding: 10px 20px;
+    margin-top: -100px;
+    background: none;
+}
+	.osaka-section-title.fixed {
+		position: fixed;
+		top: 100px;
+		width: 100%;
+		box-sizing: border-box;
+		z-index: 1000;
+		background: #c2121a;
+	}
+	.osaka-section-title.fixed.absolute {
+	  position: absolute;
+	  background: none;
+	}
+	@media (max-width: 1100px) {
+		.osaka-section-title {
+			padding: 20px;
+		}
+	}
+	@media (min-width: 750px) {
+		.osaka-section-title.fixed {
+			width: 240px !important;
+			z-index: 0;
+		}
+	}
+
+#osaka-menu {
+	width: 100%;
+	position: relative;
+	min-height: 100vh;
+	height: auto;
+	background: url(../osakaohsho/images/osaka-menu-bg.jpg);
+	background-repeat: repeat;
+	z-index: 16000;
+	-webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+}
+	@media (max-width: 400px) {
+		#osaka-menu {
+			-webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+			clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+		}
+	}
+	@media (max-width: 1000px) {
+		#osaka-menu {
+			-webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+			clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+		}
+	}
+
+	.osaka-food {
+		margin-top: -750px;
+	}
+	.menu-spacer75 {
+		width: auto;
+		height: 75px;
+	}
+	.menu-spacer150 {
+		width: auto;
+		height: 150px;
+	}
+		@media (max-width: 750px) {
+			.menu-spacer75 {
+				display:none;
+			}
+
+			.menu-spacer150 {
+				display:none;
+			}
+		}
+	.osaka-menu-item {
+		position: relative;
+		width: auto;
+		margin-bottom: 50px;
+		background: none;
+	}
+
+	/* TABLE STYLES */
+
+	table {
+		border-color: 1px solid rgba(0,0,0,0) !important;
+	}
+		.tg  {
+			border-collapse:collapse;
+			border-spacing:0;
+		}
+		.tg td{
+			font-family: 'DINPro', sans-serif;
+			font-size:14px;
+			padding:5px 5px;
+			border-style:solid;
+			border-width:0;
+			overflow:hidden;
+			word-break:normal;
+		}
+		.tg th {
+			font-family: 'HelveticaNeueLTCom-LtCn', sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			padding:5px 5px;
+			border-style:solid;
+			border-width:1px;
+			overflow:hidden;
+			word-break:normal;}
+		.tg .tg-yw4l{
+			vertical-align:top
+		}
+		th, td {
+		    border-bottom: 1px solid rgba(0,0,0,0);
+		}
+		table h5 {
+			margin-top: 15px !important;
+			margin-bottom: 0px !important;
+		}
+		.indent {
+			padding-left: 20px !important;
+		}
+
+/* BRANCHES */
+
+#osaka-branches {
+	width: 100%;
+	height: auto;
+	background: #d3d3d3;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+	background: url(../osakaohsho/images/osaka-wood.jpg);
+	background-repeat: repeat-y;
+}
+	.osaka-branch-row {
+		width: 100%;
+		min-height: 140px;
+		padding-top: 25px;
+	}
+
+/* MAP */
+.osaka-map {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+	.osaka-map iframe {
+		position: absolute;
+	    top: -50px;
+		left: 0;
+		width: 100% !important;
+		height: 450px !important;
+		pointer-events:none;
+	}
+
+
+/* SOCIAL FEED */
+#social {
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	background: url(../osakaohsho/images/osaka-wood.jpg);
+	background-repeat: repeat-y;
+}
+
+
+/* FOOTER */
+
+footer {
+	z-index: -1000;
+}
+	#footer-menu {
+	    display: none;
+	}
+	    @media (min-width: 750px) {
+	    	#footer-menu {
+	        	display: inline;
+	      	}
+	    }
+
+/* EFFECTS */
+
+.fade {
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+@media (max-width: 960px) {
+	.disappear {
+  	display: none;
+  }
+}

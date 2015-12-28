@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Champion Heavyweight';
+  src: url('../fonts/Champion-HTF-Heavyweight.otf')  format('opentype');
+}
+
+body {
+	background: #f1f1f1;
+}
+
+#coming-soon {
+	height: 100vh;
+	width: 100%;
+	background: url(../birdhouse/images/birdhouse-bg.jpg);
+	background-repeat: repeat;
+}
+
+.bird {
+	width: 600px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+	.bird img {
+		position: absolute;
+		top: 30vh;
+		width: 500px;
+		height: auto;
+		margin-left: 0;
+	}
+
+	.bird .text {
+		font-family: 'Champion Heavyweight', sans-serif;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	@media (max-width: 500px) {
+		.bird {
+			width: 100vw;
+		}
+		.bird img {
+			width: 90vw;
+			height: auto !important;
+			min-height: 100px;
+			margin-left: calc(10vw / 2);
+		}
+	}
+
+	@media (min-width: 700px) {
+		.bird img {
+			top: 20vh;
+			margin-left: 50px;
+		}
+	}
