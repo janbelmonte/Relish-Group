@@ -25,6 +25,7 @@
 	</div>
 </footer>
 <?php wp_footer(); ?>
-<script src="<?php bloginfo('template_directory');?>/js/relish.js" charset="utf-8"></script>
+<script src="<?php bloginfo('template_directory');?>/js/osakaohsho.js"></script>
+<script src="<?php bloginfo('template_directory');?>/js/scrolling.js"></script>
 </body>
 </html>

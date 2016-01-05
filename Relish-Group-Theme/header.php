@@ -43,7 +43,7 @@
 
   	<nav class="nav-collapse" style="z-index:1001;">
   		<div id="menu-center" class="limit">
-  			<a href="index.html"><img id="relish-logo" src="images/relish-logo.png" /></a>
+  			<a href="index.html"><img id="relish-logo" src="<?php bloginfo('template_directory');?>/images/relish-logo.png" /></a>
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
 			    <li class="navi__listItem"><a href="#about">About</a></li>
@@ -56,22 +56,22 @@
 			<div class="limit">
 				<div class="container brand__row">
 					<div class="two columns brand__item">
-						<a href="/kumori"><img class="brand__logo" src="images/nav/brands-kumori-logo.png" width="100%"/></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>kumori"><img class="brand__logo" src="<?php bloginfo('template_directory');?>/images/brands-kumori-logo.png" width="100%"/></a>
 					</div>
 					<div class="two columns brand__item">
-						<a href="/osakaohsho"><img class="brand__logo" src="osakaohsho/images/osaka-logo.png" width="100%"/></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>osakaohsho"><img class="brand__logo" src="<?php bloginfo('template_directory');?>/images/osaka-logo.png" width="100%"/></a>
 					</div>
 					<div class="two columns brand__item">
-						<a href="/weenamkee"><img class="brand__logo brands-wnk-logo"src="images/nav/brands-wnk-logo.png"/></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>weenamkee"><img class="brand__logo brands-wnk-logo"src="<?php bloginfo('template_directory');?>/images/brands-wnk-logo.png"/></a>
 					</div>
 					<div class="two columns brand__item">
-						<a href="/birdhouse"><img class="brand__logo"src="birdhouse/images/birdhouse-logo.png"/></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>birdhouse"><img class="brand__logo"src="birdhouse/images/birdhouse-logo.png"/></a>
 					</div>
 					<div class="two columns brand__item">
-						<a href="/rockseoul"><img class="brand__logo"src="rockseoul/images/rockseoul-logo-square.png"/></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>rockseoul"><img class="brand__logo"src="rockseoul/images/rockseoul-logo-square.png"/></a>
 					</div>
 					<div class="two columns brand__item">
-						<a href="/seoulstation"><img class="brand__logo"src="seoulstation/images/seoulstation-logo.png"/></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>seoulstation"><img class="brand__logo"src="seoulstation/images/seoulstation-logo.png"/></a>
 					</div>
 					<!-- <div class="two columns brand__item">
 						<a href="#"><img class="brand__logo" src="images/relish-logo.png" width="100%"/></a>
