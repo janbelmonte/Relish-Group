@@ -6,8 +6,10 @@ add_action('do_meta_boxes', 'customposttype_image_box');
 function customposttype_image_box() {
 
 	remove_meta_box( 'postimagediv', 'kumori-item', 'side' );
+	remove_meta_box( 'postimagediv', 'carousel-image', 'side' );
 
 	add_meta_box('postimagediv', __('Custom Image'), 'post_thumbnail_meta_box', 'kumori-item', 'advanced', 'high');
+	add_meta_box('postimagediv', __('Custom Image'), 'post_thumbnail_meta_box', 'carousel-image', 'advanced', 'high');
 
 }
 
@@ -408,7 +410,7 @@ function branch_loop($queryObj){
 //
 function carousel_query($restaurant){
   $carouselArgs = array(
-    'post_type' => "carousel",
+    'post_type' => "carousel-image",
     'tax_query' => array(
       array(
         'taxonomy' => 'tag',

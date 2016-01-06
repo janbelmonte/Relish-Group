@@ -11,12 +11,7 @@
 				</div>
 				<div class="six columns">
 					<div class="css-carousel">
-						<img class="osaka-carousel-img" src="images/osaka-carousel-1.png" />
-						<img class="osaka-carousel-img" src="images/osaka-carousel-2.png" />
-						<img class="osaka-carousel-img" src="images/osaka-carousel-3.png" />
-						<img class="osaka-carousel-img" src="images/osaka-carousel-1.png" />
-						<img class="osaka-carousel-img" src="images/osaka-carousel-2.png" />
-						<img class="osaka-carousel-img" src="images/osaka-carousel-3.png" />
+						<?php $carouselQuery = carousel_query('osakaohsho'); carousel_loop('osakaohsho', $carouselQuery); ?>
 					</div>
 				</div>
 			</div>
