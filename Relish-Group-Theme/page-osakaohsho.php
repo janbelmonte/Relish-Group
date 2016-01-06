@@ -48,7 +48,7 @@
 							    <td class="tg-yw4l"><h5>Koshihikari Sets</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-								<?php $koshikariQuery = menu_item_query('osakaohsho','koshihikari'); menu_item_loop($koshikariQuery); ?>
+								<?php $koshikariQuery = menu_item_query('osakaohsho','koshihikari sets'); menu_item_loop($koshikariQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l"></td>
 							    <td class="tg-yw4l"></td>
@@ -57,7 +57,7 @@
 							    <td class="tg-yw4l"><h5>Chahan Sets</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-								<?php $chahanQuery = menu_item_query('osakaohsho','chahan set'); menu_item_loop($chahanQuery);?>
+								<?php $chahanQuery = menu_item_query('osakaohsho','chahan sets'); menu_item_loop($chahanQuery);?>
 
 							  <tr>
 							    <td class="tg-yw4l">* Each Chahan Set comes with a serving of Chahan, 3 pieces of gyoza, miso soup, a fruit plate and unlimited premium steamed Japanese Koshihikari rice.</td>
@@ -203,7 +203,7 @@
 				<div class="three columns">
 					<h1>BRANCHES</h1>
 				</div>
-				<?php $branchQuery = branch_query('osakaohsho'); branch_loop($branchQuery); ?>
+				<?php $branchQuery = branch_query('osakaohsho'); branch_loop('osakaohsho', $branchQuery); ?>
 			</div>
 		</div>
 

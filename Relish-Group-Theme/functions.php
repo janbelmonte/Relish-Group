@@ -284,7 +284,7 @@ function menu_item_query($restaurant, $menu_category){
       ),
       array(
         'taxonomy' => 'tag',
-        'field'    => 'slug',
+        'field'    => 'name',
         'terms'    => $menu_category,
       ),
     ),
@@ -299,13 +299,20 @@ function menu_item_loop($queryObj){
     while ( $queryObj -> have_posts() ) {
       $queryObj -> the_post();
       $postID = get_the_ID();
-      echo '<tr>
-        <td class="tg-yw4l"><b>'.get_the_title($postID).'</b></td>
-        <td class="tg-yw4l">';
+
+      if( rwmb_meta( 'sub_menu_item_1' ) != '' ){
+				echo '<tr>';
+				switch($restaurant){
+					case 'osakaohsho':
+						echo '<td class="tg-yw4l"><b>'.get_the_title($postID).'</b></td>';
+						break;
+						default:
+						echo '<td class="tg-yw4l">'.get_the_title($postID).'</td>';
+				}
+        echo '<td class="tg-yw4l">';
         if( rwmb_meta( 'price' ) != '' ){ echo rwmb_meta( 'price' ); }
         echo '</td>
-      </tr>';
-      if( rwmb_meta( 'sub_menu_item_1' ) != '' ){
+	      </tr>';
         $sub_menu_item_1 = rwmb_meta( 'sub_menu_item_1' );
         $sub_menu_item_1_price = rwmb_meta( 'sub_menu_item_1_price' );
         $sub_menu_item_2 = rwmb_meta( 'sub_menu_item_2' );
@@ -347,7 +354,14 @@ function menu_item_loop($queryObj){
             </tr>';
           }
         }
-      }
+      } else {
+				echo '<tr>
+	        <td class="tg-yw4l">'.get_the_title($postID).'</td>
+	        <td class="tg-yw4l">';
+	        if( rwmb_meta( 'price' ) != '' ){ echo rwmb_meta( 'price' ); }
+	        echo '</td>
+	      </tr>';
+			}
     }
   }
 }
@@ -414,10 +428,18 @@ function branch_loop($restaurant, $queryObj){
 					</div>';
 					break;
 				case 'weenamkee':
-					echo '<div class="wnk-menu-item">
-						<p class="item-name">'.get_the_title($postID).'</p>
-						<p class="item-desc">'.rwmb_meta( 'address_line_1' ).'<br />'.rwmb_meta("branch_contact_details").'</p>
-					</div>';
+					if (rwmb_meta('address_line_1') != '') {
+						echo '<div class="wnk-menu-item">
+							<p class="item-name">'.get_the_title($postID).'</p>
+							<p class="item-desc">'.rwmb_meta( 'address_line_1' ).', '.rwmb_meta( 'city' ).'<br />'.rwmb_meta("branch_contact_details").'</p>
+						</div>';
+					} else {
+						echo '<div class="wnk-menu-item">
+							<p class="item-name">'.get_the_title($postID).'</p>
+							<p class="item-desc">'.rwmb_meta( 'city' ).'<br />'.rwmb_meta("branch_contact_details").'</p>
+						</div>';
+					}
+
 					break;
 			}
 
