@@ -493,6 +493,21 @@ function carousel_loop($restaurant, $queryObj){
         	    </div>';
             }
           break;
+				case 'relish':
+            if( $counter == 0 ){
+							$link = $src['0'];
+              echo '<div class="item active" style="background-image:url('.$link.'); background-size:cover; background-position: center center; height:100vh;">';
+              echo '<div class="carousel-caption">';
+              echo '</div>';
+              echo '</div>';
+            } else {
+							$link = $src['0'];
+              echo '<div class="item" style="background-image:url('.$link.'); background-size:cover; background-position: center center; height:100vh;">
+        	      <div class="carousel-caption">
+        	      </div>
+        	    </div>';
+            }
+          break;
       }
       $counter++;
     }
