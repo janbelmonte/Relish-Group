@@ -392,18 +392,35 @@ function branch_query($restaurant){
   return $branchQuery;
 }
 
-function branch_loop($queryObj){
+function branch_loop($restaurant, $queryObj){
   if( $queryObj -> have_posts() ){
     while( $queryObj -> have_posts() ){
       $queryObj -> the_post();
       $postID = get_the_ID();
-      echo
-      '<div class="three columns">
-      <p><b>'.get_the_title($postID).'</b><br/>
-      '.rwmb_meta( 'address_line_1' ).',<br/>
-      '.rwmb_meta( 'city' ).'<br/>
-      '.rwmb_meta("branch_contact_details").'</p>
-      </div>';
+			switch($restaurant){
+				case 'osakaohsho':
+					echo
+		      '<div class="three columns">
+		      <p><b>'.get_the_title($postID).'</b><br/>
+		      '.rwmb_meta( 'address_line_1' ).',<br/>
+		      '.rwmb_meta( 'city' ).'<br/>
+		      '.rwmb_meta("branch_contact_details").'</p>
+		      </div>';
+					break;
+				case 'kumori':
+					echo '<div class="four columns">
+						<p class="item-name">'.get_the_title($postID).'</p>
+						<p class="item-desc">'.rwmb_meta( 'address_line_1' ).'<br/>'.rwmb_meta("branch_contact_details").'</p>
+					</div>';
+					break;
+				case 'weenamkee':
+					echo '<div class="wnk-menu-item">
+						<p class="item-name">'.get_the_title($postID).'</p>
+						<p class="item-desc">'.rwmb_meta( 'address_line_1' ).'<br />'.rwmb_meta("branch_contact_details").'</p>
+					</div>';
+					break;
+			}
+
     }
   }
 }
@@ -441,12 +458,14 @@ function carousel_loop($restaurant, $queryObj){
           break;
         case 'kumori':
             if( $counter == 0 ){
-              echo '<div class="item active" style="background-image:url("'.$src['0'].'"); background-size:cover; background-position: center center; height:100vh;">
-                <div class="carousel-caption">
-                </div>
-              </div>';
+							$link = $src['0'];
+              echo '<div class="item active" style="background-image:url('.$link.'); background-size:cover; background-position: center center; height:100vh;">';
+              echo '<div class="carousel-caption">';
+              echo '</div>';
+              echo '</div>';
             } else {
-              echo '<div class="item" style="background-image:url("'.$src['0'].'"); background-size:cover; background-position: center center; height:100vh;">
+							$link = $src['0'];
+              echo '<div class="item" style="background-image:url('.$link.'); background-size:cover; background-position: center center; height:100vh;">
         	      <div class="carousel-caption">
         	      </div>
         	    </div>';

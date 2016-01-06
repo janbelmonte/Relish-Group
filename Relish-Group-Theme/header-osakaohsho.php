@@ -37,6 +37,7 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="<?php bloginfo('template_directory');?>/images/favicon.png">
+  <?php wp_head(); ?>
 
 </head>
 <body>

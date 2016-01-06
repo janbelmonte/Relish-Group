@@ -21,22 +21,23 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/normalize.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/skeleton.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/relish.css">
-  <link rel="stylesheet" href="../css/kumori.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/relish.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/kumori.css">
   <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
 
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="../js/jquery-2.1.4.min.js"></script>
-  <script src="../js/bootstrap.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/jquery-2.1.4.min.js"></script>
+  <script src="<?php bloginfo('template_directory');?>/js/bootstrap.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_directory');?>/images/favicon.png">
   <?php wp_head(); ?>
 
 </head>
@@ -53,7 +54,7 @@
 
   	<nav class="nav-collapse">
   		<div id="menu-center" class="limit">
-  			<a href="index.html"><img id="kumori-logo" src="<?php bloginfo('template_directory');?>/images/kumori-logo.jpg" /></a>
+  			<a href="index.html"><img id="kumori-logo" src="<?php bloginfo('template_directory');?>/images/kumori/kumori-logo.jpg" /></a>
   			<a href="../index.php"><img id="relish-logo" src="<?php bloginfo('template_directory');?>/images/relish-logo.png" /></a>
   			<ul class="navi__list">
 			 	<li class="navi__listItem"><a class="active" href="#kumori-desc">ABOUT</a></li>
