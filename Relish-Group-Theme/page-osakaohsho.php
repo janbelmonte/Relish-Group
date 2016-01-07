@@ -39,7 +39,7 @@
 							    <td class="tg-yw4l"><h5>Gyoza</h5></th>
 							    <td class="tg-yw4l"></th>
 							  </tr>
-								<?php $gyozaQuery = menu_item_query('osakaohsho', 'gyoza'); menu_item_loop($gyozaQuery); ?>
+								<?php $gyozaQuery = menu_item_query('osakaohsho', 'gyoza'); menu_item_loop('osakaohsho',$gyozaQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l"></td>
 							    <td class="tg-yw4l"></td>
@@ -48,7 +48,7 @@
 							    <td class="tg-yw4l"><h5>Koshihikari Sets</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-								<?php $koshikariQuery = menu_item_query('osakaohsho','koshihikari sets'); menu_item_loop($koshikariQuery); ?>
+								<?php $koshikariQuery = menu_item_query('osakaohsho','koshihikari sets'); menu_item_loop('osakaohsho',$koshikariQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l"></td>
 							    <td class="tg-yw4l"></td>
@@ -57,7 +57,7 @@
 							    <td class="tg-yw4l"><h5>Chahan Sets</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-								<?php $chahanQuery = menu_item_query('osakaohsho','chahan sets'); menu_item_loop($chahanQuery);?>
+								<?php $chahanQuery = menu_item_query('osakaohsho','chahan sets'); menu_item_loop('osakaohsho',$chahanQuery);?>
 
 							  <tr>
 							    <td class="tg-yw4l">* Each Chahan Set comes with a serving of Chahan, 3 pieces of gyoza, miso soup, a fruit plate and unlimited premium steamed Japanese Koshihikari rice.</td>
@@ -75,7 +75,7 @@
 							    <td class="tg-yw4l"><h5>Fuwatoro Sets</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-								<?php $fuwatoroQuery = menu_item_query('osakaohsho','fuwatoro sets'); menu_item_loop($fuwatoroQuery); ?>
+								<?php $fuwatoroQuery = menu_item_query('osakaohsho','fuwatoro sets'); menu_item_loop('osakaohsho',$fuwatoroQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l">*Each Fuwatoro Set comes with a serving of Fuwatoro Tenshin Han, two servings of miso soup and two servings of fruit.</td>
 							    <td class="tg-yw4l"></td>
@@ -84,7 +84,7 @@
 							    <td class="tg-yw4l"><h5>Japanese Curry Sets</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-							  <?php $curryQuery = menu_item_query('osakaohsho','japanese curry sets'); menu_item_loop($curryQuery); ?>
+							  <?php $curryQuery = menu_item_query('osakaohsho','japanese curry sets'); menu_item_loop('osakaohsho',$curryQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l">*Each Japanese Curry Set comes with 3 pieces of gyoza, miso soup, a fruit plate and unlimited premium steamed Japanese Koshihikari rice.</td>
 							    <td class="tg-yw4l"></td>
@@ -97,7 +97,7 @@
 							    <td class="tg-yw4l"><h5>Appetizers &amp; Salads</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-							<?php $appetizerQuery = menu_item_query('osakaohsho', 'appetizers & salads'); menu_item_loop($appetizerQuery); ?>
+							<?php $appetizerQuery = menu_item_query('osakaohsho', 'appetizers & salads'); menu_item_loop('osakaohsho',$appetizerQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l"></td>
 							    <td class="tg-yw4l"></td>
@@ -106,7 +106,7 @@
 							    <td class="tg-yw4l"><h5>Teppanyaki</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-							  <?php $teppanyakiQuery = menu_item_query('osakaohsho', 'teppanyaki'); menu_item_loop($teppanyakiQuery); ?>
+							  <?php $teppanyakiQuery = menu_item_query('osakaohsho', 'teppanyaki'); menu_item_loop('osakaohsho',$teppanyakiQuery); ?>
 							  <tr>
 							    <td class="tg-yw4l"></td>
 							    <td class="tg-yw4l"></td>
@@ -123,7 +123,7 @@
 						    <td class="tg-yw4l"><h5>Stir Fry</h5></td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $stirfryQuery = menu_item_query('osakaohsho', 'stir fry'); menu_item_loop($stirfryQuery); ?>
+						  <?php $stirfryQuery = menu_item_query('osakaohsho', 'stir fry'); menu_item_loop('osakaohsho',$stirfryQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"></td>
 						    <td class="tg-yw4l"></td>
@@ -132,12 +132,12 @@
 						    <td class="tg-yw4l"><h5>Vegetables &amp; Tofu</h5></td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $vegetablesQuery = menu_item_query('osakaohsho', 'vegetables & tofu'); menu_item_loop($vegetablesQuery); ?>
+						  <?php $vegetablesQuery = menu_item_query('osakaohsho', 'vegetables & tofu'); menu_item_loop('osakaohsho',$vegetablesQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"><h5>Agemono (Deep-fried)</h5></td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $agemonoQuery = menu_item_query('osakaohsho', 'agemono'); menu_item_loop($agemonoQuery); ?>
+						  <?php $agemonoQuery = menu_item_query('osakaohsho', 'agemono'); menu_item_loop('osakaohsho',$agemonoQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"></td>
 						    <td class="tg-yw4l"></td>
@@ -146,7 +146,7 @@
 						    <td class="tg-yw4l"><h5>Rice &amp; Noodles</h5></td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $riceQuery = menu_item_query('osakaohsho', 'rice & noodles'); menu_item_loop($riceQuery); ?>
+						  <?php $riceQuery = menu_item_query('osakaohsho', 'rice & noodles'); menu_item_loop('osakaohsho',$riceQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"><h5>Afternoon Sets</h5></td>
 						    <td class="tg-yw4l"></td>
@@ -159,7 +159,7 @@
 						    <td class="tg-yw4l">Gyoza Afternoon Set</td>
 						    <td class="tg-yw4l">220</td>
 						  </tr>
-						  <?php $gyozaAfternoonSetsQuery = menu_item_query('osakaohsho', 'gyoza afternoon sets'); menu_item_loop($gyozaAfternoonSetsQuery); ?>
+						  <?php $gyozaAfternoonSetsQuery = menu_item_query('osakaohsho', 'gyoza afternoon sets'); menu_item_loop('osakaohsho',$gyozaAfternoonSetsQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"></td>
 						    <td class="tg-yw4l"></td>
@@ -172,7 +172,7 @@
 						    <td class="tg-yw4l">Available only for children 10 years old or younger. Set includes rice, miso soup and a fruit plate.</td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $kiddieQuery = menu_item_query('osakaohsho', 'kiddie sets'); menu_item_loop($kiddieQuery); ?>
+						  <?php $kiddieQuery = menu_item_query('osakaohsho', 'kiddie sets'); menu_item_loop('osakaohsho',$kiddieQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"></td>
 						    <td class="tg-yw4l"></td>
@@ -181,12 +181,12 @@
 						    <td class="tg-yw4l"><div class="kill-section"></div><h5>Desserts</h5></td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $dessertsQuery = menu_item_query('osakaohsho', 'desserts'); menu_item_loop($dessertsQuery); ?>
+						  <?php $dessertsQuery = menu_item_query('osakaohsho', 'desserts'); menu_item_loop('osakaohsho',$dessertsQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"><h5>Drinks</h5></td>
 						    <td class="tg-yw4l"></td>
 						  </tr>
-						  <?php $drinksQuery = menu_item_query('osakaohsho', 'drinks'); menu_item_loop($drinksQuery); ?>
+						  <?php $drinksQuery = menu_item_query('osakaohsho', 'drinks'); menu_item_loop('osakaohsho',$drinksQuery); ?>
 						</table>
 						</div>
 					</div>

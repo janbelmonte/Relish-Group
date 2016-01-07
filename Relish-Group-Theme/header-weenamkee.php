@@ -52,6 +52,6 @@
   	<div class="top-bar"></div>
   	<nav class="no-bg limit">
   		<div class="limit">
-  			<a href="index.php"><img id="relish-logo" src="<?php bloginfo('template_directory');?>/images/relish-logo.png" /></a>
+  			<a href="../index.php"><img id="relish-logo" src="<?php bloginfo('template_directory');?>/images/relish-logo.png" /></a>
 		</div>
 	</nav>

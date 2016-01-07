@@ -294,7 +294,7 @@ function menu_item_query($restaurant, $menu_category){
   $categoryQuery = new WP_Query($categoryArgs);
   return $categoryQuery;
 }
-function menu_item_loop($queryObj){
+function menu_item_loop($restaurant, $queryObj){
   if ( $queryObj -> have_posts()) {
     while ( $queryObj -> have_posts() ) {
       $queryObj -> the_post();

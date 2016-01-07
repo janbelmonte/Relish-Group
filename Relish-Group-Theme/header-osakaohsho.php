@@ -54,7 +54,7 @@
   	<nav class="nav-collapse">
   		<div id="menu-center" class="limit">
   			<a href="osakaohsho.html"><img id="osaka-logo" src="<?php bloginfo('template_directory');?>/images/osaka-logo.png" /></a>
-  			<a href="index.php"><img id="relish-logo" src="<?php bloginfo('template_directory');?>/images/relish-logo.png" /></a>
+  			<a href="../index.php"><img id="relish-logo" src="<?php bloginfo('template_directory');?>/images/relish-logo.png" /></a>
   			<a href="#" id="pull" class="fa fa-bars fa-2x"></a>
 			<ul class="navi__list">
 			    <li class="navi__listItem"><a class="active" href="#osaka-menu">Our Food</a></li>

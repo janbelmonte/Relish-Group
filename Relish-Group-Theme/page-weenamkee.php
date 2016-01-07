@@ -39,7 +39,7 @@
 						    <th class="tg-yw4l"><h5>Signature Dishes</h5></th>
 						    <th class="tg-yw4l"></th>
 						  </tr>
-						  <?php $sigDishQuery = menu_item_query('weenamkee', 'signature dishes'); menu_item_loop($sigDishQuery); ?>
+						  <?php $sigDishQuery = menu_item_query('weenamkee', 'signature dishes'); menu_item_loop('weenamkee', $sigDishQuery); ?>
 						  <tr>
 						    <td class="tg-yw4l"></td>
 						    <td class="tg-yw4l"></td>
@@ -162,7 +162,7 @@
 							    <td class="tg-yw4l"><h5>Beverages</h5></td>
 							    <td class="tg-yw4l"></td>
 							  </tr>
-							  <?php $beveragesQuery = menu_item_query('weenamkee', 'beverages'); menu_item_loop('weenamkee', $beveragseQuery); ?>
+							  <?php $beveragesQuery = menu_item_query('weenamkee', 'beverages'); menu_item_loop('weenamkee', $beveragesQuery); ?>
 							</table>
 
 				</div>
