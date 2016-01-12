@@ -1,0 +1,169 @@
+/* UNIVERSAL */
+
+.super-container {
+	width: 100vw;
+	overflow: hidden;
+}
+
+.bg-violet {
+	background: #372b6a;
+}
+
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: 'Tungsten Book';
+  src: url('../fonts/Tungsten Rounded Book.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Tungsten Bld';
+  src: url('../fonts/Tungsten Rounded Bold.otf')  format('opentype');
+}
+
+h1, h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Tungsten Bld';
+	font-size: 48px;
+	letter-spacing: 3px;
+}
+
+h2 {
+	color: #fff;
+	font-family: 'Tungsten Book';
+	font-size: 36px;
+	letter-spacing: 3px;
+}
+
+h4 {
+	color: #fff;
+	font-family: 'Tungsten Bld';
+	font-size: 32px;
+	letter-spacing: 3px;	
+}
+
+	.letsrock {
+		margin-top: 40px;
+	}
+
+/* NAVIGATION */
+
+nav {
+	position: absolute;
+	border-top: 30px solid #10182d;
+	z-index: 20000;
+	background: none;
+}
+
+	#relish-logo {
+		float: right;
+		max-width: 25%;
+		height: 25%;
+		margin-right: 20px;
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+		z-index: 10000;
+	}
+
+	@media (min-width: 550px) {
+	    nav ul {
+	      display: block;
+	      padding: 0 !important;
+	    }
+	    #relish-logo {
+	      max-width: 165px;
+	      max-width: 165px;
+	    }
+	    #kumori-logo {
+	    	height: 100px !important;
+	    }
+  	}
+
+
+/* HERO */
+
+ #hero {
+ 	width: 100%;
+ 	min-height: 385px;
+ 	margin-top: 30px;
+ 	background: url(../rockseoul/images/rs-hero.jpg);
+ }
+
+ .hero-text {
+ 	text-align: center;
+ 	text-transform: uppercase;
+ }
+
+
+/* MYOBP */
+
+ #myobp {
+ 	padding: 60px 0;
+ 	box-shadow: 0 0 0 -5px rgba(0,0,0,0.4);
+ 	z-index: 20000;
+ }
+
+
+ /* MENUS */
+
+ #menu-1, #menu-2, #menu-3, #menu-4, #menu-5 {
+ 	min-height: 100vh;
+ 	position: relative;
+ }
+
+ #menu-1 {
+ 	background: #773575;
+ 	/*box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.5);*/
+ }
+
+ #menu-2 {
+ 	background: #b84730;
+ }
+
+ #menu-3 {
+ 	background: #301e5a;
+ }
+
+ #menu-4 {
+ 	background: #372b6a;
+ }
+
+ #menu-5 {
+ 	background: #372b6a;
+ }
+
+ img.menu-img {
+ 	position: absolute;
+ 	z-index: 20000;
+ }
+
+ img.menu-img.left {
+ 	left: -50px;
+ }
+
+ img.menu-img.right {
+ 	right: -50px;
+ }
+
+ img.menu-img.btm { 	
+ 	bottom: -50px;
+ }
+
+ img.menu-img.top {
+ 	top: -50px;
+ }
+
+ @media (max-width: 1000px) {
+ 	img.menu-img {
+ 		width: 60vw;
+ 		height: auto;
+ 	}
+ }
