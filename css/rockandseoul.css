@@ -21,6 +21,10 @@
   src: url('../fonts/Tungsten Rounded Bold.otf')  format('opentype');
 }
 
+a {
+	text-decoration: none;
+}
+
 h1, h2 {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -32,6 +36,14 @@ h1 {
 	font-size: 48px;
 	letter-spacing: 3px;
 }
+
+	/*.menu-right h1, .menu-left h1 {
+		animation: pulsate 0.3s infinite;
+		-webkit-animation: pulsate 0.3s infinite;
+		-moz-animation: pulsate 0.3s infinite;
+		-o-animation: pulsate 0.3s infinite;
+		-ms-animation: pulsate 0.3s infinite;
+	}*/
 
 h2 {
 	color: #fff;
@@ -49,6 +61,15 @@ h4 {
 
 	.letsrock {
 		margin-top: 20px;
+		animation: pulsate 0.3s infinite;
+		-webkit-animation: pulsate 0.3s infinite;
+		-moz-animation: pulsate 0.3s infinite;
+		-o-animation: pulsate 0.3s infinite;
+		-ms-animation: pulsate 0.3s infinite;
+	}
+
+	.letsrock:hover {
+		color: #ffda44;
 	}
 
 	.letsrock i {
@@ -58,6 +79,20 @@ h4 {
 		-o-transform: translateY(10px);
 		-ms-transform: translateY(10px);
 	}
+
+	.menu-item-desc {
+		font-family: 
+	}
+
+
+li {
+	color: #fff;
+	font-family: 'Tungsten Book';
+	font-size: 1.6em;
+	list-style-type: none;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
 
 /* NAVIGATION */
 
@@ -169,6 +204,13 @@ nav {
  	top: -50px;
  }
 
+ @media (min-width: 750px) {
+ 	img.menu-img {
+ 		width: 55vw;
+ 		height: auto;
+ 	}
+ }
+
  @media (max-width: 1000px) {
  	img.menu-img {
  		width: 60vw;
@@ -178,9 +220,112 @@ nav {
 
  .menu-right {
  	position: absolute;
- 	width: 40%;
+ 	width: 45%;
  	min-height: 80%;
  	height: auto;
  	right: 0;
- 	padding: 30px;
+ 	padding: 10% 10% 0 5%;
  }
+
+ .menu-left {
+ 	position: absolute;
+ 	width: 45%;
+ 	min-height: 80%;
+ 	height: auto;
+ 	padding: 10% 5% 0 10%;
+ }
+
+
+/* ANIMATIONS */
+@-webkit-keyframes pulsate {
+	    0% { 
+		    transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+		}
+	    50% {
+		    transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			-o-transform: scale(1.05);
+	    }
+	    100% {
+	    	transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+	    }
+	}
+	@-moz-keyframes pulsate {
+	    0% { 
+		    transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+		}
+	    50% {
+		    transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			-o-transform: scale(1.05);
+	    }
+	    100% {
+	    	transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+	    }
+	}
+	@-o-keyframes pulsate {
+	    0% { 
+		    transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+		}
+	    50% {
+		    transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			-o-transform: scale(1.05);
+	    }
+	    100% {
+	    	transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+	    }
+	}
+	@keyframes pulsate {
+	    0% { 
+		    transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+		}
+	    50% {
+		    transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			-o-transform: scale(1.05);
+	    }
+	    100% {
+	    	transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+	    }
+	}
